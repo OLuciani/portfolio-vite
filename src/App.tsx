@@ -17,7 +17,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className={`w-full ${theme === "light" ? "bg-white" : "bg-[#030014]"}`}>
+    <div className={`w-full ${theme === "light" ? "bg-white" : "bg-[#030014]"} px-4`}>
       <NavBar />
 
       <SideBar />

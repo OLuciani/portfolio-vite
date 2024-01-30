@@ -10,7 +10,7 @@ function Projects() {
   const { showLanguage, theme } = useContext(Context);
 
   return (
-    <div id="projects">
+    <div className="" id="projects">
       <h2 className='text-center text-[salmon] text-xl md:text-2xl font-semibold my-6'>{showLanguage === "spanish" ? "Mis proyectos" : "My projects"}</h2>
 
       <div className="flex flex-row flex-wrap justify-center items-center pt-[2%] md:text-lg">

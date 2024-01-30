@@ -17,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div id="home" className='w-full flex flex-row flex-wrap justify-evenly items-center gap-8 mb-8 pt-20'>
+    <div id="home" className='w-full flex flex-col md:flex-row md:flex-wrap justify-evenly items-center gap-8 mb-8 pt-20'>
         {/* <div className='text-center text-white text-xl md:text-2xl my-3'>Inicio</div> */}
 
 

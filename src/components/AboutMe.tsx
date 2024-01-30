@@ -8,7 +8,7 @@ const AboutMe = () => {
     <div id="about">
         <h2 className='text-center text-[salmon] text-xl md:text-2xl font-semibold'>{showLanguage === "spanish" ? "Sobre mi" : "About me"}</h2>
 
-        <div className="flex justify-evenly my-6 px-4">
+        <div className="flex justify-evenly my-6">
           <p className={`md:w-[90vw] text-about-me ${theme === "light" ? "text-black" : "text-white"} m-auto md:text-lg`}>
           {showLanguage === "spanish" 
           ? `Inmerso en el fascinante mundo del Desarrollo Web desde principios de

@@ -130,7 +130,7 @@ function SideBar() {
 
         <div className="flex gap-1 md:text-lg">
           <span
-            onClick={changeToSpanish}
+            onClick={() => {changeToSpanish(); onClickItems()}}
             className={`font-semibold ${
               theme === "light" ? "text-black " : "text-white"
             } cursor-pointer px-1 border-${
@@ -151,7 +151,7 @@ function SideBar() {
           </span>
 
           <span
-            onClick={changeToEnglish}
+            onClick={() => {changeToEnglish(); onClickItems()}}
             className={`font-semibold ${
               theme === "light" ? "text-black" : "text-white"
             } cursor-pointer px-1 border-${
@@ -170,7 +170,7 @@ function SideBar() {
 
         <div className="flex gap-1 md:text-lg">
           <span
-            onClick={changeToLight}
+            onClick={() => {changeToLight(); onClickItems()}}
             className={`font-semibold cursor-pointer px-2 
                     ${
                       theme === "light"
@@ -191,7 +191,7 @@ function SideBar() {
           </span>
 
           <span
-            onClick={changeToDark}
+            onClick={() => {changeToDark(); onClickItems()}}
             className={`font-semibold cursor-pointer px-1 
                     ${
                       theme === "light"

@@ -45,8 +45,8 @@ function NavBar() {
   //console.log(theme);
 
   return (
-    <div className="">
-      <nav className={`${theme === "light" ? "bg-white" : "bg-[#030014] text-white"} py-3 px-4 flex justify-between md:justify-between items-center fixed top-0 w-full z-10`}>
+    <div className="flex justify-center">
+      <nav className={`${theme === "light" ? "bg-white" : "bg-[#030014] text-white"} py-3 flex justify-between md:justify-evenly items-center fixed top-0 w-full z-10`}>
         <div>
           <Link to="home" smooth={true} duration={500}>
             <p className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white hover:font-semibold hover:bg-white hover:text-black"} text-2xl font-semibold px-2 rounded-md cursor-pointer`}>

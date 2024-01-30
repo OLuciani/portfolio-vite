@@ -24,7 +24,7 @@ const MySkills = () => {
     <div id="skills" className='w-full md:px-16 pt-2'>
         <h2 className='text-center text-[salmon] text-xl md:text-2xl font-semibold my-6'>{showLanguage === "spanish" ? "Habilidades" : "Skills"}</h2>
 
-        <div className='w-full px-4 grid justify-center mb-6 md:text-lg'>
+        <div className='w-full grid justify-center mb-6 md:text-lg'>
             <div className='md:w-[90vw]'>
                 <p className={`${theme === "light" ? "text-black" : "text-white"} text-left`}>{showLanguage === "spanish" ? "Estas son algunas de las habilidades que utilizo: React js, Javascript, Typescipt, HTML5, Next js, CSS, Tailwind css, Vite js, Node js, Express js, MySql, Mongo Db, Git, Github, Postman, Docker, Creación de APIS, Patrón de Arquitectura MVC, OPP, Scrum, Visual Studio Code, Java, Inglés e Italiano." : "These are some of the skills I use: React.js, JavaScript, TypeScript, HTML5, Next.js, CSS, Tailwind CSS, Vite.js, Node.js, Express.js, MySQL, MongoDB, Git, GitHub, Postman, Docker, API Creation, MVC Architecture, OOP, Scrum, Visual Studio Code, Java, English, and Italian."} </p>
             </div>

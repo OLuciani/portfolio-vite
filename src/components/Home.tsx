@@ -27,7 +27,7 @@ const Home = () => {
           </p>
           <p className="text-[salmon] text-2xl md:text-3xl text-center font-semibold">
             {showLanguage === "spanish" ? "soy" : "I'am"}{" "}
-            <span className="text-[salmon] text-xl md:text-3xl font-semibold">
+            <span className="text-[salmon] text-2xl md:text-3xl font-semibold">
               Oscar Miguel Luciani
             </span>
           </p>

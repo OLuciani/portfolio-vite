@@ -7,7 +7,6 @@ import { animateScroll as scroll } from 'react-scroll';
 
 function NavBar() {
   const { showLanguage, setShowLanguage, theme, setTheme, setHidde } = useContext(Context);
-  //const [showSideBar, setShowSideBar] = useState<string>("");
   
   useEffect(() => {
     console.log(theme);

@@ -134,7 +134,7 @@ const MySkills = () => {
                         <img
                             src={imageMySql}
                             alt="Image MySql"
-                            className="w-[34px] h-[34px] p-1 rounded-md bg-[#d3d3d3] absolute right-[42.5px] top-[30px] rotate-animation"
+                            className="w-[34px] h-[34px] p-1 rounded-md bg-white absolute right-[42.5px] top-[30px] rotate-animation"
                         />
                         <img
                             src={imageDocker}

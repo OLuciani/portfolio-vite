@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import { Context } from "../src/context/Context";
 import { useContext, useEffect } from "react";
+import SideBar from "./components/SideBar";
 
 function App() {
   const { theme } = useContext(Context);
@@ -18,6 +19,8 @@ function App() {
   return (
     <div className={`w-full ${theme === "light" ? "bg-white" : "bg-[#030014]"}`}>
       <NavBar />
+
+      <SideBar />
 
       <Home />
 

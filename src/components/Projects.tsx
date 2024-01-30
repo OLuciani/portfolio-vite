@@ -44,7 +44,7 @@ function Projects() {
             <div className="pt-[1%] pb-[1%] pl-[3%] pr-[3%]">
               <a href="https://s12-18-tn-csharp-next.vercel.app/">
                 <img
-                  className="w-full md:w- ml-[0.1%] border-[1px] border-white rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out"
+                  className={`w-full md:w- ml-[0.1%] border-[1px] ${theme === "light" ? "border-black" : "border-white"} rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out`}
                   src={imagenAyudaHumanitaria}
                   alt="Imágen NearByTour"
                 />
@@ -92,7 +92,7 @@ function Projects() {
             <div className="pt-[1%] pb-[1%] pl-[3%] pr-[3%]">
               <a href="https://nearbytour.vercel.app/home">
                 <img
-                  className="w-full md:w- ml-[0.1%] border-[1px] border-white rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out"
+                  className={`w-full md:w- ml-[0.1%] border-[1px] ${theme === "light" ? "border-black" : "border-white"} rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out`}
                   src={imagennearbytour}
                   alt="Imágen NearByTour"
                 />
@@ -138,7 +138,7 @@ function Projects() {
             <div className="pt-[1%] pb-[1%] pl-[3%] pr-[3%]">
               <a href="https://meddyplus.netlify.app">
                 <img
-                  className="w-full md:w- ml-[0.1%] border-[1px] border-white rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out"
+                  className={`w-full md:w- ml-[0.1%] border-[1px] ${theme === "light" ? "border-black" : "border-white"} rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out`}
                   src={imagenMeddyplus}
                   alt="Imágen Meddyplus"
                 />
@@ -179,7 +179,7 @@ function Projects() {
             <div className="pt-[1%] pb-[1%] pl-[3%] pr-[3%]">
               <a href="https://hernandez-cabanas.netlify.app/">
                 <img
-                  className="w-full md:w- ml-[0.1%] border-[1px] border-white rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out"
+                  className={`w-full md:w- ml-[0.1%] border-[1px] ${theme === "light" ? "border-black" : "border-white"} rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out`}
                   src={imagenhernandezcabañas}
                   alt="imagen-hernandez-cabañas"
                 />
@@ -222,7 +222,7 @@ function Projects() {
             <div className="pt-[1%] pb-[1%] pl-[3%] pr-[3%]">
               <a href="https://luciani-automoviles.netlify.app/">
                 <img
-                  className="w-full md:w- ml-[0.1%] border-[1px] border-white rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out"
+                  className={`first-letter:w-full md:w- ml-[0.1%] border-[1px] ${theme === "light" ? "border-black" : "border-white"} rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out`}
                   src={imagenlucianiautomoviles}
                   alt="imagen-luciani-automoviles"
                 />

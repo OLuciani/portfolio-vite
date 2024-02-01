@@ -98,9 +98,13 @@ function Contact() {
               </p>
             </div>
 
-            <div className="">
+            <div className="w-[130px]">
               <a
-                className="flex items-center gap-5"
+                className={`flex items-center gap-5 ${
+                  theme === "light"
+                    ? "hover:text-[salmon] font-semibold"
+                    : "hover:text-[lightsalmon]"
+                }`}
                 href="https://www.linkedin.com/in/oscarluciani"
                 target="_blank"
               >
@@ -127,7 +131,11 @@ function Contact() {
 
             <div className="">
               <a
-                className="flex items-center gap-5"
+                className={`flex items-center gap-5 ${
+                  theme === "light"
+                    ? "hover:text-[salmon] font-semibold"
+                    : "hover:text-[lightsalmon]"
+                }`}
                 href="https://github.com/OLuciani"
                 target="_blank"
               >

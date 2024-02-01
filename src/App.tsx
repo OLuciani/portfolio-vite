@@ -9,7 +9,7 @@ import { Context } from "../src/context/Context";
 import { useContext, useEffect } from "react";
 import SideBar from "./components/SideBar";
 
-function App() {
+const App: React.FC = () => {
   const { theme } = useContext(Context);
 
   useEffect(() => {

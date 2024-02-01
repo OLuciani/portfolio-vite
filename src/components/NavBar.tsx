@@ -2,8 +2,8 @@ import { Link } from 'react-scroll';
 import { TiThMenu } from "react-icons/ti"; 
 import { Context } from '../context/Context';
 import { useContext, useEffect } from "react";
-import { Link as ScrollLink } from 'react-scroll';
-import { animateScroll as scroll } from 'react-scroll';
+//import { Link as ScrollLink } from 'react-scroll';
+//import { animateScroll as scroll } from 'react-scroll';
 
 function NavBar() {
   const { showLanguage, setShowLanguage, theme, setTheme, setHidde } = useContext(Context);
@@ -33,12 +33,12 @@ function NavBar() {
   }
 
  
-  const scrollToTop = () => {
+ /*  const scrollToTop = () => {
     scroll.scrollToTop({
       duration: 500,
       smooth: "easeInOutQuart",
     });
-  };
+  }; */
 
   //console.log(showLanguage);
   //console.log(theme);
@@ -131,13 +131,13 @@ function NavBar() {
           <span onClick={ changeToDark } className={` md:text-lg ${theme === "light" ? "border-[1px] border-white font-semibold px-1 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] border border-white px-2 rounded-md hover:px-1 hover:rounded-md hover:bg-white hover:text-black"}`}>{showLanguage === "spanish" ? "Oscuro" : "Dark"}</span>        
         </div>
 
-        <ScrollLink to="home" smooth={true} duration={500}>
+        {/* <ScrollLink to="home" smooth={true} duration={500}> */}
         <div className="px-2 rounded-md hover:bg-white hover:text-black hover:font-semibold md:hidden">
           <span>
-            <TiThMenu onClick={() => {onClickShowSideBar(); scrollToTop();}} className="text-[24px] cursor-pointer" />
+            <TiThMenu onClick={() => {onClickShowSideBar(); /* scrollToTop(); */}} className="text-[24px] cursor-pointer" />
           </span>
         </div>
-        </ScrollLink>
+        {/* </ScrollLink> */}
       </nav>
     </div>
   );

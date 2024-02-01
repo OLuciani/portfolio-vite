@@ -36,10 +36,15 @@ function SideBar() {
 
   return (
     <>
-      <div
-        className={`absolute w-[50vw] h-[100vh] ${
+      {/* <div
+        className={`absolute w-[50vw] h-screen ${
           theme === "light" ? "bg-white" : "bg-[#030014]"
         } pt-[5%] pl-5 top-0 right-0 flex flex-col gap-10 z-10 ${hidde} md:hidden`}
+      > */}
+      <div
+        className={`w-[50vw] h-screen ${
+          theme === "light" ? "bg-white" : "bg-[#030014]"
+        } pt-[5%] pl-5 top-0 right-0 flex flex-col gap-10 z-10 ${hidde} fixed md:hidden`}
       >
         <p
           onClick={onClickHideSideBar}

@@ -44,7 +44,7 @@ function Contact() {
           theme === "light" ? "text-black" : "text-white"
         } flex justify-center items-center`}
       >
-        <div className="w-[90%] flex flex-col items-center my-5">
+        <div className="w-[90%] flex flex-col items-center gap-14 my-5 md:flex-row flex-wrap md:justify-evenly md:items-start">
           <div className="flex flex-col gap-16">
             <div className="flex items-center gap-5">
               <span>
@@ -108,16 +108,16 @@ function Contact() {
                   <AiOutlineLinkedin
                     className={`text-2xl md:text-3xl ${
                       theme === "light"
-                        ? "hover:text-blue-700"
-                        : "hover:text-blue-400"
+                        ? "hover:text-[salmon] font-semibold"
+                        : "hover:text-[lightsalmon]"
                     } cursor-pointer`}
                   />
                 </span>
                 <p
                   className={`md:text-lg ${
                     theme === "light"
-                      ? "hover:text-blue-700 font-semibold"
-                      : "hover:text-blue-400"
+                      ? "hover:text-[salmon] font-semibold"
+                      : "hover:text-[lightsalmon]"
                   } cursor-pointer`}
                 >
                   Linkedin
@@ -135,16 +135,16 @@ function Contact() {
                   <FaGithub
                     className={`text-2xl md:text-3xl ${
                       theme === "light"
-                        ? "hover:text-blue-700"
-                        : "hover:text-blue-400"
+                        ? "hover:text-[salmon] font-semibold"
+                        : "hover:text-[lightsalmon]"
                     } cursor-pointer`}
                   />
                 </span>
                 <p
                   className={`md:text-lg ${
                     theme === "light"
-                      ? "hover:text-blue-700 font-semibold"
-                      : "hover:text-blue-400"
+                      ? "hover:text-[salmon] font-semibold"
+                      : "hover:text-[lightsalmon]"
                   } cursor-pointer`}
                 >
                   Github
@@ -153,42 +153,44 @@ function Contact() {
             </div>
           </div>
 
-          <div className="mt-10 md:w-[500px]">
-            <h2 className="text-xl text-center py-4">Envia un mensaje</h2>
-            <form ref={formRef} onSubmit={handleSubmit}>
-              <label htmlFor="user_email" className="block text-lg mb-2">
-                Tu email:
-              </label>
-              <input
-                type="email"
-                id="user_email"
-                name="user_email"
-                className={`w-full mb-4 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-[salmon] ${
-                  theme === "light" ? "bg-gray-100" : "text-black"
-                }`}
-                required
-              />
+          <div className="flex flex-row justify-center items-start">
+            <div className={`md:w-[450px] border p-8 rounded-xl ${theme === "light" ? "border-black" : "border-white"}`}>
+              <h2 className="text-xl text-center pb-4">{showLanguage === "spanish" ? "Envía un mensaje" : "Send a message"}</h2>
+              <form ref={formRef} onSubmit={handleSubmit}>
+                <label htmlFor="user_email" className="block text-lg mb-2">
+                  {showLanguage === "spanish" ? "Tu email::" : "Your email:"}
+                </label>
+                <input
+                  type="email"
+                  id="user_email"
+                  name="user_email"
+                  className={`w-full mb-4 px-4 py-2 rounded-md border focus:outline-none focus:border-[salmon] ${
+                    theme === "light" ? "bg-gray-100 border-gray-400" : "text-black"
+                  }`}
+                  required
+                />
 
-              <label htmlFor="message" className="block text-lg mb-2">
-                {showLanguage === "spanish" ? "Mensaje:" : "Message:"}
-              </label>
-              <TextareaAutosize
-                id="message"
-                name="message"
-                rows={4}
-                className={`w-full mb-4 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-[salmon] ${
-                  theme === "light" ? "bg-gray-100" : "text-black"
-                }`}
-                required
-              />
+                <label htmlFor="message" className="block text-lg mb-2">
+                  {showLanguage === "spanish" ? "Mensaje:" : "Message:"}
+                </label>
+                <TextareaAutosize
+                  id="message"
+                  name="message"
+                  rows={4}
+                  className={`w-full mb-4 px-4 py-2 rounded-md border focus:outline-none focus:border-[salmon] ${
+                    theme === "light" ? "bg-gray-100 border-gray-400" : "text-black"
+                  }`}
+                  required
+                />
 
-              <button
-                type="submit"
-                className="bg-[salmon] text-white px-6 py-2 rounded-md hover:bg-opacity-80"
-              >
-                {showLanguage === "spanish" ? "Enviar" : "Send"}
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  className="bg-[salmon] text-white px-6 py-2 rounded-md hover:bg-opacity-80"
+                >
+                  {showLanguage === "spanish" ? "Enviar" : "Send"}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

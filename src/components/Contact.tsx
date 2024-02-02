@@ -209,7 +209,7 @@ function Contact() {
                   required
                 />
                 {emailError && (
-                  <p className="text-red-500 text-sm mt-[-7px] pb-2 text-center">{emailError}</p>
+                  <p className={`${theme === "light" ? "text-red-500" : "text-[lightsalmon]"} text-sm mt-[-7px] pb-2 text-center`}>{emailError}</p>
                 )}
 
                 <label htmlFor="message" className="block text-lg mb-2">
@@ -227,7 +227,7 @@ function Contact() {
                   required
                 />
                 {messageError && (
-                  <p className="text-red-500 text-sm mt-[-12px] text-center">{messageError}</p>
+                  <p className={`${theme === "light" ? "text-red-500" : "text-[lightsalmon]"} text-sm mt-[-12px] text-center`}>{messageError}</p>
                 )}
 
                 <button

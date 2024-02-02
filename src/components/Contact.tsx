@@ -5,7 +5,7 @@ import { BsTelephone } from "react-icons/bs";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { Context } from "../context/Context";
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import TextareaAutosize from "react-textarea-autosize";
 
@@ -14,10 +14,43 @@ function Contact() {
 
   const formRef = useRef(null);
 
+  const [emailError, setEmailError] = useState("");
+  const [messageError, setMessageError] = useState("");
+  const [emailValue, setEmailValue] = useState("");
+  const [messageValue, setMessageValue] = useState("");
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // Resetear mensajes de error
+    setEmailError("");
+    setMessageError("");
+
     if (formRef.current) {
+      const userEmail = (formRef.current as any).user_email.value;
+      const message = (formRef.current as any).message.value;
+
+      // Validar email
+      if (!isValidEmail(userEmail)) {
+        setEmailError(
+          showLanguage === "spanish"
+            ? "Por favor, ingrese un correo electrónico válido."
+            : "Please enter a valid email address."
+        );
+        return;
+      }
+
+      // Validar mensaje
+      if (message.trim() === "") {
+        setMessageError(
+          showLanguage === "spanish"
+            ? "Por favor, ingrese un mensaje."
+            : "Please enter a message."
+        );
+        return;
+      }
+
+      // Enviar formulario si pasa las validaciones
       emailjs
         .sendForm(
           "service_j37eijj",
@@ -27,11 +60,24 @@ function Contact() {
         )
         .then((result) => {
           console.log("Correo electrónico enviado con éxito:", result.text);
+
+           // Limpiar campos después de enviar
+           setEmailValue("");
+           setMessageValue("");
         })
         .catch((error) => {
-          console.error("Error al enviar el correo electrónico:", error.text);
+          console.error(
+            "Error al enviar el correo electrónico:",
+            error.text
+          );
         });
     }
+  };
+
+  const isValidEmail = (email: string) => {
+    // Implementa una lógica más avanzada para validar el correo electrónico si es necesario
+    // Puedes usar expresiones regulares u otras técnicas
+    return email.includes("@");
   };
 
   return (
@@ -110,26 +156,18 @@ function Contact() {
               >
                 <span>
                   <AiOutlineLinkedin
-                    className={`text-2xl md:text-3xl ${
-                      theme === "light"
-                        ? "hover:text-[salmon] font-semibold"
-                        : "hover:text-[lightsalmon]"
-                    } cursor-pointer`}
+                    className={`text-2xl md:text-3xl cursor-pointer`}
                   />
                 </span>
                 <p
-                  className={`md:text-lg ${
-                    theme === "light"
-                      ? "hover:text-[salmon] font-semibold"
-                      : "hover:text-[lightsalmon]"
-                  } cursor-pointer`}
+                  className={`md:text-lg cursor-pointer`}
                 >
                   Linkedin
                 </p>
               </a>
             </div>
 
-            <div className="">
+            <div className="w-[130px]">
               <a
                 className={`flex items-center gap-5 ${
                   theme === "light"
@@ -141,19 +179,11 @@ function Contact() {
               >
                 <span>
                   <FaGithub
-                    className={`text-2xl md:text-3xl ${
-                      theme === "light"
-                        ? "hover:text-[salmon] font-semibold"
-                        : "hover:text-[lightsalmon]"
-                    } cursor-pointer`}
+                    className={`text-2xl md:text-3xl cursor-pointer`}
                   />
                 </span>
                 <p
-                  className={`md:text-lg ${
-                    theme === "light"
-                      ? "hover:text-[salmon] font-semibold"
-                      : "hover:text-[lightsalmon]"
-                  } cursor-pointer`}
+                  className={`md:text-lg cursor-pointer`}
                 >
                   Github
                 </p>
@@ -161,22 +191,28 @@ function Contact() {
             </div>
           </div>
 
-          <div className="flex flex-row justify-center items-start">
-            <div className={`md:w-[450px] border p-8 rounded-xl ${theme === "light" ? "border-black" : "border-white"}`}>
+          <div className="w-full md:w-[450px] flex flex-row justify-center items-start">
+            <div className={`w-full border p-4 rounded-xl ${theme === "light" ? "border-black" : "border-white"}`}>
               <h2 className="text-xl text-center pb-4">{showLanguage === "spanish" ? "Envía un mensaje" : "Send a message"}</h2>
-              <form ref={formRef} onSubmit={handleSubmit}>
+
+              <form ref={formRef} onSubmit={handleSubmit} noValidate>
                 <label htmlFor="user_email" className="block text-lg mb-2">
-                  {showLanguage === "spanish" ? "Tu email::" : "Your email:"}
+                  {showLanguage === "spanish" ? "Tu email:" : "Your email:"}
                 </label>
                 <input
                   type="email"
                   id="user_email"
                   name="user_email"
+                  value={emailValue}
+                  onChange={(e) => setEmailValue(e.target.value)}
                   className={`w-full mb-4 px-4 py-2 rounded-md border focus:outline-none focus:border-[salmon] ${
                     theme === "light" ? "bg-gray-100 border-gray-400" : "text-black"
                   }`}
                   required
                 />
+                {emailError && (
+                  <p className="text-red-500 text-sm mt-[-7px] pb-2 text-center">{emailError}</p>
+                )}
 
                 <label htmlFor="message" className="block text-lg mb-2">
                   {showLanguage === "spanish" ? "Mensaje:" : "Message:"}
@@ -184,16 +220,21 @@ function Contact() {
                 <TextareaAutosize
                   id="message"
                   name="message"
+                  value={messageValue}
+                  onChange={(e) => setMessageValue(e.target.value)}
                   rows={4}
                   className={`w-full mb-4 px-4 py-2 rounded-md border focus:outline-none focus:border-[salmon] ${
                     theme === "light" ? "bg-gray-100 border-gray-400" : "text-black"
                   }`}
                   required
                 />
+                {messageError && (
+                  <p className="text-red-500 text-sm mt-[-12px] text-center">{messageError}</p>
+                )}
 
                 <button
                   type="submit"
-                  className="bg-[salmon] text-white px-6 py-2 rounded-md hover:bg-opacity-80"
+                  className="bg-[salmon] text-white px-6 py-2 mt-5 rounded-md hover:bg-opacity-80"
                 >
                   {showLanguage === "spanish" ? "Enviar" : "Send"}
                 </button>

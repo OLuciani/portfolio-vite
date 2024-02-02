@@ -75,8 +75,6 @@ function Contact() {
   };
 
   const isValidEmail = (email: string) => {
-    // Implementa una lógica más avanzada para validar el correo electrónico si es necesario
-    // Puedes usar expresiones regulares u otras técnicas
     return email.includes("@");
   };
 

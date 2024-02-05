@@ -129,9 +129,9 @@ function NavBar() {
 
         <div className={`hidden md:block`}>
           <div className='flex justify-center items-center'>
-            <span onClick={ changeToLight } className={`md:py-1 md:px-2 font-semibold md:text-lg ${theme === "light" ? "border-[1px] border-black font-semibold px-2 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] px-1 hover:px-1 hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineLightMode />}</span>
+            <span onClick={ changeToLight } className={`md:py-[3px] md:px-2 font-semibold md:text-lg ${theme === "light" ? "border-[1px] border-black font-semibold px-2 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] px-1 hover:px-1 hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineLightMode />}</span>
             <span className='md:text-lg px-2 font-semibold'>/</span>
-            <span onClick={ changeToDark } className={`md:py-1 md:text-lg ${theme === "light" ? "border-[1px] border-white font-semibold px-1 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] border border-white px-2 rounded-md hover:px- hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineDarkMode />}</span>        
+            <span onClick={ changeToDark } className={`md:py-[3px] md:text-lg ${theme === "light" ? "border-[1px] border-white font-semibold px-1 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] border border-white px-2 rounded-md hover:px- hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineDarkMode />}</span>        
           </div>
         </div>
 

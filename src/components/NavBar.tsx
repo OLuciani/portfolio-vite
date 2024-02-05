@@ -4,6 +4,8 @@ import { Context } from '../context/Context';
 import { useContext, useEffect } from "react";
 //import { Link as ScrollLink } from 'react-scroll';
 //import { animateScroll as scroll } from 'react-scroll';
+import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 function NavBar() {
   const { showLanguage, setShowLanguage, theme, setTheme, setHidde } = useContext(Context);
@@ -126,9 +128,11 @@ function NavBar() {
         </div>
 
         <div className={`hidden md:block`}>
-          <span onClick={ changeToLight } className={`font-semibold md:text-lg ${theme === "light" ? "border-[1px] border-black font-semibold px-2 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] px-1 hover:px-1 hover:rounded-md hover:bg-white hover:text-black"}`}>{showLanguage === "spanish" ? "Claro" : "Light"}</span>
-          <span className=' md:text-lg px-1 font-semibold'>/</span>
-          <span onClick={ changeToDark } className={` md:text-lg ${theme === "light" ? "border-[1px] border-white font-semibold px-1 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] border border-white px-2 rounded-md hover:px-1 hover:rounded-md hover:bg-white hover:text-black"}`}>{showLanguage === "spanish" ? "Oscuro" : "Dark"}</span>        
+          <div className='flex justify-center items-center'>
+            <span onClick={ changeToLight } className={`md:py-1 md:px-2 font-semibold md:text-lg ${theme === "light" ? "border-[1px] border-black font-semibold px-2 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] px-1 hover:px-1 hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineLightMode />}</span>
+            <span className='md:text-lg px-2 font-semibold'>/</span>
+            <span onClick={ changeToDark } className={`md:py-1 md:text-lg ${theme === "light" ? "border-[1px] border-white font-semibold px-1 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] border border-white px-2 rounded-md hover:px- hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineDarkMode />}</span>        
+          </div>
         </div>
 
         {/* <ScrollLink to="home" smooth={true} duration={500}> */}
@@ -138,7 +142,7 @@ function NavBar() {
           </span>
         </div>
         {/* </ScrollLink> */}
-      </nav>
+      </nav> 
     </div>
   );
 }

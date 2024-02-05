@@ -1,6 +1,8 @@
 import { Link } from "react-scroll";
 import { Context } from "../context/Context";
 import { useContext, useEffect } from "react";
+import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 function SideBar() {
   const { showLanguage, setShowLanguage, theme, setTheme, hidde, setHidde } =
@@ -174,44 +176,48 @@ function SideBar() {
         </div>
 
         <div className="flex gap-1 md:text-lg">
-          <span
-            onClick={() => {changeToLight(); onClickItems()}}
-            className={`font-semibold cursor-pointer px-2 
-                    ${
-                      theme === "light"
-                        ? "border-[1px] border-black"
-                        : "border-white"
-                    } 
-                    hover:bg-${theme === "light" ? "[#030014]" : "white"} 
-                    hover:text-${
-                      theme === "light" ? "white" : "black" /* Esta */
-                    } hover:border-white rounded-md 
-                    ${theme === "light" ? "hover:text-black" : "text-white"}`}
-          >
-            {showLanguage === "spanish" ? "Claro" : "Light"}
-          </span>
+          <div className="flex justify-center items-center">
+            <span
+              onClick={() => {changeToLight(); onClickItems()}}
+              className={`font-semibold cursor-pointer py-1 px-2 
+                      ${
+                        theme === "light"
+                          ? "border-[1px] border-black"
+                          : "border-white"
+                      } 
+                      hover:bg-${theme === "light" ? "[#030014]" : "white"} 
+                      hover:text-${
+                        theme === "light" ? "white" : "black" /* Esta */
+                      } hover:border-white rounded-md 
+                      ${theme === "light" ? "hover:text-black" : "text-white"}`}
+            >
+              {<MdOutlineLightMode />}
+            </span>
+          </div>
 
           <span className={`text-${theme === "light" ? "black" : "white"}`}>
             /
           </span>
 
-          <span
-            onClick={() => {changeToDark(); onClickItems()}}
-            className={`font-semibold cursor-pointer px-1 
-                    ${
-                      theme === "light"
-                        ? "border-[1px] border-white"
-                        : "border-black"
-                    } 
-                    hover:bg-${theme === "light" ? "[#030014]" : "white"} 
-                    hover:text-${theme === "light" ? "white" : "black"} 
-                    hover:border-white rounded-md 
-                    ${
-                      theme === "dark" ? "border border-white text-white" : ""
-                    }`}
-          >
-            {showLanguage === "spanish" ? "Oscuro" : "Dark"}
-          </span>
+          <div className="flex justify-center items-center">
+            <span
+              onClick={() => {changeToDark(); onClickItems()}}
+              className={`font-semibold cursor-pointer py-1 px-2 
+                      ${
+                        theme === "light"
+                          ? "border-[1px] border-white"
+                          : "border-black"
+                      } 
+                      hover:bg-${theme === "light" ? "[#030014]" : "white"} 
+                      hover:text-${theme === "light" ? "white" : "black"} 
+                      hover:border-white rounded-md 
+                      ${
+                        theme === "dark" ? "border border-white text-white" : ""
+                      }`}
+            >
+              {<MdOutlineDarkMode />}
+            </span>
+          </div>
         </div>
       </div>
     </>

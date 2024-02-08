@@ -20,7 +20,7 @@ const AboutMe = () => {
           hacia un enfoque especializado en el Frontend. Actualmente, colaboro en
           emulaciones de proyectos reales con equipos multidisciplinarios en No
           Country trabajando junto a Backend Developers, UX/UI Designers, TL, PM,
-          y otros. Mis participaciones en los proyectos de No Country han sido verdaderamente fructíferas, ya que me han ayudado a desarrollar y mejorar tanto habilidades blandas como técnicas, y tambien a sumar experiencia en el trabajo en equipo. Siempre en busca de nuevas oportunidades de crecimiento y
+          y otros. Mis participaciones en los proyectos de No Country han sido verdaderamente fructíferas, ya que me han ayudado a desarrollar y mejorar tanto habilidades blandas como técnicas, y también a sumar experiencia en el trabajo en equipo. Siempre en busca de nuevas oportunidades de crecimiento y
           desarrollo profesional, mi objetivo es contribuir en un entorno que
           valore mis habilidades y estimule mi continuo progreso en la carrera.` 
           : `I've been immersed in the fascinating world of Web Development since early 2021. I kicked off as a self-taught enthusiast in Java and later completed a Full Stack Developer (Node.js) Bootcamp at Digital House. I've eagerly trained in tools like React.js, Next.js, Typescript, Javascript, HTML, CSS, Tailwind CSS, Vite js, MySQL, and MongoDB, among others.

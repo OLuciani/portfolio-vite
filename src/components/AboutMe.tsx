@@ -11,9 +11,8 @@ const AboutMe = () => {
         <div className="flex justify-evenly my-6">
           <p className={`md:w-[90vw] text-about-me ${theme === "light" ? "text-black" : "text-white"} m-auto md:text-lg`}>
           {showLanguage === "spanish" 
-          ? `Inmerso en el fascinante mundo del Desarrollo Web desde principios de
-          2021, comencé como autodidacta en Java y más tarde completé un Bootcamp
-          de Full Stack Developer (Node.js) en Digital House. Me he capacitado con
+          ? `Di mis primeros pasos en el mundo del Desarrollo Web en enero del año 2021. Comencé como autodidacta en Java y más tarde completé un Bootcamp
+          de Full Stack Developer (Node.js) en Digital House. Desde entonces y hasta el día de hoy me he seguido capacitado con
           entusiasmo en herramientas como React.js, Next.js, Typescript,
           Javascript, HTML, CSS, Tailwind CSS, Vite js, MySQL y MongoDB entre
           otras.

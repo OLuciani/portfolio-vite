@@ -78,7 +78,7 @@ function Projects() {
                 <br />
                 {showLanguage === "spanish" ? `Herramientas utilizadas: En el frontend se utilizó Next js 13,
                 Typescript y Tailwind css. En el backend se utilizó Next js,
-                Javascript, Firebase, Cloudinary, Postaman y Algolia. Los
+                Javascript, Firebase, Cloudinary, Postman y Algolia. Los
                 Diseñadores UX UI emplearon Figma.` : `Tools used: In the frontend, we used Next.js 13, TypeScript, and Tailwind CSS. In the backend, we utilized Next.js, JavaScript, Firebase, Cloudinary, Postman, and Algolia. UX/UI Designers used Figma.`}
               </span>
             </div>

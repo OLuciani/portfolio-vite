@@ -1,7 +1,7 @@
 import imagenhernandezcabañas from "../assets/imagen-Hernandez-Cabañas-JVF.jpeg";
 import imagennearbytour from "../assets/Imagen-NearByTour1.jpeg";
 import imagenMeddyplus from "../assets/Imagen-Meddyplus.jpeg";
-import imagenComéxMenos from "../assets/Imágen-Comé-x-menos.webp";
+import imagenComéxMenos from "../assets/imágen-Comé-x-menos.webp";
 import videoDemoComéxMenos from "../assets/Videos/demo-video-Comé-x-menos.mp4";
 import { Context } from "../context/Context";
 import { useContext, useState } from "react";

@@ -36,7 +36,7 @@ function Projects() {
           theme === "light" ? "text-black" : "text-white"
         }`}
       >
-        {showLanguage === "spanish" ? "Proyecto destacado" : "Featured Project"}
+        {showLanguage === "spanish" ? "Proyecto Destacado" : "Featured Project"}
       </h4>
 
       <div className="flex flex-row flex-wrap justify-center items-center pt-[1%] md:text-lg">
@@ -224,6 +224,87 @@ function Projects() {
       <div className="flex flex-row flex-wrap justify-center items-center pt-[1%] pb-[2%] md:text-lg">
         <div className={`pt-[1%] pb-[3%]`}>
           <div className="caja-luciani-automoviles">
+            <div className="pl-[3%] pr-[3%] mb-[3%] text-left">
+              <span
+                className={`${
+                  theme === "light" ? "text-black" : "text-white"
+                } mb-[3%]`}
+              >
+                <span className="mb-[-25px] font-bold">Meddyplus</span>
+                <span className="ml-[5px]">
+                  (
+                  {showLanguage === "spanish" ? "Oct/Nov 2023" : "Oct/Nov 2023"}
+                  ):
+                </span>
+                <br />
+                {showLanguage === "spanish"
+                  ? `App para una Clínica de Medicina Integral. Permite crear citas
+                médicas para atención online, crear historias clínicas online y
+                muchas otras funciones. Muy práctica tanto para el paciente como
+                para el médico.`
+                  : "App for an Integrated Medicine Clinic. It allows scheduling medical appointments for online consultations, creating online medical records, and many other features. Very practical for both the patient and the doctor."}
+                <br />
+
+                {showLanguage === "spanish"
+                  ? `Fue creada en No Coutry por un grupo de Desarrolladrores, 3 en
+                el Frontend y 4 en el Backend. Yo trabajé en el Frontend. En el
+                Frontend se utilizaron herramientas como Vite, React.js,
+                Typescript y Tailwind CSS, proporcionando una base sólida para
+                una experiencia de usuario fluida y atractiva. En el Backend, se
+                implementaron Node.js, Typescript y SQL para garantizar un
+                rendimiento robusto y una gestión eficiente de la base de datos.`
+                  : "It was created at No Country by a group of developers, 3 in the Frontend and 4 in the Backend. I worked on the Frontend. In the Frontend, tools such as Vite, React.js, TypeScript, and Tailwind CSS were used, providing a solid foundation for a smooth and engaging user experience. On the Backend, Node.js, TypeScript, and SQL were implemented to ensure robust performance and efficient database management."}
+              </span>
+            </div>
+
+            <div className="px-[3%] flex flex-wrap justify-center">
+              <div className="lg:w-1/2 py-[1%] px-[3%] md:py-0 md:flex md:justify-center">
+                <img
+                  className={`w-full py-[1%] lg:py-0 md:w-[100%] ml-[0.1%] border-[1px] ${
+                    theme === "light" && "border-gray-400"
+                  } rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out`}
+                  src={imagenMeddyplus}
+                  alt="Imágen Meddyplus"
+                />
+              </div>
+
+              <div className="lg:w-1/2 mt-2 flex flex-col items-center justify-center gap-2 lg:gap-3">
+                <div className="mb-[1.5%]">
+                  <a href="https://d3ml0dc5hiowr8.cloudfront.net/meddyplus.mp4">
+                    <Button
+                      className="w-[260px] text-lg text-center font-semibold py-1 rounded-md"
+                      variant="contained"
+                      color="primary"
+                    >
+                      {showLanguage === "spanish"
+                        ? "Video presentación"
+                        : "Project Presentation Video"}
+                    </Button>
+                  </a>
+                </div>
+
+                <div className="mt-[1.5%]">
+                  <a
+                    href="https://meddyplus.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      className="w-[260px] text-lg text-center font-semibold py-1 rounded-md"
+                      variant="contained"
+                      color="primary"
+                    >
+                      {showLanguage === "spanish" ? "Ver App" : "View App"}
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={`pt-[1%] pb-[3%]`}>
+          <div className="caja-luciani-automoviles">
             <div className="px-[3%] mb-[1%] text-left">
               <span
                 className={`${
@@ -231,7 +312,7 @@ function Projects() {
                 } mb-[3%]`}
               >
                 <span className="mb-[-25px] font-bold">NearByTour</span>
-                <span className="ml-[5px]">(Oct/Nov 2023):</span>
+                <span className="ml-[5px]">({showLanguage === "spanish" ? "Ago/Set 2023" : "Aug/Sep 2023"}):</span>
                 <br />
                 {showLanguage === "spanish"
                   ? `Es una aplicación versátil que te permite descubrir tesoros
@@ -294,87 +375,6 @@ function Projects() {
                 <div className="mt-[1.5%]">
                   <a
                     href="https://nearbytour.vercel.app/home"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button
-                      className="w-[260px] text-lg text-center font-semibold py-1 rounded-md"
-                      variant="contained"
-                      color="primary"
-                    >
-                      {showLanguage === "spanish" ? "Ver App" : "View App"}
-                    </Button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={`pt-[1%] pb-[3%]`}>
-          <div className="caja-luciani-automoviles">
-            <div className="pl-[3%] pr-[3%] mb-[3%] text-left">
-              <span
-                className={`${
-                  theme === "light" ? "text-black" : "text-white"
-                } mb-[3%]`}
-              >
-                <span className="mb-[-25px] font-bold">Meddyplus</span>
-                <span className="ml-[5px]">
-                  (
-                  {showLanguage === "spanish" ? "Ago/Set 2023" : "Aug/Sep 2023"}
-                  ):
-                </span>
-                <br />
-                {showLanguage === "spanish"
-                  ? `App para una Clínica de Medicina Integral. Permite crear citas
-                médicas para atención online, crear historias clínicas online y
-                muchas otras funciones. Muy práctica tanto para el paciente como
-                para el médico.`
-                  : "App for an Integrated Medicine Clinic. It allows scheduling medical appointments for online consultations, creating online medical records, and many other features. Very practical for both the patient and the doctor."}
-                <br />
-
-                {showLanguage === "spanish"
-                  ? `Fue creada en No Coutry por un grupo de Desarrolladrores, 3 en
-                el Frontend y 4 en el Backend. Yo trabajé en el Frontend. En el
-                Frontend se utilizaron herramientas como Vite, React.js,
-                Typescript y Tailwind CSS, proporcionando una base sólida para
-                una experiencia de usuario fluida y atractiva. En el Backend, se
-                implementaron Node.js, Typescript y SQL para garantizar un
-                rendimiento robusto y una gestión eficiente de la base de datos.`
-                  : "It was created at No Country by a group of developers, 3 in the Frontend and 4 in the Backend. I worked on the Frontend. In the Frontend, tools such as Vite, React.js, TypeScript, and Tailwind CSS were used, providing a solid foundation for a smooth and engaging user experience. On the Backend, Node.js, TypeScript, and SQL were implemented to ensure robust performance and efficient database management."}
-              </span>
-            </div>
-
-            <div className="px-[3%] flex flex-wrap justify-center">
-              <div className="lg:w-1/2 py-[1%] px-[3%] md:py-0 md:flex md:justify-center">
-                <img
-                  className={`w-full py-[1%] lg:py-0 md:w-[100%] ml-[0.1%] border-[1px] ${
-                    theme === "light" && "border-gray-400"
-                  } rounded-md hover:shadow-md hover:shadow-[salmon] transition duration-300 ease-in-out`}
-                  src={imagenMeddyplus}
-                  alt="Imágen Meddyplus"
-                />
-              </div>
-
-              <div className="lg:w-1/2 mt-2 flex flex-col items-center justify-center gap-2 lg:gap-3">
-                <div className="mb-[1.5%]">
-                  <a href="https://d3ml0dc5hiowr8.cloudfront.net/meddyplus.mp4">
-                    <Button
-                      className="w-[260px] text-lg text-center font-semibold py-1 rounded-md"
-                      variant="contained"
-                      color="primary"
-                    >
-                      {showLanguage === "spanish"
-                        ? "Video presentación"
-                        : "Project Presentation Video"}
-                    </Button>
-                  </a>
-                </div>
-
-                <div className="mt-[1.5%]">
-                  <a
-                    href="https://meddyplus.netlify.app"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

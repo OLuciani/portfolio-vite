@@ -203,8 +203,8 @@ function Projects() {
                 <div className={`px-[3%] ${theme === "light" ? "text-black" : "text-white"}`}>
                    <p>
                     {showLanguage === "spanish"
-                      ? `Puedes entrar a la aplicación web creada en Next.js como usuario visitante, utilizando el email ficticio de prueba user_visit@demo.com y la contraseña 12345678 (este usuario tiene el rol que tendría un empleado asociado a la cuenta de un negocio). Puedes crear, editar y eliminar un descuento.`
-                      : `You can enter the web application created with Next.js as a guest user, using the test email user_visit@demo.com and the password 12345678 (this user has the role of an employee associated with a business account). You can create, edit, and delete a discount.`}
+                      ? `Puedes entrar a la aplicación web creada en Next.js como usuario visitante, utilizando el email ficticio de prueba visituser@demo.com y la contraseña 12345678 (este usuario tiene el rol que tendría un empleado asociado a la cuenta de un negocio). Puedes crear, editar y eliminar un descuento.`
+                      : `You can enter the web application created with Next.js as a guest user, using the test email visituser@demo.com and the password 12345678 (this user has the role of an employee associated with a business account). You can create, edit, and delete a discount.`}
                   </p>
                 </div>
               </div>

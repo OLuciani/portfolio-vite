@@ -26,12 +26,12 @@ const MySkills = () => {
 
         <div className='w-full grid justify-center mb-6 md:text-lg'>
             <div className='md:w-[90vw]'>
-                <p className={`${theme === "light" ? "text-black" : "text-white"} text-left`}>{showLanguage === "spanish" ? "Estas son algunas de las tecnologías y herramientas que utilizo: React js, Javascript, Typescipt, HTML5, Next js, CSS, Tailwind css, Vite js, Node js, Express js, MySql, Mongo Db, Git, Github, Postman, Docker, Creación de APIS, Patrón de Arquitectura MVC, OPP, Scrum, Visual Studio Code, Java, Inglés e Italiano." : "These are some of the skills I use: React.js, JavaScript, TypeScript, HTML5, Next.js, CSS, Tailwind CSS, Vite.js, Node.js, Express.js, MySQL, MongoDB, Git, GitHub, Postman, Docker, API Creation, MVC Architecture, OOP, Scrum, Visual Studio Code, Java, English, and Italian."} </p>
+                <p className={`${theme === "light" ? "text-black" : "text-white"} text-left`}>{showLanguage === "spanish" ? "Estas son algunas de las tecnologías y herramientas que utilizo: React js, Javascript, Typescipt, HTML5, Next js, CSS, Tailwind css, Vite js, Node js, Express js, React Native (Expo), MySql, Mongo Db, Git, Github, Postman, Docker, Creación de APIS, Patrón de Arquitectura MVC, OPP, Scrum, Visual Studio Code, Java, Inglés e Italiano." : "These are some of the skills I use: React.js, JavaScript, TypeScript, HTML5, Next.js, CSS, Tailwind CSS, Vite.js, Node.js, Express.js, React Native (Expo), MySQL, MongoDB, Git, GitHub, Postman, Docker, API Creation, MVC Architecture, OOP, Scrum, Visual Studio Code, Java, English, and Italian."} </p>
             </div>
         </div>
 
         <div className={`overflow-hidden flex flex-row flex-wrap justify-evenly`} >
-            <div className={`w-[340px] h-[340px] grid justify-center items-center habilidades-1 mb-5 ${theme === "light" ? "bg-black rounded-full" : null}`}>
+            <div className={`w-[340px] h-[340px] grid justify-center items-center habilidades-1 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
                 <div className="flex rotate-animation">
                     {/* Contenedor del círculo */}
                     <div className="relative">
@@ -98,7 +98,7 @@ const MySkills = () => {
             </div>
 
             
-            <div className={`w-[340px] h-[340px] grid justify-center items-center habilidades-2 mb-5 ${theme === "light" ? "bg-black rounded-full" : null}`}>
+            <div className={`w-[340px] h-[340px] grid justify-center items-center habilidades-2 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
                 <div className="flex rotate-animation">
                     {/* Contenedor del círculo */}
                     <div className="relative">
@@ -160,7 +160,7 @@ const MySkills = () => {
             </div>
 
 
-            <div className={`w-[340px] h-[340px] grid justify-center items-center habilidades-3 mb-5 ${theme === "light" ? "bg-black rounded-full" : null}`}>
+            <div className={`w-[340px] h-[340px] grid justify-center items-center habilidades-3 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
                 <div className="flex rotate-animation">
                     {/* Contenedor del círculo */}
                     <div className="relative">

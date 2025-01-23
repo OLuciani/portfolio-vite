@@ -6,6 +6,7 @@ import { useContext } from "react";
 const Home = () => {
   const { showLanguage, theme } = useContext(Context);
   const [showTransitionInicio, setShowTransitionInicio] = useState(false);
+  console.log(showTransitionInicio);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -32,12 +33,18 @@ const Home = () => {
             </span>
           </p>
 
-          <p
+          {/* Esta <p> comentada es para la transición del texto Frontend Developer */}
+          {/* <p
             className={`${
               theme === "light" ? "text-black" : "text-white"
             } text-lg md:text-2xl text-center font-semibold mt-[3px] ${
               showTransitionInicio ? "inicio-transition" : ""
             }`}
+          > */}
+          <p
+            className={`${
+              theme === "light" ? "text-black" : "text-white"
+            } text-lg md:text-2xl text-center font-semibold mt-[3px]`}
           >
             Frontend Developer
           </p>

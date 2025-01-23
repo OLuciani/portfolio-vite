@@ -59,7 +59,7 @@ function NavBar() {
         <div className="">
           <Link to="home" smooth={true} duration={500}>
             <p
-              className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white  hover:font-semibold hover:bg-white hover:text-black"} md:text-lg font-semibold px-2 rounded-md hidden md:flex cursor-pointer`}
+              className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white  hover:font-semibold hover:bg-white hover:text-black"} md:text-lg lg:text-xl font-semibold px-2 rounded-md hidden md:flex cursor-pointer`}
               id={"#home"}
             >
               {
@@ -72,7 +72,7 @@ function NavBar() {
         <div className="">
         <Link to="about" smooth={true} duration={500} offset={-60}>
             <p
-              className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white  hover:font-semibold hover:bg-white hover:text-black"} md:text-lg font-semibold px-2 rounded-md hidden md:flex cursor-pointer`}
+              className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white  hover:font-semibold hover:bg-white hover:text-black"} md:text-lg lg:text-xl font-semibold px-2 rounded-md hidden md:flex cursor-pointer`}
               id={"#about"}
             >
               {
@@ -85,7 +85,7 @@ function NavBar() {
         <div className="">
         <Link to="skills" smooth={true} duration={500} offset={-30}>
             <p
-              className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white  hover:font-semibold hover:bg-white hover:text-black"} md:text-lg font-semibold px-2 rounded-md hidden md:flex cursor-pointer`}
+              className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white  hover:font-semibold hover:bg-white hover:text-black"} md:text-lg lg:text-xl font-semibold px-2 rounded-md hidden md:flex cursor-pointer`}
               id={"#skills"}
             >
               {
@@ -98,7 +98,7 @@ function NavBar() {
         <div className="">
           <Link to="projects" smooth={true} duration={500} offset={-60}>
             <p
-              className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white  hover:font-semibold hover:bg-white hover:text-black"} md:text-lg font-semibold px-2 rounded-md hidden md:flex cursor-pointer`}
+              className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white  hover:font-semibold hover:bg-white hover:text-black"} md:text-lg lg:text-xl font-semibold px-2 rounded-md hidden md:flex cursor-pointer`}
               id={"#projects"}
             >
               {
@@ -111,7 +111,7 @@ function NavBar() {
         <div className="">
           <Link to="contact" smooth={true} duration={500} offset={-60}>
             <p
-              className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white  hover:font-semibold hover:bg-white hover:text-black"} md:text-lg font-semibold px-2 rounded-md hidden md:flex cursor-pointer`}
+              className={`${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold" : "text-white  hover:font-semibold hover:bg-white hover:text-black"} md:text-lg lg:text-xl font-semibold px-2 rounded-md hidden md:flex cursor-pointer`}
               id={"#contact"}
             >
               {
@@ -122,16 +122,17 @@ function NavBar() {
         </div>
 
         <div className={`hidden md:block`}>
-          <span onClick={ changeToSpanish } className={`font-semibold ${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold cursor-pointer" : "bg-[#030014] text-white hover:font-semibold px-1 hover:bg-white hover:text-black cursor-pointer"} md:text-lg ${showLanguage === "spanish" ? `border-[1px] ${theme === "light" ? "border-black" : "border-white"} font-semibold px-2 rounded-md mr-1` : "cursor-pointer px-1 hover:rounded-md"}`}>{showLanguage === "spanish" ? "Esp" : "Spa"}</span>
+          <span onClick={ changeToSpanish } className={`font-semibold ${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold cursor-pointer" : "bg-[#030014] text-white hover:font-semibold px-1 hover:bg-white hover:text-black cursor-pointer"} md:text-lg lg:text-xl ${showLanguage === "spanish" ? `border-[1px] ${theme === "light" ? "border-black" : "border-white"} font-semibold px-2 rounded-md mr-1` : "cursor-pointer px-1 hover:rounded-md"}`}>{showLanguage === "spanish" ? "Esp" : "Spa"}</span>
           <span className=' md:text-lg px-1 font-semibold'>/</span>
-          <span onClick={ changeToEnglish } className={`font-semibold ${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold cursor-pointer" : "bg-[#030014] text-white hover:font-semibold px-1 hover:bg-white hover:text-black cursor-pointer"} md:text-lg ${showLanguage === "english" ? `border-[1px] ${theme === "light" ? "border-black" : "border-white"} font-semibold px-2 rounded-md mr-1` : "cursor-pointer px-1 hover:rounded-md"}`}>{showLanguage === "english" ? "Eng" : "Ing"}</span>        
+          <span onClick={ changeToEnglish } className={`font-semibold ${theme === "light" ? "text-black hover:bg-[#030014] hover:text-white hover:font-semibold cursor-pointer" : "bg-[#030014] text-white hover:font-semibold px-1 hover:bg-white hover:text-black cursor-pointer"} md:text-lg lg:text-xl ${showLanguage === "english" ? `border-[1px] ${theme === "light" ? "border-black" : "border-white"} font-semibold px-2 rounded-md mr-1` : "cursor-pointer px-1 hover:rounded-md"}`}>{showLanguage === "english" ? "Eng" : "Ing"}</span>        
         </div>
 
         <div className={`hidden md:block`}>
           <div className='flex justify-center items-center'>
-            <span onClick={ changeToLight } className={`md:py-[3px] md:px-2 font-semibold md:text-lg ${theme === "light" ? "border-[1px] border-black font-semibold px-2 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] px-1 hover:px-1 hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineLightMode />}</span>
+            <span onClick={ changeToLight } className={`md:py-[3px] md:px-2 font-semibold md:text-lg lg:text-xl ${theme === "light" ? "border-[1px] border-black font-semibold px-2 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] px-1 hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineLightMode />}</span>
             <span className='md:text-lg px-2 font-semibold'>/</span>
-            <span onClick={ changeToDark } className={`md:py-[3px] md:text-lg ${theme === "light" ? "border-[1px] border-white font-semibold px-1 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] border border-white px-2 rounded-md hover:px- hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineDarkMode />}</span>        
+            {/* <span onClick={ changeToDark } className={`md:py-[3px] md:text-lg ${theme === "light" ? "border-[1px] border-white font-semibold px-1 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] border border-white px-2 rounded-md hover:px- hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineDarkMode />}</span> */}   
+            <span onClick={ changeToDark } className={`md:py-[3px] md:px-2 font-semibold md:text-lg lg:text-xl ${theme === "light" ? "font-semibold px-2 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] px-1 hover:rounded-md hover:bg-white hover:text-black border-[1px] border-white rounded-md"}`}>{<MdOutlineDarkMode />}</span>     
           </div>
         </div>
 

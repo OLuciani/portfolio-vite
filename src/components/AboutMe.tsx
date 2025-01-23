@@ -1,47 +1,63 @@
 import { Context } from '../context/Context';
 import { useContext } from "react";
+import { Button } from "@mui/material";
+
 
 const AboutMe = () => {
   const { showLanguage, theme } = useContext(Context);
 
+  const cvPathES = "./data/CV (ES)-Oscar Luciani - Frontend.pdf";
+  const cvPathEN = "./data/CV (EN)-Oscar Luciani - Frontend Developer.pdf";
+
   return (
     <div id="about">
-        <h2 className='text-center text-[salmon] text-xl md:text-2xl font-semibold'>{showLanguage === "spanish" ? "Sobre mi" : "About me"}</h2>
-
-        <div className="flex justify-evenly my-6">
-          <p className={`md:w-[90vw] text-about-me ${theme === "light" ? "text-black" : "text-white"} m-auto md:text-lg`}>
-          {showLanguage === "spanish" 
-          ? `Di mis primeros pasos en el mundo del Desarrollo Web en enero del año 2021. Comencé como autodidacta en Java y más tarde completé un Bootcamp
-          de Full Stack Developer (Node.js) en Digital House. Desde entonces y hasta el día de hoy me he seguido capacitado con
-          entusiasmo en herramientas como React.js, Next.js, Typescript,
-          Javascript, HTML, CSS, Tailwind CSS, Vite js, MySQL y MongoDB entre
-          otras.
-          Mi trayectoria comenzó como Full Stack Developer, pero evolucionó
-          hacia un enfoque especializado en el Frontend. Actualmente, colaboro en
-          emulaciones de proyectos reales con equipos multidisciplinarios en No
-          Country trabajando junto a Backend Developers, UX/UI Designers, TL, PM,
-          y otros. Mis participaciones en los proyectos de No Country han sido verdaderamente fructíferas, ya que me han ayudado a desarrollar y mejorar tanto habilidades blandas como técnicas, y también a sumar experiencia en el trabajo en equipo. Siempre en busca de nuevas oportunidades de crecimiento y
-          desarrollo profesional, mi objetivo es contribuir en un entorno que
-          valore mis habilidades y estimule mi continuo progreso en la carrera.` 
-          : `I've been immersed in the fascinating world of Web Development since early 2021. I kicked off as a self-taught enthusiast in Java and later completed a Full Stack Developer (Node.js) Bootcamp at Digital House. I've eagerly trained in tools like React.js, Next.js, Typescript, Javascript, HTML, CSS, Tailwind CSS, Vite js, MySQL, and MongoDB, among others.
-
-          While I began my journey as a Full Stack Developer, it evolved towards a specialized focus on the Frontend. Currently, I collaborate on real project simulations with multidisciplinary teams at No Country, working alongside Backend Developers, UX/UI Designers, TL, PM, and others.
-          
-          Always on the lookout for new opportunities for growth and professional development, my goal is to contribute to an environment that values my skills and fosters my ongoing career progress. Let's connect and explore the possibilities!`
-          }
-            
-          </p>
+      <h2 className='text-center text-[salmon] text-xl md:text-2xl font-semibold'>{showLanguage === "spanish" ? "Sobre mi" : "About me"}</h2>
+      <div className="flex justify-evenly my-6">
+        <div className={`md:w-[90vw] text-about-me ${theme === "light" ? "text-black" : "text-white"} m-auto md:text-lg`}>
+          {showLanguage === "spanish" ? (
+            <>
+              <p>
+                Mi incursión en el Desarrollo Web comenzó a principios de 2021, y desde entonces he mantenido un compromiso constante con el aprendizaje y la innovación tecnológica. Inicié como autodidacta en Java y complementé mi formación con un Bootcamp intensivo de Full Stack Development (Node.js) en Digital House. A lo largo de mi carrera, he adquirido experiencia práctica con tecnologías modernas como React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, MySQL, y MongoDB, entre otras.
+              </p>
+              <p>
+                Uno de mis logros más recientes es 'Comé x menos', una aplicación híbrida que desarrollé de manera independiente. Este proyecto conecta a usuarios con descuentos en restaurantes, bares y otros comercios gastronómicos. Concebí esta idea como un desafío personal, con el objetivo de adquirir experiencia práctica en el desarrollo de una aplicación grande y compleja, que también podría tener potencial de monetización en el futuro. La aplicación incluye un frontend móvil desarrollado en React Native con Expo y una plataforma web construida en Next.js, lo que me permitió enfrentar y superar desafíos técnicos en entornos multiplataforma.
+              </p>
+              <p>
+                Con una trayectoria que comenzó como Full Stack Developer y evolucionó hacia una especialización en Frontend, busco integrarme en equipos que valoren la innovación y el trabajo colaborativo. Mi objetivo es seguir creciendo profesionalmente mientras aporto soluciones creativas y efectivas a los proyectos en los que participo.
+              </p>
+            </>
+          ) : (
+            <>
+              <p>
+                My journey in Web Development began in early 2021, and since then, I have been committed to continuous learning and technological innovation. I started as a self-taught developer exploring Java and later enhanced my skills through an intensive Full Stack Development (Node.js) Bootcamp at Digital House. Throughout my career, I have gained hands-on experience with modern technologies such as React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, MySQL, and MongoDB, among others.
+              </p>
+              <p>
+                One of my most recent achievements is 'Comé x menos,' a hybrid application I developed independently. This project connects users with discounts in restaurants, bars, and other dining establishments. I conceived this idea as a personal challenge to gain practical experience with a large and complex application, while also exploring its potential for monetization in the future. The app features a mobile frontend built with React Native and Expo and a web platform developed with Next.js, enabling me to tackle and solve technical challenges across multiple platforms.
+              </p>
+              <p>
+                With a career path that started as a Full Stack Developer and evolved into a Frontend specialization, I aim to join teams that value innovation and collaboration. My goal is to continue growing professionally while contributing creative and effective solutions to the projects I undertake.
+              </p>
+            </>
+          )}
         </div>
+      </div>
 
-        {
-          showLanguage === "spanish"
-          ? <div className="grid justify-center">
-              <a href="./data/CV (ES)-Oscar Luciani - Frontend.pdf" download><button className={`${theme === "light" ? "bg-black hover:bg-gray-600 text-white" : "bg-gray-300 hover:bg-gray-500"} text-lg hover:text-white font-bold px-8 rounded-md`}>{showLanguage === "spanish" ? "Descargar CV" : "Download CV"}</button></a>
-            </div>
-          : <div className="grid justify-center">
-              <a href="./data/CV (EN)-Oscar Luciani - Frontend Developer.pdf" download><button className={`${theme === "light" ? "bg-black hover:bg-gray-600 text-white" : "bg-gray-300 hover:bg-gray-500"} text-lg hover:text-white font-bold px-8 rounded-md`}>{showLanguage === "spanish" ? "Descargar CV" : "Download CV"}</button></a>
-            </div>
-        }
+      <div className="flex flex-col sm:flex-row justify-evenly items-center gap-4">
+        {/* Botón para abrir el CV en una nueva pestaña */}
+        <a href={showLanguage === "spanish" ? cvPathES : cvPathEN} target="_blank" rel="noopener noreferrer">
+          <Button variant="contained" color="primary" className="w-[149px] h-[36.5px] text-lg font-bold rounded-md">
+            {showLanguage === "spanish" ? "Ver CV" : "View CV"}
+          </Button>
+        </a>
+
+        {/* Botón para descargar el CV */}
+        <a href={showLanguage === "spanish" ? cvPathES : cvPathEN} download>
+          <Button variant="contained" color="primary" className="w-[149px] h-[36.5px] text-lg font-bold rounded-md">
+            {showLanguage === "spanish" ? "Descargar CV" : "Download CV"}
+          </Button>
+        </a>
+
+      </div>
         
     </div>
 

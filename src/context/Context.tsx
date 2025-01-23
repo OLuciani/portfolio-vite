@@ -12,7 +12,7 @@ interface ContextProps {
 export const Context = createContext<ContextProps>({
   showLanguage: "spanish",
   setShowLanguage: () => {},
-  theme: "dark",
+  theme: "light",
   setTheme: () => {},
   hidde: "hidden",
   setHidde: () => {},
@@ -20,7 +20,7 @@ export const Context = createContext<ContextProps>({
 
 export default function ContextProvider({ children }: { children: ReactNode }) {
   const [showLanguage, setShowLanguage] = useState<string>("spanish");
-  const [theme, setTheme] = useState<string>("dark");
+  const [theme, setTheme] = useState<string>("light");
   const [hidde, setHidde] = useState<string>("hidden");
   
 

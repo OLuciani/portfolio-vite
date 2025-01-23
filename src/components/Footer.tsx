@@ -7,7 +7,7 @@ function Footer() {
     return (
       <>
         <div className="w-full h-14 grid justify-center items-center">
-          <p className={`${theme === "light" ? "text-black" : "text-white"} md:text-lg`}>{showLanguage === "spanish" ? "© Derechos Reservados 2024" : "© All Rights Reserved 2024"}</p>
+          <p className={`font-bold ${theme === "light" ? "text-black" : "text-white"} md:text-lg`}>{showLanguage === "spanish" ? "© Derechos Reservados 2025" : "© All Rights Reserved 2025"}</p>
         </div>
       </>
     )

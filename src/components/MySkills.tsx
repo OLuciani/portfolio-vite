@@ -31,7 +31,7 @@ const MySkills = () => {
         </div>
 
         <div className={`overflow-hidden flex flex-row flex-wrap justify-evenly`} >
-            <div className={`w-[340px] h-[340px] grid justify-center items-center habilidades-1 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
+            <div className={`w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] grid justify-center items-center habilidades-1 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
                 <div className="flex rotate-animation">
                     {/* Contenedor del círculo */}
                     <div className="relative">
@@ -98,7 +98,7 @@ const MySkills = () => {
             </div>
 
             
-            <div className={`w-[340px] h-[340px] grid justify-center items-center habilidades-2 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
+            <div className={`w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] grid justify-center items-center habilidades-2 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
                 <div className="flex rotate-animation">
                     {/* Contenedor del círculo */}
                     <div className="relative">
@@ -160,7 +160,7 @@ const MySkills = () => {
             </div>
 
 
-            <div className={`w-[340px] h-[340px] grid justify-center items-center habilidades-3 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
+            <div className={`w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] grid justify-center items-center habilidades-3 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
                 <div className="flex rotate-animation">
                     {/* Contenedor del círculo */}
                     <div className="relative">
@@ -197,8 +197,6 @@ const MySkills = () => {
                     </div>
                 </div>
             </div>
-            
-
         </div>
     </div>
     

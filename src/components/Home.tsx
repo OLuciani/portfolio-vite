@@ -33,7 +33,7 @@ const Home = () => {
             </span>
           </p>
 
-          {/* Esta <p> comentada es para la transición del texto Frontend Developer */}
+          {/* Esta <p> comentada la usaba para la transición del texto Frontend Developer */}
           {/* <p
             className={`${
               theme === "light" ? "text-black" : "text-white"

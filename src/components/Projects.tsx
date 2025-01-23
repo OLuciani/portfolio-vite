@@ -61,7 +61,7 @@ function Projects() {
                         <br />
                         Tecnologías utilizadas:
                         <ul>
-                          <li>Frontend Móvil: React Native with Expo</li>
+                          <li>Frontend Móvil: React Native con Expo</li>
                           <li>Frontend Web: Next.js</li>
                           <li>Estilos: Tailwind CSS</li>
                           <li>Backend: Node.js con Express.js</li>
@@ -200,7 +200,7 @@ function Projects() {
                     </Button>
                   </a>
                 </div>
-                <div className="px-[3%]">
+                <div className={`px-[3%] ${theme === "light" ? "text-black" : "text-white"}`}>
                    <p>
                     {showLanguage === "spanish"
                       ? `Puedes entrar a la aplicación web creada en Next.js como usuario visitante, utilizando el email ficticio de prueba user_visit@demo.com y la contraseña 12345678 (este usuario tiene el rol que tendría un empleado asociado a la cuenta de un negocio). Puedes crear, editar y eliminar un descuento.`

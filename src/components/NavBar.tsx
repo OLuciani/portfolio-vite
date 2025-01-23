@@ -34,17 +34,6 @@ function NavBar() {
     setHidde("");
   }
 
- 
- /*  const scrollToTop = () => {
-    scroll.scrollToTop({
-      duration: 500,
-      smooth: "easeInOutQuart",
-    });
-  }; */
-
-  //console.log(showLanguage);
-  //console.log(theme);
-
   return (
     <div className="flex justify-center">
       <nav className={`${theme === "light" ? "bg-white" : "bg-[#030014] text-white"} py-3 flex justify-between md:justify-evenly items-center fixed top-0 w-full z-10`}>
@@ -130,19 +119,16 @@ function NavBar() {
         <div className={`hidden md:block`}>
           <div className='flex justify-center items-center'>
             <span onClick={ changeToLight } className={`md:py-[3px] md:px-2 font-semibold md:text-lg lg:text-xl ${theme === "light" ? "border-[1px] border-black font-semibold px-2 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] px-1 hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineLightMode />}</span>
-            <span className='md:text-lg px-2 font-semibold'>/</span>
-            {/* <span onClick={ changeToDark } className={`md:py-[3px] md:text-lg ${theme === "light" ? "border-[1px] border-white font-semibold px-1 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] border border-white px-2 rounded-md hover:px- hover:rounded-md hover:bg-white hover:text-black"}`}>{<MdOutlineDarkMode />}</span> */}   
+            <span className='md:text-lg px-2 font-semibold'>/</span>   
             <span onClick={ changeToDark } className={`md:py-[3px] md:px-2 font-semibold md:text-lg lg:text-xl ${theme === "light" ? "font-semibold px-2 rounded-md mr-1 cursor-pointer hover:bg-[#030014] hover:text-white" : "cursor-pointer bg-[#030014] px-1 hover:rounded-md hover:bg-white hover:text-black border-[1px] border-white rounded-md"}`}>{<MdOutlineDarkMode />}</span>     
           </div>
         </div>
 
-        {/* <ScrollLink to="home" smooth={true} duration={500}> */}
         <div className="px-2 rounded-md hover:bg-white hover:text-black hover:font-semibold md:hidden">
           <span>
             <TiThMenu onClick={() => {onClickShowSideBar(); /* scrollToTop(); */}} className="text-[24px] cursor-pointer" />
           </span>
         </div>
-        {/* </ScrollLink> */}
       </nav> 
     </div>
   );

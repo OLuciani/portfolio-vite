@@ -30,7 +30,7 @@ const MySkills = () => {
             </div>
         </div>
 
-        <div className={`overflow-hidden flex flex-row flex-wrap justify-evenly gap-10`} >
+        <div className={`overflow-hidden flex flex-row flex-wrap justify-evenly ${theme === "light" ? "gap-5" : "gap-10" }`} >
             <div className={`w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] grid justify-center items-center habilidades-1 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
                 <div className="flex rotate-animation">
                     {/* Contenedor del círculo */}

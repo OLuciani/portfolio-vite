@@ -45,14 +45,14 @@ const AboutMe = () => {
       <div className="flex flex-col sm:flex-row justify-evenly items-center gap-4">
         {/* Botón para abrir el CV en una nueva pestaña */}
         <a href={showLanguage === "spanish" ? cvPathES : cvPathEN} target="_blank" rel="noopener noreferrer">
-          <Button variant="contained" color="primary" className="w-[149px] h-[36.5px] text-lg font-bold rounded-md">
+          <Button variant="contained" color="primary" className="w-[260px] h-[36.5px] text-lg font-bold rounded-md">
             {showLanguage === "spanish" ? "Ver CV" : "View CV"}
           </Button>
         </a>
 
         {/* Botón para descargar el CV */}
         <a href={showLanguage === "spanish" ? cvPathES : cvPathEN} download>
-          <Button variant="contained" color="primary" className="w-[149px] h-[36.5px] text-lg font-bold rounded-md">
+          <Button variant="contained" color="primary" className="w-[260px] h-[36.5px] text-lg font-bold rounded-md">
             {showLanguage === "spanish" ? "Descargar CV" : "Download CV"}
           </Button>
         </a>

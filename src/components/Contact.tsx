@@ -96,7 +96,7 @@ function Contact() {
 
   return (
     <div id="contact" className="mb-6 mt-[-3%]">
-      <h2 className="text-center text-[salmon] text-xl md:text-2xl font-semibold my-6">
+      <h2 className="text-center text-[#f06556] text-xl md:text-2xl font-semibold my-6">
         {showLanguage === "spanish" ? "Contacto" : "Contact"}
       </h2>
       <div

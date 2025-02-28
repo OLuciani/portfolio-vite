@@ -22,7 +22,7 @@ const MySkills = () => {
 
   return (
     <div id="skills" className='w-full md:px-16 pt-2'>
-        <h2 className='text-center text-[salmon] text-xl md:text-2xl font-semibold my-6'>{showLanguage === "spanish" ? "Habilidades" : "Skills"}</h2>
+        <h2 className='text-center text-[#f06556] text-xl md:text-2xl font-semibold my-6'>{showLanguage === "spanish" ? "Habilidades" : "Skills"}</h2>
 
         <div className='w-full grid justify-center mb-10 md:text-lg'>
             <div className='md:w-[90vw]'>

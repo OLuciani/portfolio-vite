@@ -23,12 +23,12 @@ const Home = () => {
     >
       <div className="flex flex-col">
         <div className="">
-          <p className="text-[salmon] text-2xl md:text-3xl font-semibold mt-2">
+          <p className="text-[#f06556] text-2xl md:text-3xl font-semibold mt-2">
             {showLanguage === "spanish" ? "Hola !" : "Hi !"}
           </p>
-          <p className="text-[salmon] text-2xl md:text-3xl text-center font-semibold">
+          <p className="text-[#f06556] text-2xl md:text-3xl text-center font-semibold">
             {showLanguage === "spanish" ? "soy" : "I'am"}{" "}
-            <span className="text-[salmon] text-2xl md:text-3xl font-semibold">
+            <span className="text-[#f06556] text-2xl md:text-3xl font-semibold">
               Oscar Miguel Luciani
             </span>
           </p>

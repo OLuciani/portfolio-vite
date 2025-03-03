@@ -40,12 +40,14 @@ function SideBar() {
     <>
       <div
         className={`w-[50vw] h-screen ${
-          theme === "light" ? "bg-white" : "bg-[#030014]"
+          theme === "light" ? "bg-gray-300" : "bg-gray-800"
         } py-[5%] pl-5 top-0 right-0 flex flex-col gap-10 z-10 ${hidde} fixed md:hidden overflow-y-auto`}
       >
         <p
           onClick={onClickHideSideBar}
-          className={`text-xl text-[salmon] font-semibold cursor-pointer`}
+          className={`text-xl ${
+            theme === "light" ? "text-black" : "text-white"
+          } font-semibold cursor-pointer`}
         >
           X
         </p>
@@ -140,7 +142,7 @@ function SideBar() {
             } hover:bg-${
               theme === "light" ? "[#030014]" : "white"
             } hover:text-${
-              theme === "light" ? "white" : "black" /* Esta */
+              theme === "light" ? "white" : "black" 
             } hover:font-semibold hover:border-white rounded-md ${
               showLanguage === "spanish" && `border-[1px]`
             } `}
@@ -161,7 +163,7 @@ function SideBar() {
             } hover:bg-${
               theme === "light" ? "[#030014]" : "white"
             } hover:text-${
-              theme === "light" ? "white" : "black" /* Esta */
+              theme === "light" ? "white" : "black" 
             } hover:font-semibold hover:border-white rounded-md ${
               showLanguage === "english" && `border-[1px]`
             }`}
@@ -182,7 +184,7 @@ function SideBar() {
                       } 
                       hover:bg-${theme === "light" ? "[#030014]" : "white"} 
                       hover:text-${
-                        theme === "light" ? "white" : "black" /* Esta */
+                        theme === "light" ? "white" : "black" 
                       } hover:border-white rounded-md 
                       ${theme === "light" ? "hover:text-black" : "text-white"}`}
             >
@@ -200,14 +202,14 @@ function SideBar() {
               className={`font-semibold cursor-pointer py-1 px-2 
                       ${
                         theme === "light"
-                          ? "border-[1px] border-white"
-                          : "border-black"
+                          ? "border-[1px] border-black"
+                          : "border-white"
                       } 
                       hover:bg-${theme === "light" ? "[#030014]" : "white"} 
                       hover:text-${theme === "light" ? "white" : "black"} 
                       hover:border-white rounded-md 
                       ${
-                        theme === "dark" ? "border border-white text-white" : ""
+                        theme === "dark" ? "border border-white text-white" : "border border-gray-300"
                       }`}
             >
               {<MdOutlineDarkMode />}

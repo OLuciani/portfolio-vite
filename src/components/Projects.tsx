@@ -568,7 +568,7 @@ function Projects() {
       <div className="flex flex-row flex-wrap justify-center items-center pt-[1%] pb-[2%] md:text-lg">
         <div className={`pt-[1%] pb-[3%]`}>
           <div className="caja-luciani-automoviles">
-            <div className="pl-[3%] pr-[3%] mb-[3%] text-left">
+            <div className="px-[3%] mb-[2%] text-left">
               <span
                 className={`${
                   theme === "light" ? "text-black" : "text-white"
@@ -612,7 +612,7 @@ function Projects() {
                 />
               </div>
 
-              <div className="md:w-[260px] mt-2 flex flex-col items-center justify-center gap-4 md:gap-5">
+              <div className="md:w-[260px] mt-2 flex flex-col items-center justify-center py-2 md:py-0 gap-4 md:gap-5">
                 <div>
                   <a href="https://d3ml0dc5hiowr8.cloudfront.net/meddyplus.mp4">
                     <Button
@@ -649,7 +649,7 @@ function Projects() {
 
         <div className={`pt-[1%] pb-[3%]`}>
           <div className="caja-luciani-automoviles">
-            <div className="px-[3%] mb-[1%] text-left">
+            <div className="px-[3%] mb-[2%] text-left">
               <span
                 className={`${
                   theme === "light" ? "text-black" : "text-white"
@@ -687,7 +687,7 @@ function Projects() {
             </div>
 
             <div className="px-[3%] flex flex-wrap justify-evenly">
-              <div className="md:w-520px py-[1%]  px-[3%] md:py-0 md:px-0 md:flex md:justify-center">
+              <div className="md:w-520px py-[1%] px-[3%] md:py-0 md:px-0 md:flex md:justify-center">
                 <img
                   className={`w-full py-[1%] lg:py-0 md:w-[520px] ml-[0.1%] border-[1px] ${
                     theme === "light" && "border-gray-400"
@@ -697,7 +697,7 @@ function Projects() {
                 />
               </div>
 
-              <div className="md:w-[260px] mt-2 flex flex-col items-center justify-center gap-4 md:gap-5">
+              <div className="md:w-[260px] mt-2 flex flex-col items-center justify-center py-2 md:py-0 gap-4 md:gap-5">
                 <div className={`${showLanguage === "english" ? "mt-8" : ""}`}>
                   <a
                     href="https://www.youtube.com/watch?v=Hc3N-QXwT7Q"
@@ -738,7 +738,7 @@ function Projects() {
 
         <div className={`py-[1%]`}>
           <div className="caja-luciani-automoviles">
-            <div className="pl-[3%] pr-[3%] mb-[3%] text-left">
+            <div className="px-[3%] mb-[2%] text-left">
               <span
                 className={`${
                   theme === "light" ? "text-black" : "text-white"

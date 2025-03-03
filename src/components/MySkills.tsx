@@ -30,169 +30,226 @@ const MySkills = () => {
             </div>
         </div>
 
-        <div className={`overflow-hidden flex flex-row flex-wrap justify-evenly ${theme === "light" ? "gap-5" : "gap-10" }`} >
-            <div className={`w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] grid justify-center items-center habilidades-1 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
+        <div className={`overflow-hidden flex flex-row flex-wrap justify-evenly pt-5 md:pt-0 ${theme === "light" ? "gap-10" : "gap-10" }`} >
+            <div className={`w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] grid justify-center items-center habilidades-1 mb-5 `}>
                 <div className="flex rotate-animation">
                     {/* Contenedor del círculo */}
                     <div className="relative">
                         {/* Línea diagonal izquierda-arriba a derecha-abajo */}
-                        <div className={`bg-white absolute w-[340px] h-[1px] transform rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
+                        <div className={`${theme === "light" ? "bg-gray-600" : "bg-white"} absolute w-[340px] h-[1px] transform rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
+
+                        <div className={`w-[50px] h-[50px] absolute right-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}>
                         <img
                             src={imageReact}
                             alt="Image React"
-                            className="w-[38.25px] absolute right-[42.5px] top-[25.5px] rotate-animation"
+                            className="w-[38.25px]"
                         />
-                        <img
-                            src={imageNext}
-                            alt="Image Next"
-                            className={`w-[38.25px] absolute left-[42.5px] top-[42.5px] rotate-animation`}
-                        />
+                        </div>    
+
+                        <div className={`w-[50px] h-[50px] absolute left-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}>
+                            <img
+                                src={imageNext}
+                                alt="Image Next"
+                                className={`w-[38.25px] bg-black rounded-md`}
+                            />
+                        </div>
                         </div>
 
-                        <div className={`absolute w-[340px] h-[1px] bg-white -translate-x-1/4 translate-y-[85px]`}>
-                        <img
-                            src={imageTailwind}
-                            alt="Image Tailwind"
-                            className="w-[38.25px] absolute right-[42.5px] top-[25.5px] rotate-animation"
-                        />
-                        <img
-                            src={imageHTML}
-                            alt="Image HTML"
-                            className="w-[34px] absolute left-[42.5px] top-[25.5px] rotate-animation"
-                        />
+                        <div className={`${theme === "light" ? "bg-gray-600" : "bg-white"} absolute w-[340px] h-[1px] -translate-x-1/4 translate-y-[85px]`}>
+
+                        <div className={`w-[50px] h-[50px] absolute right-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}>
+                            <img
+                                src={imageTailwind}
+                                alt="Image Tailwind"
+                                className="w-[38.25px]"
+                            />
+                        </div>
+
+                        <div className={`w-[50px] h-[50px] absolute left-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}>
+                            <img
+                                src={imageHTML}
+                                alt="Image HTML"
+                                className="w-[34px]"
+                            />
+                        </div>
                         </div>
 
                         {/* Línea diagonal izquierda-abajo a derecha-arriba */}
-                        <div className={`absolute w-[340px] h-[1px] bg-white transform -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
-                        <img
-                            src={imageTypescript}
-                            alt="Image Typescript"
-                            className="w-[30px] absolute right-[42.5px] top-[31.5px] rotate-animation"
-                        />
-                        <img
-                            src={imageJavascript}
-                            alt="Image Javascript"
-                            className="w-[30px] absolute left-[42.5px] top-[31.5px] rounded-md rotate-animation"
-                        />
-                        </div>
-                        <div className={`absolute w-[340px] h-[1px] bg-white -rotate-90 -translate-x-1/4 translate-y-[85px]`}>
-                        <span>
-                            <TbBrandVite
-                            className="w-[34px] absolute right-[42.5px] top-[25.5px] text-gray-300 text-5xl rotate-animation"
+                        <div className={`${theme === "light" ? "bg-gray-600" : "bg-white"} absolute w-[340px] h-[1px] transform -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
+
+                        <div className={`w-[50px] h-[50px] absolute right-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}>
+                            <img
+                                src={imageTypescript}
+                                alt="Image Typescript"
+                                className={`${theme === "light" ? "w-[30px] rounded-sm" : "w-[30px] rounded-md"}`}
                             />
-                        </span>
                         </div>
 
-                        <img
-                        src={imageCSS}
-                        alt="Image CSS"
-                        className="w-[38.25px] absolute left-[20.4px] top-[-42.5px] -rotate-12 rotate-animation"
-                        />
+                        <div className={`w-[50px] h-[50px] absolute left-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}>
+                            <img
+                                src={imageJavascript}
+                                alt="Image Javascript"
+                                className={`${theme === "light" ? "w-[30px] rounded-sm" : "w-[30px] rounded-md"}`}
+                            />
+                        </div>
+
+                        </div>
+                        <div className={`${theme === "light" ? "bg-gray-600" : "bg-white"} absolute w-[340px] h-[1px] -rotate-90 -translate-x-1/4 translate-y-[85px]`}>
+                        
+                        <div className={`w-[50px] h-[50px] absolute right-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}>
+                            <span>
+                                <TbBrandVite
+                                className="w-[34px] text-gray-300 text-5xl "
+                                />
+                            </span>
+                        </div>
+                        </div>
+                        <div className={`w-[50px] h-[50px] bg-black rounded-md absolute left-[11.9px] top-[-62px] rotate-animation p-[5px] flex justify-center items-center`}>
+                            <img
+                            src={imageCSS}
+                            alt="Image CSS"
+                            className="w-[38.25px]"
+                            />
+                        </div>
+
 
                         {/* Círculos con borde */}
-                        <div className={`w-[170px] h-[170px] border-[1px] border-white rounded-full grid justify-center items-center`}>
-                        <div className={`w-[102px] h-[102px] border-[1px] border-white rounded-full`}></div>
+                        <div className={`${theme === "light" ? "border-gray-600" : "border-white"} w-[170px] h-[170px] border-[1px] rounded-full grid justify-center items-center`}>
+                        <div className={`${theme === "light" ? "border-gray-600" : "border-white"} w-[102px] h-[102px] border-[1px] rounded-full`}></div>
                         </div>
+
                     </div>
                 </div>
             </div>
 
             
-            <div className={`w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] grid justify-center items-center habilidades-2 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
+            <div className={`w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] grid justify-center items-center habilidades-2 mb-5`}>
                 <div className="flex rotate-animation">
                     {/* Contenedor del círculo */}
                     <div className="relative">
                         {/* Línea diagonal izquierda-arriba a derecha-abajo */}
-                        <div className={`absolute w-[340px] h-[1px] bg-white transform rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
-                            <img 
-                                src={imageNode}
-                                alt="Image Node"
-                                className="w-[38.25px] absolute right-[42.5px] top-[25.5px] rotate-animation"
-                            />
-                            <img
-                                src={imageExpress}
-                                alt="Image Express"
-                                className={`w-[38.25px] absolute left-[42.5px] top-[25.5px] rotate-animation`}
-                            />
+                        <div className={`${theme === "light" ? "bg-gray-600" : "bg-white"} absolute w-[340px] h-[1px] transform rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
+
+                            <div className={`w-[50px] h-[50px] absolute right-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}
+                            >
+                                <img 
+                                    src={imageNode}
+                                    alt="Image Node"
+                                    className="w-[38.25px]"
+                                />
+                            </div>
+
+                            <div className={`w-[50px] h-[50px] absolute left-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}
+                            >
+                                <img
+                                    src={imageExpress}
+                                    alt="Image Express"
+                                    className={`w-[38.25px]`}
+                                />
+                            </div>
                         </div>
 
-                        <div className={`absolute w-[340px] h-[1px] bg-white -translate-x-1/4 translate-y-[85px]`}>
-                        <img
-                            src={imageGithub}
-                            alt="Image Github"
-                            className={`w-[38.25px] absolute ${theme === "light" ? "bg-black rounded-md" : null} right-[42.5px] top-[25.5px] rotate-animation`}
-                        />
-                        <img
-                            src={imageMongoDb}
-                            alt="Image MongoDb"
-                            className="w-[27px] absolute left-[42.5px] top-[18.5px] rotate-animation"
-                        />
+                        <div className={`${theme === "light" ? "bg-gray-600" : "bg-white"} absolute w-[340px] h-[1px] -translate-x-1/4 translate-y-[85px]`}>
+
+                            <div className={`w-[50px] h-[50px] absolute right-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}
+                                >
+                                <img
+                                    src={imageGithub}
+                                    alt="Image Github"
+                                    className={`w-[38.25px] ${theme === "light" ? "bg-black rounded-md" : null}`}
+                                />
+                            </div>
+
+                            <div className={`w-[50px] h-[50px] absolute left-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}
+                                >
+                                <img
+                                    src={imageMongoDb}
+                                    alt="Image MongoDb"
+                                    className={`${theme === "light" ? "w-[17px]" : "w-[21px]"}`}
+                                />
+                            </div>
                         </div>
 
                         {/* Línea diagonal izquierda-abajo a derecha-arriba */}
-                        <div className={`absolute w-[340px] h-[1px] bg-white transform -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
-                        <img
-                            src={imageMySql}
-                            alt="Image MySql"
-                            className="w-[34px] h-[34px] p-1 rounded-md bg-white absolute right-[42.5px] top-[30px] rotate-animation"
-                        />
-                        <img
-                            src={imageDocker}
-                            alt="Image Docker"
-                            className="w-[36.45px] h-[25.5px] absolute left-[42.5px] top-[33.5px] rounded-md rotate-animation"
-                        />
+                        <div className={`${theme === "light" ? "bg-gray-600" : "bg-white"} absolute w-[340px] h-[1px] transform -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
+                            <div className={`w-[50px] h-[50px] absolute right-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}
+                            >
+                                <img
+                                    src={imageMySql}
+                                    alt="Image MySql"
+                                    className={`${theme === "light" ? "w-[30px] h-[30px]" : "w-[34px] h-[34px]"} p-1 rounded-md bg-white`}
+                                />
+                            </div>
+
+                            <div className={`w-[50px] h-[50px] absolute left-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}
+                            >
+                                <img
+                                    src={imageDocker}
+                                    alt="Image Docker"
+                                    className={`${theme === "light" ? "w-[30px] h-[30px]" : "w-[36.45px] h-[25.5px]"} `}
+                                />
+                            </div>
                         </div>
-                        <div className={`absolute w-[340px] h-[1px] bg-white -rotate-90 -translate-x-1/4 translate-y-[85px]`}>
-                        <img src={imagenGit}
-                            alt="Image Git"
-                            className={`w-[34px] border rounded-sm bg-white absolute right-[42.5px] top-[25.5px] rotate-animation`}
-                            /> 
+                        <div className={`${theme === "light" ? "bg-gray-600" : "bg-white"} absolute w-[340px] h-[1px] -rotate-90 -translate-x-1/4 translate-y-[85px]`}>
+                            <div className={`w-[50px] h-[50px] absolute right-[25.25px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}
+                            >
+                                <img src={imagenGit}
+                                    alt="Image Git"
+                                    className={`w-[34px] border rounded-sm bg-white`}
+                                />
+                            </div>    
+
                         </div>
 
-                        <span><SiPostman className={`w-[34px] absolute left-[20.4px] top-[-42.5px] text-white text-5xl rotate-animation`} /></span>
+                        
+                        
+                        <span className={`w-[50px] h-[50px] bg-black rounded-md absolute left-[11.9px] top-[-62px] text-white text-[35px] flex justify-center items-center`}><SiPostman /></span>
 
-                        {/* Círculos con borde */}
-                        <div className={`w-[170px] h-[170px] border-[1px] border-white rounded-full grid justify-center items-center`}>
-                        <div className={`w-[102px] h-[102px] border-[1px] border-white rounded-full`}></div>
+                        
+                        <div className={`w-[170px] h-[170px] border-[1px] ${theme === "light" ? "border-gray-600" : "border-white"} rounded-full grid justify-center items-center`}>
+                        <div className={`w-[102px] h-[102px] border-[1px] ${theme === "light" ? "border-gray-600" : "border-white"} rounded-full`}></div>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div className={`w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] grid justify-center items-center habilidades-3 mb-5 ${theme === "light" ? "bg-gray-800 rounded-full" : null}`}>
+            <div className={`w-[300px] h-[300px] sm:w-[340px] sm:h-[340px] grid justify-center items-center habilidades-3 mb-5`}>
                 <div className="flex rotate-animation">
                     {/* Contenedor del círculo */}
                     <div className="relative">
                         {/* Línea diagonal izquierda-arriba a derecha-abajo */}
-                        <div className={`absolute w-[340px] h-[1px] bg-white transform rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
-                            <div className='w-[50px] absolute right-[42.5px] top-[30.5px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-[#c0c031] text-center'>Inglés</p></div>
+                        <div className={`absolute w-[340px] h-[1px] ${theme === "light" ? "bg-gray-600" : "bg-white"} transform rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
+                        {/* <div className={`w-[40.25px] h-[40.25px] absolute right-[42.5px] top-[25.5px] rotate-animation bg-black p-[5px] rounded-md flex justify-center items-center`}
+                        > */}
 
-                            <div className='w-[50px] absolute left-[42.5px] top-[30px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-[#ffa07a] text-center'>Scrum</p></div>
+                            <div className='w-[50px] h-[50px] bg-black rounded-md absolute right-[25.25px] top-[25.5px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-[#c0c031] text-center'>Inglés</p></div>
+
+                            <div className='w-[50px] h-[50px] bg-black rounded-md absolute left-[25.25px] top-[25.5px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-[#ffa07a] text-center'>Scrum</p></div>
                         </div>
 
-                        <div className={`absolute w-[340px] h-[1px] bg-white -translate-x-1/4 translate-y-[85px]`}>
-                            <div className='w-[50px] absolute right-[42.5px] top-[24px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-center text-[#90ee90]'>Pat Arq MVC</p></div>
+                        <div className={`absolute w-[340px] h-[1px] ${theme === "light" ? "bg-gray-600" : "bg-white"} -translate-x-1/4 translate-y-[85px]`}>
+                            <div className='w-[50px] h-[50px] bg-black rounded-md absolute right-[25.25px] top-[25.5px] grid justify-center items-center rotate-animation'><p className={`${theme === "light" ? "text-[11px]" : "text-[14px]"} text-center text-[#90ee90]`}>Pat Arq MVC</p></div>
 
-                            <div className='w-[50px] absolute left-[42.5px] top-[30px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-[#ee82ee] text-center'>OPP</p></div>
+                            <div className='w-[50px] h-[50px] bg-black rounded-md absolute left-[25.25px] top-[25.5px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-[#ee82ee] text-center'>OPP</p></div>
                         </div>
 
                         {/* Línea diagonal izquierda-abajo a derecha-arriba */}
-                        <div className={`absolute w-[340px] h-[1px] bg-white transform -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
-                            <div className='w-[50px] absolute right-[42.5px] top-[23px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-blue-300 text-center'>Creación de APIS</p></div>
+                        <div className={`absolute w-[340px] h-[1px] ${theme === "light" ? "bg-gray-600" : "bg-white"} transform -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}>
+                            <div className='w-[50px] h-[50px] bg-black rounded-md absolute right-[25.25px] top-[25.5px] grid justify-center items-center rotate-animation'><p className={`${theme === "light" ? "text-[11px]" : "text-[14px]"} text-blue-300 text-center`}>Creación de APIS</p></div>
 
-                                <div className='w-[50px] absolute left-[42.5px] top-[24px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-[#cdb4b4] text-center'>V. S. Code</p></div>
+                                <div className='w-[50px] h-[50px] bg-black rounded-md absolute left-[25.25px] top-[25.5px] grid justify-center items-center rotate-animation'><p className={`${theme === "light" ? "text-[11px]" : "text-[14px]"} text-[#cdb4b4] text-center`}>V. S.<p className={`${theme === "light" ? "text-[11px]" : "text-[14px]"} text-[#cdb4b4] text-center`}>Code</p></p></div>
                         </div>
 
-                        <div className={`absolute w-[340px] h-[1px] bg-white -rotate-90 -translate-x-1/4 translate-y-[85px]`}>
-                            <div className='w-[50px] absolute right-[42.5px] top-[32px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-[orange] text-center'>Italiano</p></div>
+                        <div className={`absolute w-[340px] h-[1px] ${theme === "light" ? "bg-gray-600" : "bg-white"} -rotate-90 -translate-x-1/4 translate-y-[85px]`}>
+                            <div className={`w-[50px] h-[50px] bg-black rounded-md absolute right-[25.25px] top-[25.5px] grid justify-center items-center rotate-animation`}><p className={`${theme === "light" ? "text-[11px]" : "text-[14px]"} text-[orange] text-center`}>Italiano</p></div>
                         </div>
 
-                        <div className='w-[50px] absolute left-[20.5px] top-[-30px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-center text-[#ceb29d]'>Java</p></div>
+                        <div className='w-[50px] h-[50px] bg-black rounded-md absolute left-[11.9px] top-[-62px] grid justify-center items-center rotate-animation'><p className='text-[14px] text-center text-[#ceb29d]'>Java</p></div>
 
                         {/* Círculos con borde */}
-                        <div className={`w-[170px] h-[170px] border-[1px] border-white rounded-full grid justify-center items-center`}>
-                        <div className={`w-[102px] h-[102px] border-[1px] border-white rounded-full`}></div>
+                        <div className={`w-[170px] h-[170px] border-[1px] ${theme === "light" ? "border-gray-600" : "border-white"} rounded-full grid justify-center items-center`}>
+                        <div className={`w-[102px] h-[102px] border-[1px] ${theme === "light" ? "border-gray-600" : "border-white"} rounded-full`}></div>
                         </div>
                     </div>
                 </div>

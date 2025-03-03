@@ -40,7 +40,7 @@ function SideBar() {
     <>
       <div
         className={`w-[50vw] h-screen ${
-          theme === "light" ? "bg-gray-300" : "bg-gray-800"
+          theme === "light" ? "bg-gray-200" : "bg-gray-800"
         } py-[5%] pl-5 top-0 right-0 flex flex-col gap-10 z-10 ${hidde} fixed md:hidden overflow-y-auto`}
       >
         <p
@@ -209,7 +209,7 @@ function SideBar() {
                       hover:text-${theme === "light" ? "white" : "black"} 
                       hover:border-white rounded-md 
                       ${
-                        theme === "dark" ? "border border-white text-white" : "border border-gray-300"
+                        theme === "dark" ? "border border-white text-white" : "border border-gray-200"
                       }`}
             >
               {<MdOutlineDarkMode />}

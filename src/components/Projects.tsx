@@ -503,14 +503,14 @@ function Projects() {
 
                   {showMobileVideo && (
                     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
-                      <div className="relative w-[90%] max-w-[900px] bg-black rounded-lg overflow-hidden">
+                      <div className="relative w-[90%] max-w-[900px] bg-black rounded-lg flex justify-center overflow-hidden">
                         <video
                           ref={videoRef}
                           src={videoComéxMenosMobile}
                           controls
                           autoPlay
-                          className={`w-full h-auto ${
-                            isFullscreen ? "py-[6%] 3xl:py-[13%]" : "py-10"
+                          className={`w-60 h-auto ${
+                            isFullscreen ? "py-[6%] md 3xl:py-[13%]" : "py-10"
                           }`}
                         ></video>
                         <button

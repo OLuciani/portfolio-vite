@@ -8,13 +8,25 @@ import Projects from "./components/Projects";
 import { Context } from "../src/context/Context";
 import { useContext, useEffect } from "react";
 import SideBar from "./components/SideBar";
+import axios from "axios";
+
 
 const App: React.FC = () => {
   const { theme } = useContext(Context);
 
   useEffect(() => {
-    console.log(theme);
-  }, [theme]);
+    const incrementVisitCounter = async () => {
+      const apiUrl = import.meta.env.VITE_BACKEND_API_URL;
+      try {
+        await axios.put(`${apiUrl}/visitCounter`);
+        console.log("Visita registrada.");
+      } catch (error) {
+        console.error("Error al registrar la visita:", error);
+      }
+    };
+
+    incrementVisitCounter();
+  }, []);
 
   return (
     <div className={`w-full ${theme === "light" ? "bg-white" : "bg-[#030014]"} px-4`}>

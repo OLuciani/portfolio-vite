@@ -81,7 +81,7 @@ function Projects() {
                 <span className="ml-[5px]">
                   (
                   {showLanguage === "spanish"
-                    ? "May 2024/Ene 2025"
+                    ? "Jun 2024/Ene 2025"
                     : "May 2024/Jan 2025"}
                   ):
                 </span>
@@ -90,100 +90,114 @@ function Projects() {
                   <>
                     {showFullContent ? (
                       <>
+                        {/* <p className="mb-4 font-bold">Comé x menos (May 2024 - Feb 2025)</p> */}
                         <p className="mb-4">
                           "Comé x menos" es una aplicación híbrida que conecta a
                           los usuarios con descuentos exclusivos en
                           restaurantes, bares, cafeterías, panaderías y otros
                           establecimientos gastronómicos. A diferencia de
-                          plataformas como PedidosYa o Rappi, cuyo enfoque
-                          principal es el delivery, uno de los objetivos clave
-                          de "Comé x menos" es acercar a los clientes a los
-                          locales de los negocios. La aplicación invita a los
-                          usuarios a consumir directamente en el establecimiento
-                          o a realizar un "takeaway" (retirar la comida en el
-                          local) para aprovechar los descuentos. La aplicación
-                          consta de dos partes principales: una aplicación web
-                          destinada a los dueños y administradores de los
-                          negocios, quienes pueden publicar y gestionar los
-                          descuentos ofrecidos, y una aplicación móvil orientada
-                          a los usuarios que desean aprovechar esos descuentos.
-                          Los usuarios generan descuentos que se guardan como
-                          códigos QR en sus dispositivos, los cuales pueden
-                          presentar en los establecimientos para recibir el
-                          descuento. Los administradores de los negocios, al
-                          iniciar sesión en la app móvil con el rol adecuado,
-                          tienen acceso a un escáner para verificar los códigos
-                          QR presentados por los usuarios. Ambas partes
-                          comparten el mismo backend, lo que asegura que los
-                          datos sean consistentes y estén actualizados en tiempo
-                          real, independientemente de la plataforma utilizada.
+                          plataformas como PedidosYa o Rappi, que se centran en
+                          el delivery, el objetivo de "Comé x menos" es fomentar
+                          el consumo directo en los locales o la modalidad de
+                          "takeaway" para aprovechar los descuentos.
                         </p>
 
-                        <p className="mb-4">
-                          Como próximo paso, planeo integrar una pasarela de
-                          pago (Mercado Pago) en la aplicación móvil, lo que
-                          permitirá a los usuarios pagar directamente desde la
-                          app. Además, tengo la intención de mejorar la
-                          experiencia de usuario implementando filtros más
-                          avanzados, como la opción de marcar negocios y
-                          descuentos como favoritos. También estoy considerando
-                          agregar una sección que permita ver los últimos
-                          negocios que se han sumado a la plataforma, entre
-                          otras mejoras que iré implementando para optimizar la
-                          aplicación conforme descubra nuevas oportunidades.
+                        <p className="mb-4 font-bold">
+                          La app está compuesta por dos plataformas:
                         </p>
-
-                        <p className="mb-4">
-                          Diseñada y desarrollada de forma independiente, esta
-                          aplicación no solo representa un ejemplo de mi
-                          capacidad técnica, sino también de mi iniciativa,
-                          disciplina y compromiso para afrontar proyectos
-                          complejos desde su concepción hasta su ejecución.
-                        </p>
-
-                        <p className="">Tecnologías utilizadas:</p>
                         <ul className="list-disc ml-5 mb-4">
-                          <li>Frontend Web: Next.js</li>
-                          <li>Frontend Móvil: React Native con Expo</li>
-                          <li>Backend: Node.js con Express.js</li>
-                          <li>Estilos: Tailwind CSS</li>
-                          <li>Base de datos: MongoDB Atlas</li>
-                          <li>Autenticación: Firebase Authentication</li>
-                          <li>Otras: Axios, Formik y Yup</li>
+                          <li>
+                            <strong>Aplicación web:</strong> para dueños y
+                            administradores de negocios, quienes pueden publicar
+                            y gestionar descuentos.
+                          </li>
+                          <li>
+                            <strong>Aplicación móvil:</strong> para los usuarios
+                            que buscan descuentos y generan códigos QR para
+                            canjear en los locales.
+                          </li>
+                          <li>
+                            <strong>Escáner QR:</strong> los administradores de
+                            los negocios pueden validar los descuentos mediante
+                            un escáner integrado en la app móvil.
+                          </li>
                         </ul>
 
                         <p className="mb-4">
-                          Desarrollar "Comé x menos" en solitario fue un desafío
-                          inmenso que me permitió crecer tanto profesional como
-                          personalmente. Al no contar con un equipo, asumí todos
-                          los roles, desde la investigación inicial y la
-                          planificación hasta la implementación y el despliegue.
-                          Algunos de los retos principales fueron:
+                          Ambas versiones comparten el mismo backend, que creé
+                          con Node.js y Express, asegurando sincronización en
+                          tiempo real. Para la base de datos, utilicé MongoDB
+                          Atlas.
                         </p>
 
+                        <p className="mb-4 font-bold">
+                          🚀 Retos resueltos en el desarrollo
+                        </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            Crear una arquitectura escalable que pudiera
-                            soportar usuarios en diferentes plataformas.
+                            ✅ <strong>Autenticación segura:</strong> Integré
+                            Firebase Authentication con sesiones protegidas
+                            mediante JWT y cookies.
                           </li>
                           <li>
-                            Implementar un sistema de autenticación robusto y
-                            seguro.
+                            ✅ <strong>Sincronización en tiempo real:</strong>{" "}
+                            Aseguré que los descuentos creados en la web se
+                            reflejen de inmediato en la app móvil.
                           </li>
                           <li>
-                            Diseñar una interfaz de usuario intuitiva que fuera
-                            atractiva y funcional para usuarios y
-                            administradores.
+                            ✅{" "}
+                            <strong>Experiencia híbrida (web y móvil):</strong>{" "}
+                            Diseñé una arquitectura que funciona sin fricciones
+                            en ambas plataformas.
                           </li>
                           <li>
-                            Optimizar la aplicación para manejar imágenes de
-                            gran tamaño sin afectar el rendimiento.
+                            ✅ <strong>Optimización de imágenes:</strong>{" "}
+                            Implementé un sistema de compresión para mejorar el
+                            rendimiento sin perder calidad.
                           </li>
+                          <li>
+                            ✅ <strong>Validación de descuentos con QR:</strong>{" "}
+                            Creé un sistema de escaneo para asegurar que los
+                            descuentos sean legítimos.
+                          </li>
+                          <li>
+                            ✅ <strong>Despliegue eficiente:</strong> Optimizé
+                            tiempos de carga en la nube para mejorar el
+                            rendimiento.
+                          </li>
+                        </ul>
+
+                        <p className="mb-4 font-bold">📌 Próximos pasos:</p>
+                        <ul className="list-disc ml-5 mb-4">
+                          <li>
+                            🔹 Integrar una pasarela de pago con Mercado Pago
+                            para permitir pagos dentro de la app.
+                          </li>
+                          <li>
+                            🔹 Agregar filtros avanzados y una opción para
+                            marcar favoritos.
+                          </li>
+                          <li>
+                            🔹 Incluir una sección con los negocios más
+                            recientes.
+                          </li>
+                        </ul>
+
+                        <p className="mb-4 font-bold">
+                          🛠️ Tecnologías utilizadas
+                        </p>
+                        <ul className="list-disc ml-5 mb-4">
+                          <li>Frontend Web: Next.js + Tailwind CSS</li>
+                          <li>Frontend Móvil: React Native con Expo</li>
+                          <li>Backend: Node.js con Express.js</li>
+                          <li>Base de datos: MongoDB Atlas</li>
+                          <li>Autenticación: Firebase Authentication</li>
+                          <li>Otras herramientas: Axios, Formik, Yup</li>
                         </ul>
 
                         <p className="mb-2">
                           🔒 El código fuente de este proyecto es privado para
-                          preservar su desarrollo futuro.
+                          su futura evolución.
                         </p>
                         <p className="mb-2">
                           🎥 Puedes ver demostraciones en video de la aplicación
@@ -214,151 +228,214 @@ function Projects() {
                       </>
                     ) : (
                       <>
-                        <p>
+                        <p className="mb-4">
                           "Comé x menos" es una aplicación híbrida que conecta a
                           los usuarios con descuentos exclusivos en
                           restaurantes, bares, cafeterías, panaderías y otros
                           establecimientos gastronómicos. A diferencia de
-                          plataformas como PedidosYa o Rappi, cuyo enfoque
-                          principal es el delivery, uno de los objetivos clave
-                          de "Comé x menos" es acercar a los clientes a los
-                          locales de los negocios. La aplicación invita a los
-                          usuarios a consumir directamente en el establecimiento
-                          o a realizar un "takeaway" (retirar la comida en el
-                          local) para aprovechar los descuentos. La aplicación
-                          consta de dos partes principales: una aplicación web
-                          destinada a los dueños y administradores de los
-                          negocios, quienes pueden publicar y gestionar los
-                          descuentos ofrecidos, y una aplicación móvil orientada
-                          a los usuarios que desean aprovechar esos descuentos.
-                          Los usuarios generan descuentos que se guardan como
-                          códigos QR en sus dispositivos, los cuales pueden
-                          presentar en los establecimientos para recibir el
-                          descuento. Los administradores de los negocios, al
-                          iniciar sesión en la app móvil con el rol adecuado,
-                          tienen acceso a un escáner para verificar los códigos
-                          QR presentados por los usuarios. Ambas partes
-                          comparten el mismo backend, lo que asegura que los
-                          datos sean consistentes y estén actualizados en tiempo
-                          real, independientemente de la plataforma utilizada.
-                          <button
-                            onClick={toggleContent}
-                            className={`ml-2 hover:underline ${
-                              theme === "light"
-                                ? "text-blue-500"
-                                : "text-blue-400"
-                            }`}
-                            aria-label={
-                              showFullContent
-                                ? "Mostrar menos contenido"
-                                : "Mostrar más contenido"
-                            }
-                          >
-                            {showFullContent
-                              ? "Mostrar menos..."
-                              : "Mostrar más..."}
-                          </button>
+                          plataformas como PedidosYa o Rappi, que se centran en
+                          el delivery, el objetivo de "Comé x menos" es fomentar
+                          el consumo directo en los locales o la modalidad de
+                          "takeaway" para aprovechar los descuentos.
                         </p>
+
+                        <p className="mb-4 font-bold">
+                          La app está compuesta por dos plataformas:
+                        </p>
+                        <ul className="list-disc ml-5 mb-4">
+                          <li>
+                            <strong>Aplicación web:</strong> para dueños y
+                            administradores de negocios, quienes pueden publicar
+                            y gestionar descuentos.
+                          </li>
+                          <li>
+                            <strong>Aplicación móvil:</strong> para los usuarios
+                            que buscan descuentos y generan códigos QR para
+                            canjear en los locales.
+                          </li>
+                          <li>
+                            <strong>Escáner QR:</strong> los administradores de
+                            los negocios pueden validar los descuentos mediante
+                            un escáner integrado en la app móvil.
+                          </li>
+                        </ul>
+
+                        <p className="mb-4">
+                          Ambas versiones comparten el mismo backend, que creé
+                          con Node.js y Express, asegurando sincronización en
+                          tiempo real. Para la base de datos, utilicé MongoDB
+                          Atlas.
+                        </p>
+
+                        <p className="mb-4 font-bold">
+                          🚀 Retos resueltos en el desarrollo
+                        </p>
+
+                        <ul className="list-disc ml-5 mb-4">
+                          <li>
+                            ✅ <strong>Autenticación segura:</strong> Integré
+                            Firebase Authentication con sesiones protegidas
+                            mediante JWT y cookies.
+                          </li>
+                          <li>
+                            ✅ <strong>Sincronización en tiempo real:</strong>{" "}
+                            Aseguré que los descuentos creados en la web se
+                            reflejen de inmediato en la app móvil.
+                          </li>
+                          <li>
+                            ✅{" "}
+                            <strong>Experiencia híbrida (web y móvil):</strong>{" "}
+                            Diseñé una arquitectura que funciona sin fricciones
+                            en ambas plataformas.
+                          </li>
+                          <li>
+                            ✅ <strong>Optimización de imágenes:</strong>{" "}
+                            Implementé un sistema de compresión para mejorar el
+                            rendimiento sin perder calidad.
+                          </li>
+                          <li>
+                            ✅ <strong>Validación de descuentos con QR:</strong>{" "}
+                            Creé un sistema de escaneo para asegurar que los
+                            descuentos sean legítimos.
+                          </li>
+                          <li>
+                            ✅ <strong>Despliegue eficiente:</strong> Optimizé
+                            tiempos de carga en la nube para mejorar el
+                            rendimiento.
+                            <button
+                              onClick={toggleContent}
+                              className={`ml-2 hover:underline ${
+                                theme === "light"
+                                  ? "text-blue-500"
+                                  : "text-blue-400"
+                              }`}
+                              aria-label={
+                                showFullContent
+                                  ? "Mostrar menos contenido"
+                                  : "Mostrar más contenido"
+                              }
+                            >
+                              {showFullContent
+                                ? "Mostrar menos..."
+                                : "Mostrar más..."}
+                            </button>
+                          </li>
+                        </ul>
                       </>
                     )}
-
                   </>
                 ) : (
                   <>
                     {showFullContent ? (
                       <>
+                        {/* <p className="mb-4 font-bold">Comé x menos (May 2024 - Feb 2025)</p> */}
                         <p className="mb-4">
                           "Comé x menos" is a hybrid application that connects
                           users with exclusive discounts at restaurants, bars,
                           cafés, bakeries, and other food establishments. Unlike
-                          platforms like PedidosYa or Rappi, which primarily
-                          focus on delivery, one of the key objectives of "Comé
-                          x menos" is to bring customers directly to business
-                          locations. The app encourages users to dine in or opt
-                          for takeaway (picking up food at the venue) to take
-                          advantage of discounts. The application consists of
-                          two main parts: a web application designed for
-                          business owners and administrators, allowing them to
-                          publish and manage offered discounts, and a mobile
-                          application for users who want to benefit from those
-                          discounts. Users generate discounts stored as QR codes
-                          on their devices, which they can present at
-                          establishments to receive the discount. Business
-                          administrators, when logging into the mobile app with
-                          the appropriate role, have access to a scanner to
-                          verify the QR codes presented by users. Both parts
-                          share the same backend, ensuring that data remains
-                          consistent and up-to-date in real time, regardless of
-                          the platform being used.
+                          platforms like PedidosYa or Rappi, which focus on
+                          delivery, the goal of "Comé x menos" is to encourage
+                          in-store dining or takeaway to take advantage of
+                          discounts.
                         </p>
 
-                        <p className="mb-4">
-                          As the next step, I plan to integrate a payment
-                          gateway (Mercado Pago) into the mobile app, allowing
-                          users to pay directly from the app. Additionally, I
-                          intend to enhance the user experience by implementing
-                          more advanced filters, such as the ability to mark
-                          businesses and discounts as favorites. I am also
-                          considering adding a section that displays the latest
-                          businesses that have joined the platform, along with
-                          other improvements that I will implement as new
-                          opportunities arise.
+                        <p className="mb-4 font-bold">
+                          The app consists of two platforms:
                         </p>
-
-                        <p className="mb-4">
-                          Designed and developed independently, this application
-                          not only showcases my technical skills but also
-                          highlights my initiative, discipline, and commitment
-                          to tackling complex projects from conception to
-                          execution.
-                        </p>
-
-                        <p className="">Technologies used:</p>
                         <ul className="list-disc ml-5 mb-4">
-                          <li>Web Frontend: Next.js</li>
+                          <li>
+                            <strong>Web application:</strong> For business
+                            owners and administrators to publish and manage
+                            discounts.
+                          </li>
+                          <li>
+                            <strong>Mobile application:</strong> For users to
+                            browse discounts and generate QR codes to redeem
+                            them in stores.
+                          </li>
+                          <li>
+                            <strong>QR scanner:</strong> Business administrators
+                            can validate discounts using an integrated scanner
+                            in the mobile app.
+                          </li>
+                        </ul>
+
+                        <p className="mb-4">
+                          Both versions share the same backend, which I built
+                          with Node.js and Express, ensuring real-time
+                          synchronization. For the database, I used MongoDB
+                          Atlas.
+                        </p>
+
+                        <p className="mb-4 font-bold">
+                          🚀 Development challenges solved
+                        </p>
+                        <ul className="list-disc ml-5 mb-4">
+                          <li>
+                            ✅ <strong>Secure authentication:</strong>{" "}
+                            Integrated Firebase Authentication with session
+                            protection using JWT and cookies.
+                          </li>
+                          <li>
+                            ✅ <strong>Real-time synchronization:</strong>{" "}
+                            Ensured that discounts created on the web instantly
+                            reflect in the mobile app.
+                          </li>
+                          <li>
+                            ✅{" "}
+                            <strong>Hybrid experience (web & mobile):</strong>{" "}
+                            Designed an architecture that works seamlessly on
+                            both platforms.
+                          </li>
+                          <li>
+                            ✅ <strong>Image optimization:</strong> Implemented
+                            a compression system to enhance performance without
+                            losing quality.
+                          </li>
+                          <li>
+                            ✅ <strong>QR discount validation:</strong>{" "}
+                            Developed a scanning system to ensure discounts are
+                            legitimate.
+                          </li>
+                          <li>
+                            ✅ <strong>Efficient deployment:</strong> Optimized
+                            cloud load times for better performance.
+                          </li>
+                        </ul>
+
+                        <p className="mb-4 font-bold">📌 Next steps:</p>
+                        <ul className="list-disc ml-5 mb-4">
+                          <li>
+                            🔹 Integrate a payment gateway with Mercado Pago to
+                            enable in-app transactions.
+                          </li>
+                          <li>
+                            🔹 Add advanced filters and a favorite-marking
+                            feature.
+                          </li>
+                          <li>
+                            🔹 Include a section showcasing the newest
+                            businesses.
+                          </li>
+                        </ul>
+
+                        <p className="mb-4 font-bold">🛠️ Technologies used</p>
+                        <ul className="list-disc ml-5 mb-4">
+                          <li>Frontend Web: Next.js + Tailwind CSS</li>
                           <li>Mobile Frontend: React Native with Expo</li>
                           <li>Backend: Node.js with Express.js</li>
-                          <li>Styling: Tailwind CSS</li>
                           <li>Database: MongoDB Atlas</li>
                           <li>Authentication: Firebase Authentication</li>
-                          <li>Others: Axios, Formik, and Yup</li>
-                        </ul>
-
-                        <p className="mb-4">
-                          Developing "Comé x menos" on my own was an immense
-                          challenge that allowed me to grow both professionally
-                          and personally. Without a team, I took on all roles,
-                          from initial research and planning to implementation
-                          and deployment. Some of the main challenges included:
-                        </p>
-
-                        <ul className="list-disc ml-5 mb-4">
-                          <li>
-                            Creating a scalable architecture capable of
-                            supporting users across different platforms.
-                          </li>
-                          <li>
-                            Implementing a robust and secure authentication
-                            system.
-                          </li>
-                          <li>
-                            Designing an intuitive user interface that is both
-                            attractive and functional for users and
-                            administrators.
-                          </li>
-                          <li>
-                            Optimizing the application to handle large images
-                            without affecting performance.
-                          </li>
+                          <li>Other tools: Axios, Formik, Yup</li>
                         </ul>
 
                         <p className="mb-2">
-                          🔒 The source code for this project is private to
-                          preserve its future development.
+                          🔒 The source code for this project is private for
+                          future development.
                         </p>
                         <p className="mb-2">
-                          🎥 You can watch video demonstrations of the web and
-                          mobile applications in action.
+                          🎥 You can watch video demos of the web and mobile
+                          applications in action.
                         </p>
                         <p>
                           💡 In technical interviews, I can share relevant code
@@ -366,8 +443,10 @@ function Projects() {
                           used in detail.
                           <button
                             onClick={toggleContent}
-                            className={`ml-2 hover:underline ${
-                              theme === "light" ? "text-blue-500" : "text-blue-400"
+                            className={`ml-2 mt-2 hover:underline ${
+                              theme === "light"
+                                ? "text-blue-500"
+                                : "text-blue-400"
                             }`}
                             aria-label={
                               showFullContent
@@ -381,43 +460,96 @@ function Projects() {
                       </>
                     ) : (
                       <>
-                        <p>
+                        <p className="mb-4">
                           "Comé x menos" is a hybrid application that connects
                           users with exclusive discounts at restaurants, bars,
                           cafés, bakeries, and other food establishments. Unlike
-                          platforms like PedidosYa or Rappi, which primarily
-                          focus on delivery, one of the key objectives of "Comé
-                          x menos" is to bring customers directly to business
-                          locations. The app encourages users to dine in or opt
-                          for takeaway (picking up food at the venue) to take
-                          advantage of discounts. The application consists of
-                          two main parts: a web application designed for
-                          business owners and administrators, allowing them to
-                          publish and manage offered discounts, and a mobile
-                          application for users who want to benefit from those
-                          discounts. Users generate discounts stored as QR codes
-                          on their devices, which they can present at
-                          establishments to receive the discount. Business
-                          administrators, when logging into the mobile app with
-                          the appropriate role, have access to a scanner to
-                          verify the QR codes presented by users. Both parts
-                          share the same backend, ensuring that data remains
-                          consistent and up-to-date in real time, regardless of
-                          the platform being used.
-                          <button
-                            onClick={toggleContent}
-                            className={`ml-2 hover:underline ${
-                              theme === "light" ? "text-blue-500" : "text-blue-400"
-                            }`}
-                            aria-label={
-                              showFullContent
-                                ? "Show less content"
-                                : "Show more content"
-                            }
-                          >
-                            {showFullContent ? "Show less..." : "Show more..."}
-                          </button>
+                          platforms like PedidosYa or Rappi, which focus on
+                          delivery, the goal of "Comé x menos" is to encourage
+                          in-store dining or takeaway to take advantage of
+                          discounts.
                         </p>
+
+                        <p className="mb-4 font-bold">
+                          The app consists of two platforms:
+                        </p>
+                        <ul className="list-disc ml-5 mb-4">
+                          <li>
+                            <strong>Web application:</strong> For business
+                            owners and administrators to publish and manage
+                            discounts.
+                          </li>
+                          <li>
+                            <strong>Mobile application:</strong> For users to
+                            browse discounts and generate QR codes to redeem
+                            them in stores.
+                          </li>
+                          <li>
+                            <strong>QR scanner:</strong> Business administrators
+                            can validate discounts using an integrated scanner
+                            in the mobile app.
+                          </li>
+                        </ul>
+
+                        <p className="mb-4">
+                          Both versions share the same backend, which I built
+                          with Node.js and Express, ensuring real-time
+                          synchronization. For the database, I used MongoDB
+                          Atlas.
+                        </p>
+
+                        <p className="mb-4 font-bold">
+                          🚀 Development challenges solved
+                        </p>
+                        <ul className="list-disc ml-5 mb-4">
+                          <li>
+                            ✅ <strong>Secure authentication:</strong>{" "}
+                            Integrated Firebase Authentication with session
+                            protection using JWT and cookies.
+                          </li>
+                          <li>
+                            ✅ <strong>Real-time synchronization:</strong>{" "}
+                            Ensured that discounts created on the web instantly
+                            reflect in the mobile app.
+                          </li>
+                          <li>
+                            ✅{" "}
+                            <strong>Hybrid experience (web & mobile):</strong>{" "}
+                            Designed an architecture that works seamlessly on
+                            both platforms.
+                          </li>
+                          <li>
+                            ✅ <strong>Image optimization:</strong> Implemented
+                            a compression system to enhance performance without
+                            losing quality.
+                          </li>
+                          <li>
+                            ✅ <strong>QR discount validation:</strong>{" "}
+                            Developed a scanning system to ensure discounts are
+                            legitimate.
+                          </li>
+                          <li>
+                            ✅ <strong>Efficient deployment:</strong> Optimized
+                            cloud load times for better performance.
+                            <button
+                              onClick={toggleContent}
+                              className={`ml-2 hover:underline ${
+                                theme === "light"
+                                  ? "text-blue-500"
+                                  : "text-blue-400"
+                              }`}
+                              aria-label={
+                                showFullContent
+                                  ? "Show less content"
+                                  : "Show more content"
+                              }
+                            >
+                              {showFullContent
+                                ? "Show less..."
+                                : "Show more..."}
+                            </button>
+                          </li>
+                        </ul>
                       </>
                     )}
                   </>
@@ -435,10 +567,15 @@ function Projects() {
                   alt="Comé x menos - Web App"
                 />
 
-                {showLanguage === "spanish"
-                  ? <p className="font-semibold text-center mt-2">Imagen App Web</p>
-                  : <p className="font-semibold text-center mt-2">Web App Image</p>
-                }
+                {showLanguage === "spanish" ? (
+                  <p className="font-semibold text-center mt-2">
+                    Imagen App Web
+                  </p>
+                ) : (
+                  <p className="font-semibold text-center mt-2">
+                    Web App Image
+                  </p>
+                )}
               </div>
 
               {/* Imagen App Móvil */}
@@ -448,11 +585,16 @@ function Projects() {
                   src={imageComéxMenosMobileApp}
                   alt="Comé x menos - Mobile App"
                 />
-                
-                {showLanguage === "spanish"
-                  ? <p className="font-semibold text-center mt-2">Imagen App Móvil</p>
-                  : <p className="font-semibold text-center mt-2">Mobile App Image</p>
-                }
+
+                {showLanguage === "spanish" ? (
+                  <p className="font-semibold text-center mt-2">
+                    Imagen App Móvil
+                  </p>
+                ) : (
+                  <p className="font-semibold text-center mt-2">
+                    Mobile App Image
+                  </p>
+                )}
               </div>
 
               {/* Video App Móvil */}

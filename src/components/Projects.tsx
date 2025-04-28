@@ -196,8 +196,21 @@ function Projects() {
                         </ul>
 
                         <p className="mb-2">
-                          🔒 El código fuente de este proyecto es privado para
-                          su futura evolución.
+                          📂 El código fuente del frontend web de "Comé x menos"
+                          está disponible públicamente en GitHub.
+                        </p>
+                        <a
+                          href="https://github.com/OLuciani/discount-project-web"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition mb-2"
+                        >
+                          Ver repositorio del frontend web
+                        </a>
+
+                        <p className="mb-2">
+                          🔒 Los repositorios del backend y de la aplicación
+                          móvil son privados para su futura evolución.
                         </p>
                         <p className="mb-2">
                           🎥 Puedes ver demostraciones en video de la aplicación
@@ -430,9 +443,23 @@ function Projects() {
                         </ul>
 
                         <p className="mb-2">
-                          🔒 The source code for this project is private for
-                          future development.
+                         📂 The source code for the "Comé x menos" web frontend is
+                          publicly available on GitHub.
                         </p>
+                        <a
+                          href="https://github.com/OLuciani/discount-project-web"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition mb-2"
+                        >
+                          View Web Frontend Repository
+                        </a>
+
+                        <p className="mb-2">
+                          🔒 The backend and mobile application repositories are
+                          private for future development.
+                        </p>
+
                         <p className="mb-2">
                           🎥 You can watch video demos of the web and mobile
                           applications in action.

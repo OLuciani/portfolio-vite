@@ -90,7 +90,6 @@ function Projects() {
                   <>
                     {showFullContent ? (
                       <>
-                        {/* <p className="mb-4 font-bold">Comé x menos (May 2024 - Feb 2025)</p> */}
                         <p className="mb-4">
                           "Comé x menos" es una aplicación híbrida que conecta a
                           los usuarios con descuentos exclusivos en
@@ -196,21 +195,32 @@ function Projects() {
                         </ul>
 
                         <p className="mb-2">
-                          📂 El código fuente del frontend web de "Comé x menos"
+                          📂 El código fuente del frontend web y del backend de "Comé x menos"
                           está disponible públicamente en GitHub.
                         </p>
-                        <a
-                          href="https://github.com/OLuciani/discount-project-web"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-block bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition mb-2"
-                        >
-                          Ver repositorio del frontend web
-                        </a>
+
+                        <div className="flex flex-col md:flex-row md:justify-evenly items-center gap-3">
+                          <a
+                            href="https://github.com/OLuciani/discount-project-web"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-[300px] flex justify-center bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition  mb-2"
+                          >
+                            Ver repositorio del frontend web
+                          </a>
+
+                          <a
+                            href="https://github.com/OLuciani/discount-project-backend"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-[300px] flex justify-center bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition mb-2"
+                          >
+                            Ver repositorio del backend
+                          </a>
+                        </div>
 
                         <p className="mb-2">
-                          🔒 Los repositorios del backend y de la aplicación
-                          móvil son privados para su futura evolución.
+                          🔒 El repositorio de la aplicación móvil se mantiene privado para facilitar su evolución y desarrollo futuro.
                         </p>
                         <p className="mb-2">
                           🎥 Puedes ver demostraciones en video de la aplicación
@@ -443,21 +453,31 @@ function Projects() {
                         </ul>
 
                         <p className="mb-2">
-                         📂 The source code for the "Comé x menos" web frontend is
-                          publicly available on GitHub.
+                         📂 The source code for the web frontend and backend of 'Comé x menos' is publicly available on GitHub.
                         </p>
-                        <a
-                          href="https://github.com/OLuciani/discount-project-web"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-block bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition mb-2"
-                        >
-                          View Web Frontend Repository
-                        </a>
+
+                        <div className="flex flex-col items-center md:flex-row md:justify-evenly gap-3">
+                          <a
+                            href="https://github.com/OLuciani/discount-project-web"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition mb-2"
+                          >
+                            View Web Frontend Repository
+                          </a>
+
+                          <a
+                            href="https://github.com/OLuciani/discount-project-backend"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-[300px] flex justify-center bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition mb-2"
+                          >
+                            View Backend Repository
+                          </a>
+                        </div>
 
                         <p className="mb-2">
-                          🔒 The backend and mobile application repositories are
-                          private for future development.
+                          🔒 The mobile app repository is kept private to support its future evolution and ongoing development.
                         </p>
 
                         <p className="mb-2">

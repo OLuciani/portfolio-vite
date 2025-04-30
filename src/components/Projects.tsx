@@ -199,24 +199,34 @@ function Projects() {
                           está disponible públicamente en GitHub.
                         </p>
 
-                        <div className="flex flex-col md:flex-row md:justify-evenly items-center gap-3">
-                          <a
-                            href="https://github.com/OLuciani/discount-project-web"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-[300px] flex justify-center bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition  mb-2"
+                        <div className="flex flex-col md:flex-row md:justify-evenly items-center gap-4 py-2">
+                          <Button
+                            className="w-[325px] text-center font-semibold py-1 rounded-md"
+                            variant="contained"
+                            color="primary"
                           >
-                            Ver repositorio del frontend web
-                          </a>
+                            <a
+                              href="https://github.com/OLuciani/discount-project-web"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Ver repositorio del frontend web
+                            </a>
+                          </Button>
 
-                          <a
-                            href="https://github.com/OLuciani/discount-project-backend"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-[300px] flex justify-center bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition mb-2"
+                          <Button
+                            className="w-[325px] text-center font-semibold py-1 rounded-md"
+                            variant="contained"
+                            color="primary"
                           >
-                            Ver repositorio del backend
-                          </a>
+                            <a
+                              href="https://github.com/OLuciani/discount-project-backend"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Ver repositorio del backend
+                            </a>
+                          </Button>
                         </div>
 
                         <p className="mb-2">
@@ -456,24 +466,34 @@ function Projects() {
                          📂 The source code for the web frontend and backend of 'Comé x menos' is publicly available on GitHub.
                         </p>
 
-                        <div className="flex flex-col items-center md:flex-row md:justify-evenly gap-3">
-                          <a
-                            href="https://github.com/OLuciani/discount-project-web"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-block bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition mb-2"
+                        <div className="flex flex-col items-center md:flex-row md:justify-evenly gap-4 py-2">
+                          <Button
+                            className="w-[325px] text-center font-semibold py-1 rounded-md"
+                            variant="contained"
+                            color="primary"
                           >
-                            View Web Frontend Repository
-                          </a>
+                            <a
+                              href="https://github.com/OLuciani/discount-project-web"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              View Web Frontend Repository
+                            </a>
+                          </Button>
 
-                          <a
-                            href="https://github.com/OLuciani/discount-project-backend"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-[300px] flex justify-center bg-blue-600 text-white px-4 py-1 rounded-md font-medium hover:bg-blue-700 transition mb-2"
+                          <Button
+                            className="w-[325px] text-center font-semibold py-1 rounded-md"
+                            variant="contained"
+                            color="primary"
                           >
-                            View Backend Repository
-                          </a>
+                            <a
+                              href="https://github.com/OLuciani/discount-project-backend"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              View Backend Repository
+                            </a>
+                          </Button>
                         </div>
 
                         <p className="mb-2">

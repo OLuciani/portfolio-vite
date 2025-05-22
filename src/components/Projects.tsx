@@ -1,4 +1,4 @@
-import imagenhernandezcabañas from "../assets/imagen-Hernandez-Cabañas-JVF.jpeg";
+//import imagenhernandezcabañas from "../assets/imagen-Hernandez-Cabañas-JVF.jpeg";
 import imagennearbytour from "../assets/Imagen-NearByTour1.jpeg";
 import imagenMeddyplus from "../assets/Imagen-Meddyplus.jpeg";
 import imagenComéxMenos from "../assets/imágen-Comé-x-menos.webp";
@@ -945,7 +945,8 @@ function Projects() {
           </div>
         </div>
 
-        <div className={`py-[1%]`}>
+        {/* Dejo comentado momentaneamente este proyecto, por si decido volver a mostrarlo. */}
+        {/* <div className={`py-[1%]`}>
           <div className="caja-luciani-automoviles">
             <div className="px-[3%] mb-[2%] text-left">
               <span
@@ -1009,7 +1010,7 @@ function Projects() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

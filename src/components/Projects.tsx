@@ -366,7 +366,7 @@ function Projects() {
   <div className="caja-luciani-automoviles">
     <div className="px-[3%] mb-[2%] text-left">
       <span className={`${theme === "light" ? "text-black" : "text-white"} mb-[3%]`}>
-        <span className="font-bold">Cabin Rentals</span>
+        <span className="font-bold">Natura (Cabin Rentals App)</span>
         <span className="ml-[5px]">
           ({showLanguage === "spanish" ? "Abr/Jun 2025" : "Apr/Jun 2025"})
         </span>

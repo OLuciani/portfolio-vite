@@ -74,9 +74,9 @@ function Projects() {
           : "Featured Project"}
       </h4>
 
-      {/* <div
+      <div
         className={`flex flex-row flex-wrap justify-center items-center pt-[1%] pb-[1%] md:text-lg`}
-       >
+      >
         <div className="caja-luciani-automoviles">
           <div className="px-[3%] mb-[2%] text-left">
             <span
@@ -84,7 +84,7 @@ function Projects() {
                 theme === "light" ? "text-black" : "text-white"
               } mb-[3%]`}
             >
-              <span className="font-bold">Cabin Rentals</span>
+              <span className="font-bold">Natura (Cabin Rentals App)</span>
               <span className="ml-[5px]">
                 ({showLanguage === "spanish" ? "Abr/Jun 2025" : "Apr/Jun 2025"})
               </span>
@@ -94,7 +94,6 @@ function Projects() {
             <div>
               {showLanguage === "spanish" ? (
                 <>
-                  
                   <p>
                     "Cabin Rentals" es una aplicación web completa para la
                     gestión de alquileres de cabañas, diseñada para ofrecer una
@@ -105,23 +104,10 @@ function Projects() {
 
                   <p>
                     La aplicación consta de dos grandes bloques: un frontend
-                    desarrollado con Next.js usando la arquitectura App Router
-                    para una navegación rápida y modular, y un backend
-                    construido con Node.js y Express.js siguiendo una
-                    arquitectura REST API para gestionar la lógica y datos.
-                  </p>
-
-                  <p className="mt-4 font-semibold">
-                    La autenticación se implementa con Firebase Authentication y
-                    Firebase Admin SDK, usando cookies HTTPOnly para seguridad y
-                    persistencia de sesión. Los datos se almacenan en MongoDB
-                    Atlas, garantizando un backend confiable y escalable.
-                  </p>
-
-                  <p>
-                    El proyecto está desplegado en Vercel (frontend) y Render
-                    (backend), seleccionando plataformas que optimizan
-                    rendimiento y costos sin sacrificar estabilidad.
+                    desarrollado con Next.js aplicando una arquitectura basada
+                    en capas y organizada por funcionalidades (feature-based), y
+                    un backend construido con Node.js y Express.js siguiendo una
+                    Clean Architecture simplificada.
                   </p>
 
                   <p className="mt-4 font-semibold">
@@ -144,19 +130,36 @@ function Projects() {
                       ✅ Manejo de estado global y persistencia de sesión en
                       frontend con Zustand y cookies.
                     </li>
-                    <li>
-                      ✅ Despliegue optimizado y configuraciones específicas
-                      para producción.
-                    </li>
-                    <li>
-                      ✅ Arquitectura preparada para integración futura de
-                      sincronización en tiempo real.
-                    </li>
                   </ul>
 
-                
                   {showMore && (
                     <>
+                      <ul className="list-disc list-inside ml-4">
+                        <li>
+                          ✅ Despliegue optimizado y configuraciones específicas
+                          para producción.
+                        </li>
+                        <li>
+                          ✅ Arquitectura preparada para integración futura de
+                          sincronización en tiempo real.
+                        </li>
+                      </ul>
+
+                      <p className="mt-4 font-semibold">
+                        La autenticación se implementa con Firebase
+                        Authentication y Firebase Admin SDK, usando cookies
+                        HTTPOnly para seguridad y persistencia de sesión. Los
+                        datos se almacenan en MongoDB Atlas, garantizando un
+                        backend confiable y escalable.
+                      </p>
+
+                      <p>
+                        El proyecto está desplegado en Vercel (frontend) y
+                        Render (backend), seleccionando plataformas que
+                        optimizan rendimiento y costos sin sacrificar
+                        estabilidad.
+                      </p>
+
                       <p className="mt-4 font-semibold">📌 Próximos pasos:</p>
                       <ul className="list-disc list-inside ml-4">
                         <li>Integrar pasarela de pagos con Mercado Pago.</li>
@@ -205,7 +208,6 @@ function Projects() {
                 </>
               ) : (
                 <>
-                  
                   <p>
                     Cabin Rentals is a full-featured web application for
                     managing cabin rentals, designed to provide a smooth and
@@ -215,23 +217,9 @@ function Projects() {
 
                   <p>
                     The app consists of two main parts: a frontend built with
-                    Next.js using the App Router architecture for fast and
-                    modular navigation, and a backend built with Node.js and
-                    Express.js following a REST API architecture to manage logic
-                    and data.
-                  </p>
-
-                  <p className="mt-4 font-semibold">
-                    Authentication is implemented with Firebase Authentication
-                    and Firebase Admin SDK, using HTTPOnly cookies to ensure
-                    security and session persistence. Data is stored in MongoDB
-                    Atlas, providing a reliable and scalable backend.
-                  </p>
-
-                  <p>
-                    The project is deployed on Vercel (frontend) and Render
-                    (backend), choosing platforms that optimize performance and
-                    cost without sacrificing stability.
+                    Next.js using a layered and feature-based architecture, and
+                    a backend built with Node.js and Express.js following a
+                    simplified Clean Architecture.
                   </p>
 
                   <p className="mt-4 font-semibold">
@@ -254,19 +242,35 @@ function Projects() {
                       ✅ Global state management and session persistence on
                       frontend using Zustand and HTTPOnly cookies.
                     </li>
-                    <li>
-                      ✅ Optimized deployment and production-specific
-                      configurations.
-                    </li>
-                    <li>
-                      ✅ Architecture prepared for future real-time
-                      synchronization integration.
-                    </li>
                   </ul>
 
-                  
                   {showMore && (
                     <>
+                      <ul className="list-disc list-inside ml-4">
+                        <li>
+                          ✅ Optimized deployment and production-specific
+                          configurations.
+                        </li>
+                        <li>
+                          ✅ Architecture prepared for future real-time
+                          synchronization integration.
+                        </li>
+                      </ul>
+
+                      <p className="mt-4 font-semibold">
+                        Authentication is implemented with Firebase
+                        Authentication and Firebase Admin SDK, using HTTPOnly
+                        cookies to ensure security and session persistence. Data
+                        is stored in MongoDB Atlas, providing a reliable and
+                        scalable backend.
+                      </p>
+
+                      <p>
+                        The project is deployed on Vercel (frontend) and Render
+                        (backend), choosing platforms that optimize performance
+                        and cost without sacrificing stability.
+                      </p>
+
                       <p className="mt-4 font-semibold">📌 Next steps:</p>
                       <ul className="list-disc list-inside ml-4">
                         <li>Integrate payment gateway with Mercado Pago.</li>
@@ -314,7 +318,7 @@ function Projects() {
             </div>
           </div>
 
-          <div className="pt-[1%] pb-[3%] px-[3%] flex flex-wrap justify-evenly">
+          <div className="pt-[1%] pb-[3%] px-[3%] flex flex-wrap justify-evenly items-center md:gap-5">
             <div className="md:w-520px py-[1%] px-[3%] md:py-0 md:px-0 md:flex md:justify-center">
               <img
                 className={`w-full py-[1%] lg:py-0 md:w-[520px] ml-[0.1%] border-[1px] ${
@@ -324,7 +328,7 @@ function Projects() {
                 alt="imagen-cabin-rentals"
               />
             </div>
-            <div className="md:w-[260px] mt-2 flex flex-col items-center justify-center">
+            <div className="md:w-[260px] mt-3 md:mt-0 flex flex-col items-center justify-center gap-3">
               <div className="grid justify-center items-center mb-[10px]">
                 <a
                   href="https://cabin-rentals-frontend.vercel.app/"
@@ -357,190 +361,46 @@ function Projects() {
                   </Button>
                 </a>
               </div>
+
+              <div className="grid justify-center items-center mt-[10px]">
+                <a
+                  href="https://github.com/OLuciani/cabin-rentals-frontend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    className="w-[260px] text-lg text-center font-semibold py-1 rounded-md"
+                    variant="contained"
+                    color="primary"
+                  >
+                    {showLanguage === "spanish"
+                      ? "Ver Código Frontend"
+                      : "View Frontend Code"}
+                  </Button>
+                </a>
+              </div>
+
+              <div className="grid justify-center items-center mt-[10px]">
+                <a
+                  href="https://github.com/OLuciani/cabin-rentals-backend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    className="w-[260px] text-lg text-center font-semibold py-1 rounded-md"
+                    variant="contained"
+                    color="primary"
+                  >
+                    {showLanguage === "spanish"
+                      ? "Ver Código Backend"
+                      : "View Backend Code"}
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div> */}
-
-      <div className={`flex flex-row flex-wrap justify-center items-center pt-[1%] pb-[1%] md:text-lg`}>
-  <div className="caja-luciani-automoviles">
-    <div className="px-[3%] mb-[2%] text-left">
-      <span className={`${theme === "light" ? "text-black" : "text-white"} mb-[3%]`}>
-        <span className="font-bold">Natura (Cabin Rentals App)</span>
-        <span className="ml-[5px]">
-          ({showLanguage === "spanish" ? "Abr/Jun 2025" : "Apr/Jun 2025"})
-        </span>
-        <br />
-      </span>
-
-      <div>
-        {showLanguage === "spanish" ? (
-          <>
-            <p>
-              "Cabin Rentals" es una aplicación web completa para la gestión
-              de alquileres de cabañas, diseñada para ofrecer una experiencia
-              fluida y segura tanto para usuarios que buscan reservar como
-              para administradores que gestionan la disponibilidad y pagos.
-            </p>
-
-            <p>
-              La aplicación consta de dos grandes bloques: un frontend
-              desarrollado con Next.js aplicando una arquitectura basada en
-              capas y organizada por funcionalidades (feature-based), y un
-              backend construido con Node.js y Express.js siguiendo una Clean
-              Architecture simplificada.
-            </p>
-
-            <p className="mt-4 font-semibold">🚀 Retos y soluciones destacadas:</p>
-            <ul className="list-disc list-inside ml-4">
-              <li>✅ Autenticación segura con Firebase y gestión de sesiones mediante cookies HTTPOnly.</li>
-              <li>✅ Implementación del sistema App Router de Next.js para una UX ágil y modular.</li>
-              <li>✅ Diseño de API REST segura para la gestión integral de usuarios, reservas y cabañas.</li>
-              <li>✅ Manejo de estado global y persistencia de sesión en frontend con Zustand y cookies.</li>
-            </ul>
-
-            {showMore && (
-              <>
-                <ul className="list-disc list-inside ml-4">
-                  <li>✅ Despliegue optimizado y configuraciones específicas para producción.</li>
-                  <li>✅ Arquitectura preparada para integración futura de sincronización en tiempo real.</li>
-                </ul>
-
-                <p className="mt-4 font-semibold">
-                  La autenticación se implementa con Firebase Authentication y Firebase Admin SDK, usando cookies HTTPOnly para seguridad y persistencia de sesión. Los datos se almacenan en MongoDB Atlas, garantizando un backend confiable y escalable.
-                </p>
-
-                <p>
-                  El proyecto está desplegado en Vercel (frontend) y Render (backend), seleccionando plataformas que optimizan rendimiento y costos sin sacrificar estabilidad.
-                </p>
-
-                <p className="mt-4 font-semibold">📌 Próximos pasos:</p>
-                <ul className="list-disc list-inside ml-4">
-                  <li>Integrar pasarela de pagos con Mercado Pago.</li>
-                  <li>Añadir sistema de notificaciones para usuarios y administradores.</li>
-                  <li>Implementar filtros avanzados y recomendaciones personalizadas.</li>
-                  <li>Desarrollar versión móvil nativa para ampliar el alcance (actualmente sólo es web).</li>
-                </ul>
-
-                <p className="mt-4 font-semibold">🛠️ Tecnologías:</p>
-                <ul className="list-disc list-inside ml-4">
-                  <li>Frontend: Next.js (App Router), TypeScript, Tailwind CSS.</li>
-                  <li>Backend: Node.js, Express.js.</li>
-                  <li>Autenticación: Firebase Authentication y Firebase Admin SDK.</li>
-                  <li>Base de datos: MongoDB Atlas.</li>
-                  <li>Almacenamiento de imágenes: Cloudinary.</li>
-                  <li>Manejo de estado: Zustand y cookies HTTPOnly.</li>
-                  <li>Despliegue: Vercel (frontend), Render (backend).</li>
-                  <li>Herramientas: Axios, js-cookie, JWT.</li>
-                </ul>
-              </>
-            )}
-
-            <button className="mt-4 text-blue-600 hover:underline" onClick={toggleShowMore}>
-              {showMore ? "Mostrar menos" : "Mostrar más"}
-            </button>
-          </>
-        ) : (
-          <>
-            <p>
-              Cabin Rentals is a full-featured web application for managing cabin rentals, designed to provide a smooth and secure experience for both users looking to book and administrators managing availability and payments.
-            </p>
-
-            <p>
-              The app consists of two main parts: a frontend built with Next.js using a layered and feature-based architecture, and a backend built with Node.js and Express.js following a simplified Clean Architecture.
-            </p>
-
-            <p className="mt-4 font-semibold">🚀 Key challenges and solutions:</p>
-            <ul className="list-disc list-inside ml-4">
-              <li>✅ Secure authentication with Firebase and session management via HTTPOnly cookies.</li>
-              <li>✅ Implementation of Next.js App Router system for agile and modular UX.</li>
-              <li>✅ Secure REST API design for comprehensive user, reservation, and cabin management.</li>
-              <li>✅ Global state management and session persistence on frontend using Zustand and HTTPOnly cookies.</li>
-            </ul>
-
-            {showMore && (
-              <>
-                <ul className="list-disc list-inside ml-4">
-                  <li>✅ Optimized deployment and production-specific configurations.</li>
-                  <li>✅ Architecture prepared for future real-time synchronization integration.</li>
-                </ul>
-
-                <p className="mt-4 font-semibold">
-                  Authentication is implemented with Firebase Authentication and Firebase Admin SDK, using HTTPOnly cookies to ensure security and session persistence. Data is stored in MongoDB Atlas, providing a reliable and scalable backend.
-                </p>
-
-                <p>
-                  The project is deployed on Vercel (frontend) and Render (backend), choosing platforms that optimize performance and cost without sacrificing stability.
-                </p>
-
-                <p className="mt-4 font-semibold">📌 Next steps:</p>
-                <ul className="list-disc list-inside ml-4">
-                  <li>Integrate payment gateway with Mercado Pago.</li>
-                  <li>Add notification system for users and admins.</li>
-                  <li>Implement advanced filters and personalized recommendations.</li>
-                  <li>Develop native mobile app version to broaden reach (currently web only).</li>
-                </ul>
-
-                <p className="mt-4 font-semibold">🛠️ Technologies:</p>
-                <ul className="list-disc list-inside ml-4">
-                  <li>Frontend: Next.js (App Router), TypeScript, Tailwind CSS.</li>
-                  <li>Backend: Node.js, Express.js.</li>
-                  <li>Authentication: Firebase Authentication and Firebase Admin SDK.</li>
-                  <li>Database: MongoDB Atlas.</li>
-                  <li>Image storage: Cloudinary.</li>
-                  <li>State management: Zustand and HTTPOnly cookies.</li>
-                  <li>Deployment: Vercel (frontend), Render (backend).</li>
-                  <li>Tools: Axios, js-cookie, JWT.</li>
-                </ul>
-              </>
-            )}
-
-            <button className="mt-4 text-blue-600 hover:underline" onClick={toggleShowMore}>
-              {showMore ? "Show less" : "Show more"}
-            </button>
-          </>
-        )}
       </div>
-    </div>
-
-    <div className="pt-[1%] pb-[3%] px-[3%] flex flex-wrap justify-evenly">
-      <div className="md:w-520px py-[1%] px-[3%] md:py-0 md:px-0 md:flex md:justify-center">
-        <img
-          className={`w-full py-[1%] lg:py-0 md:w-[520px] ml-[0.1%] border-[1px] ${
-            theme === "light" ? "border-gray-300" : "border-gray-700"
-          } rounded-md`}
-          src={imageCabinRentals1}
-          alt="imagen-cabin-rentals"
-        />
-      </div>
-      <div className="md:w-[260px] mt-2 flex flex-col items-center justify-center">
-        <div className="grid justify-center items-center mb-[10px]">
-          <a href="https://cabin-rentals-frontend.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <Button
-              className="w-[260px] text-lg text-center font-semibold py-1 rounded-md"
-              variant="contained"
-              color="primary"
-            >
-              {showLanguage === "spanish" ? "Ver App" : "View App"}
-            </Button>
-          </a>
-        </div>
-        <div className="grid justify-center items-center">
-          <a href="https://cabin-rentals-backend.onrender.com/api/health" target="_blank" rel="noopener noreferrer">
-            <Button
-              className="w-[260px] text-lg text-center font-semibold py-1 rounded-md"
-              variant="contained"
-              color="primary"
-            >
-              {showLanguage === "spanish" ? "Ver API Backend" : "View Backend API"}
-            </Button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 
       <div className="flex flex-row flex-wrap justify-center items-center md:text-lg">
         <div className="">

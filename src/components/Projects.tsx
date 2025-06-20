@@ -78,7 +78,7 @@ function Projects() {
         className={`flex flex-row flex-wrap justify-center items-center pt-[1%] pb-[1%] md:text-lg`}
       >
         <div className="caja-luciani-automoviles">
-          <div className="px-[3%] mb-[2%] text-left">
+          <div className="px-[3%] mb-[1%] text-left">
             <span
               className={`${
                 theme === "light" ? "text-black" : "text-white"
@@ -200,10 +200,10 @@ function Projects() {
                   )}
 
                   <button
-                    className="mt-4 text-blue-600 hover:underline"
+                    className=" text-blue-600 hover:underline"
                     onClick={toggleShowMore}
                   >
-                    {showMore ? "Mostrar menos" : "Mostrar más"}
+                    {showMore ? "Mostrar menos..." : "Mostrar más..."}
                   </button>
                 </>
               ) : (
@@ -308,17 +308,17 @@ function Projects() {
                   )}
 
                   <button
-                    className="mt-4 text-blue-600 hover:underline"
+                    className="text-blue-600 hover:underline"
                     onClick={toggleShowMore}
                   >
-                    {showMore ? "Show less" : "Show more"}
+                    {showMore ? "Show less..." : "Show more..."}
                   </button>
                 </>
               )}
             </div>
           </div>
 
-          <div className="pt-[1%] pb-[3%] px-[3%] flex flex-wrap justify-evenly items-center md:gap-5">
+          <div className="pb-[3%] px-[3%] flex flex-wrap justify-evenly items-center md:gap-5">
             <div className="md:w-520px py-[1%] px-[3%] md:py-0 md:px-0 md:flex md:justify-center">
               <img
                 className={`w-full py-[1%] lg:py-0 md:w-[520px] ml-[0.1%] border-[1px] ${

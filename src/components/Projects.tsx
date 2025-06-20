@@ -145,7 +145,7 @@ function Projects() {
                         </li>
                       </ul>
 
-                      <p className="mt-4 font-semibold">
+                      <p className="mt-4 ">
                         La autenticación se implementa con Firebase
                         Authentication y Firebase Admin SDK, usando cookies
                         HTTPOnly para seguridad y persistencia de sesión. Los
@@ -257,7 +257,7 @@ function Projects() {
                         </li>
                       </ul>
 
-                      <p className="mt-4 font-semibold">
+                      <p className="mt-4">
                         Authentication is implemented with Firebase
                         Authentication and Firebase Admin SDK, using HTTPOnly
                         cookies to ensure security and session persistence. Data
@@ -435,72 +435,68 @@ function Projects() {
                           "takeaway" para aprovechar los descuentos.
                         </p>
 
-                        <p className="mb-4 font-bold">
+                        <p className="mb-2 font-semibold">
                           La app está compuesta por dos plataformas:
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            <strong>Aplicación web:</strong> para dueños y
+                            Aplicación web: para dueños y
                             administradores de negocios, quienes pueden publicar
                             y gestionar descuentos.
                           </li>
                           <li>
-                            <strong>Aplicación móvil:</strong> para los usuarios
+                          Aplicación móvil: para los usuarios
                             que buscan descuentos y generan códigos QR para
                             canjear en los locales.
                           </li>
-                          <li>
-                            <strong>Escáner QR:</strong> los administradores de
-                            los negocios pueden validar los descuentos mediante
-                            un escáner integrado en la app móvil.
-                          </li>
                         </ul>
 
-                        <p className="mb-4">
+                        <p className="mb-2">
                           Ambas versiones comparten el mismo backend, que creé
                           con Node.js y Express, asegurando sincronización en
                           tiempo real. Para la base de datos, utilicé MongoDB
                           Atlas.
                         </p>
 
-                        <p className="mb-4 font-bold">
+                        <p>
+                          Escáner QR: los administradores de
+                          los negocios pueden validar los descuentos mediante
+                          un escáner integrado en la app móvil.
+                        </p>
+
+                        <p className="my-4 font-semibold">
                           🚀 Retos resueltos en el desarrollo
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            ✅ <strong>Autenticación segura:</strong> Integré
+                            ✅ Autenticación segura: Integré
                             Firebase Authentication con sesiones protegidas
                             mediante JWT y cookies.
                           </li>
                           <li>
-                            ✅ <strong>Sincronización en tiempo real:</strong>{" "}
-                            Aseguré que los descuentos creados en la web se
+                            ✅ Sincronización en tiempo real: Aseguré que los descuentos creados en la web se
                             reflejen de inmediato en la app móvil.
                           </li>
                           <li>
-                            ✅{" "}
-                            <strong>Experiencia híbrida (web y móvil):</strong>{" "}
+                            ✅ Experiencia híbrida (web y móvil): 
                             Diseñé una arquitectura que funciona sin fricciones
                             en ambas plataformas.
                           </li>
                           <li>
-                            ✅ <strong>Optimización de imágenes:</strong>{" "}
-                            Implementé un sistema de compresión para mejorar el
+                            ✅ Optimización de imágenes: Implementé un sistema de compresión para mejorar el
                             rendimiento sin perder calidad.
                           </li>
                           <li>
-                            ✅ <strong>Validación de descuentos con QR:</strong>{" "}
-                            Creé un sistema de escaneo para asegurar que los
+                            ✅ Validación de descuentos con QR: Creé un sistema de escaneo para asegurar que los
                             descuentos sean legítimos.
                           </li>
                           <li>
-                            ✅ <strong>Despliegue eficiente:</strong> Optimizé
-                            tiempos de carga en la nube para mejorar el
+                            ✅ Despliegue eficiente: Optimizé tiempos de carga en la nube para mejorar el
                             rendimiento.
                           </li>
                         </ul>
 
-                        <p className="mb-4 font-bold">📌 Próximos pasos:</p>
+                        <p className="mb-4 font-semibold">📌 Próximos pasos:</p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
                             🔹 Integrar una pasarela de pago con Mercado Pago
@@ -516,7 +512,7 @@ function Projects() {
                           </li>
                         </ul>
 
-                        <p className="mb-4 font-bold">
+                        <p className="mb-4 font-semibold">
                           🛠️ Tecnologías utilizadas
                         </p>
                         <ul className="list-disc ml-5 mb-4">
@@ -608,67 +604,63 @@ function Projects() {
                           "takeaway" para aprovechar los descuentos.
                         </p>
 
-                        <p className="mb-4 font-bold">
+                        <p className="mb-4 font-semibold">
                           La app está compuesta por dos plataformas:
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            <strong>Aplicación web:</strong> para dueños y
+                            Aplicación web: para dueños y
                             administradores de negocios, quienes pueden publicar
                             y gestionar descuentos.
                           </li>
                           <li>
-                            <strong>Aplicación móvil:</strong> para los usuarios
+                            Aplicación móvil: para los usuarios
                             que buscan descuentos y generan códigos QR para
                             canjear en los locales.
                           </li>
-                          <li>
-                            <strong>Escáner QR:</strong> los administradores de
-                            los negocios pueden validar los descuentos mediante
-                            un escáner integrado en la app móvil.
-                          </li>
                         </ul>
 
-                        <p className="mb-4">
+                        <p className="mb-2">
                           Ambas versiones comparten el mismo backend, que creé
                           con Node.js y Express, asegurando sincronización en
                           tiempo real. Para la base de datos, utilicé MongoDB
                           Atlas.
                         </p>
 
-                        <p className="mb-4 font-bold">
+                        <p>
+                          Escáner QR: los administradores de
+                          los negocios pueden validar los descuentos mediante
+                          un escáner integrado en la app móvil.
+                        </p>
+
+                        <p className="my-4 font-semibold">
                           🚀 Retos resueltos en el desarrollo
                         </p>
 
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            ✅ <strong>Autenticación segura:</strong> Integré
+                            ✅ Autenticación segura: Integré
                             Firebase Authentication con sesiones protegidas
                             mediante JWT y cookies.
                           </li>
                           <li>
-                            ✅ <strong>Sincronización en tiempo real:</strong>{" "}
-                            Aseguré que los descuentos creados en la web se
+                            ✅ Sincronización en tiempo real: Aseguré que los descuentos creados en la web se
                             reflejen de inmediato en la app móvil.
                           </li>
                           <li>
-                            ✅{" "}
-                            <strong>Experiencia híbrida (web y móvil):</strong>{" "}
-                            Diseñé una arquitectura que funciona sin fricciones
+                            ✅ Experiencia híbrida (web y móvil): Diseñé una arquitectura que funciona sin fricciones
                             en ambas plataformas.
                           </li>
                           <li>
-                            ✅ <strong>Optimización de imágenes:</strong>{" "}
-                            Implementé un sistema de compresión para mejorar el
+                            ✅ Optimización de imágenes: Implementé un sistema de compresión para mejorar el
                             rendimiento sin perder calidad.
                           </li>
                           <li>
-                            ✅ <strong>Validación de descuentos con QR:</strong>{" "}
-                            Creé un sistema de escaneo para asegurar que los
+                            ✅ Validación de descuentos con QR: Creé un sistema de escaneo para asegurar que los
                             descuentos sean legítimos.
                           </li>
                           <li>
-                            ✅ <strong>Despliegue eficiente:</strong> Optimizé
+                            ✅ Despliegue eficiente: Optimizé
                             tiempos de carga en la nube para mejorar el
                             rendimiento.
                             <button
@@ -708,71 +700,67 @@ function Projects() {
                           discounts.
                         </p>
 
-                        <p className="mb-4 font-bold">
+                        <p className="mb-4 font-semibold">
                           The app consists of two platforms:
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            <strong>Web application:</strong> For business
+                            Web application: For business
                             owners and administrators to publish and manage
                             discounts.
                           </li>
                           <li>
-                            <strong>Mobile application:</strong> For users to
+                            Mobile application: For users to
                             browse discounts and generate QR codes to redeem
                             them in stores.
                           </li>
-                          <li>
-                            <strong>QR scanner:</strong> Business administrators
-                            can validate discounts using an integrated scanner
-                            in the mobile app.
-                          </li>
                         </ul>
 
-                        <p className="mb-4">
+                        <p className="mb-2">
                           Both versions share the same backend, which I built
                           with Node.js and Express, ensuring real-time
                           synchronization. For the database, I used MongoDB
                           Atlas.
                         </p>
 
-                        <p className="mb-4 font-bold">
+                        <p>
+                          QR scanner: Business administrators
+                          can validate discounts using an integrated scanner
+                          in the mobile app.
+                        </p>
+
+                        <p className="my-4 font-semibold">
                           🚀 Development challenges solved
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            ✅ <strong>Secure authentication:</strong>{" "}
-                            Integrated Firebase Authentication with session
+                            ✅ Secure authentication: Integrated Firebase Authentication with session
                             protection using JWT and cookies.
                           </li>
                           <li>
-                            ✅ <strong>Real-time synchronization:</strong>{" "}
-                            Ensured that discounts created on the web instantly
+                            ✅ Real-time synchronization: Ensured that discounts created on the web instantly
                             reflect in the mobile app.
                           </li>
                           <li>
-                            ✅{" "}
-                            <strong>Hybrid experience (web & mobile):</strong>{" "}
-                            Designed an architecture that works seamlessly on
+                            ✅ Hybrid experience (web & mobile): Designed an architecture that works seamlessly on
                             both platforms.
                           </li>
                           <li>
-                            ✅ <strong>Image optimization:</strong> Implemented
+                            ✅ Image optimization: Implemented
                             a compression system to enhance performance without
                             losing quality.
                           </li>
                           <li>
-                            ✅ <strong>QR discount validation:</strong>{" "}
-                            Developed a scanning system to ensure discounts are
+                            ✅ QR discount validation: Developed a scanning system to ensure discounts are
                             legitimate.
                           </li>
                           <li>
-                            ✅ <strong>Efficient deployment:</strong> Optimized
+                            ✅ Efficient deployment: Optimized
                             cloud load times for better performance.
                           </li>
                         </ul>
 
-                        <p className="mb-4 font-bold">📌 Next steps:</p>
+                        <p className="mb-4 font-semibold">📌 Next steps:</p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
                             🔹 Integrate a payment gateway with Mercado Pago to
@@ -788,7 +776,7 @@ function Projects() {
                           </li>
                         </ul>
 
-                        <p className="mb-4 font-bold">🛠️ Technologies used</p>
+                        <p className="mb-4 font-semibold">🛠️ Technologies used</p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>Frontend Web: Next.js + Tailwind CSS</li>
                           <li>Mobile Frontend: React Native with Expo</li>
@@ -875,66 +863,62 @@ function Projects() {
                           discounts.
                         </p>
 
-                        <p className="mb-4 font-bold">
+                        <p className="mb-4 font-semibold">
                           The app consists of two platforms:
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            <strong>Web application:</strong> For business
+                            Web application: For business
                             owners and administrators to publish and manage
                             discounts.
                           </li>
                           <li>
-                            <strong>Mobile application:</strong> For users to
+                            Mobile application: For users to
                             browse discounts and generate QR codes to redeem
                             them in stores.
                           </li>
-                          <li>
-                            <strong>QR scanner:</strong> Business administrators
-                            can validate discounts using an integrated scanner
-                            in the mobile app.
-                          </li>
                         </ul>
 
-                        <p className="mb-4">
+                        <p className="mb-2">
                           Both versions share the same backend, which I built
                           with Node.js and Express, ensuring real-time
                           synchronization. For the database, I used MongoDB
                           Atlas.
                         </p>
 
-                        <p className="mb-4 font-bold">
+                        <p>
+                          QR scanner: Business administrators
+                          can validate discounts using an integrated scanner
+                          in the mobile app.
+                        </p>
+
+                        <p className="my-4 font-semibold">
                           🚀 Development challenges solved
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            ✅ <strong>Secure authentication:</strong>{" "}
-                            Integrated Firebase Authentication with session
+                            ✅ Secure authentication: Integrated Firebase Authentication with session
                             protection using JWT and cookies.
                           </li>
                           <li>
-                            ✅ <strong>Real-time synchronization:</strong>{" "}
-                            Ensured that discounts created on the web instantly
+                            ✅ Real-time synchronization: Ensured that discounts created on the web instantly
                             reflect in the mobile app.
                           </li>
                           <li>
-                            ✅{" "}
-                            <strong>Hybrid experience (web & mobile):</strong>{" "}
-                            Designed an architecture that works seamlessly on
+                            ✅ Hybrid experience (web & mobile): Designed an architecture that works seamlessly on
                             both platforms.
                           </li>
                           <li>
-                            ✅ <strong>Image optimization:</strong> Implemented
+                            ✅ Image optimization: Implemented
                             a compression system to enhance performance without
                             losing quality.
                           </li>
                           <li>
-                            ✅ <strong>QR discount validation:</strong>{" "}
-                            Developed a scanning system to ensure discounts are
+                            ✅ QR discount validation: Developed a scanning system to ensure discounts are
                             legitimate.
                           </li>
                           <li>
-                            ✅ <strong>Efficient deployment:</strong> Optimized
+                            ✅ Efficient deployment: Optimized
                             cloud load times for better performance.
                             <button
                               onClick={toggleContent}

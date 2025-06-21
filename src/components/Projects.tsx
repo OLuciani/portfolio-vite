@@ -79,7 +79,7 @@ function Projects() {
       >
         <div className="caja-luciani-automoviles">
           <div className="px-[3%] mb-[1%] text-left">
-            <span
+            <div
               className={`${
                 theme === "light" ? "text-black" : "text-white"
               } mb-[3%]`}
@@ -89,232 +89,248 @@ function Projects() {
                 ({showLanguage === "spanish" ? "Abr/Jun 2025" : "Apr/Jun 2025"})
               </span>
               <br />
-            </span>
+              {/* </span> */}
 
-            <div>
-              {showLanguage === "spanish" ? (
-                <>
-                  <p>
-                    "Cabin Rentals" es una aplicación web completa para la
-                    gestión de alquileres de cabañas, diseñada para ofrecer una
-                    experiencia fluida y segura tanto para usuarios que buscan
-                    reservar como para administradores que gestionan la
-                    disponibilidad y pagos.
-                  </p>
+              <div>
+                {showLanguage === "spanish" ? (
+                  <>
+                    <p>
+                      "Cabin Rentals" es una aplicación web completa para la
+                      gestión de alquileres de cabañas, diseñada para ofrecer
+                      una experiencia fluida y segura tanto para usuarios que
+                      buscan reservar como para administradores que gestionan la
+                      disponibilidad y pagos.
+                    </p>
 
-                  <p>
-                    La aplicación consta de dos grandes bloques: un frontend
-                    desarrollado con Next.js aplicando una arquitectura basada
-                    en capas y organizada por funcionalidades (feature-based), y
-                    un backend construido con Node.js y Express.js siguiendo una
-                    Clean Architecture simplificada.
-                  </p>
+                    <p>
+                      La aplicación consta de dos grandes bloques: un frontend
+                      desarrollado con Next.js aplicando una arquitectura basada
+                      en capas y organizada por funcionalidades (feature-based),
+                      y un backend construido con Node.js y Express.js siguiendo
+                      una Clean Architecture simplificada.
+                    </p>
 
-                  <p className="mt-4 font-semibold">
-                    🚀 Retos y soluciones destacadas:
-                  </p>
-                  <ul className="list-disc list-inside ml-4">
-                    <li>
-                      ✅ Autenticación segura con Firebase y gestión de sesiones
-                      mediante cookies HTTPOnly.
-                    </li>
-                    <li>
-                      ✅ Implementación del sistema App Router de Next.js para
-                      una UX ágil y modular.
-                    </li>
-                    <li>
-                      ✅ Diseño de API REST segura para la gestión integral de
-                      usuarios, reservas y cabañas.
-                    </li>
-                    <li>
-                      ✅ Manejo de estado global y persistencia de sesión en
-                      frontend con Zustand y cookies.
-                    </li>
-                  </ul>
+                    <p className="mt-4 font-semibold">
+                      🚀 Retos y soluciones destacadas:
+                    </p>
+                    <ul className="list-disc list-inside ml-4">
+                      <li>
+                        ✅ Autenticación segura con Firebase y gestión de
+                        sesiones mediante cookies HTTPOnly.
+                      </li>
+                      <li>
+                        ✅ Implementación del sistema App Router de Next.js para
+                        una UX ágil y modular.
+                      </li>
+                      <li>
+                        ✅ Diseño de API REST segura para la gestión integral de
+                        usuarios, reservas y cabañas.
+                      </li>
+                      <li>
+                        ✅ Manejo de estado global y persistencia de sesión en
+                        frontend con Zustand y cookies.
+                      </li>
+                    </ul>
 
-                  {showMore && (
-                    <>
-                      <ul className="list-disc list-inside ml-4">
-                        <li>
-                          ✅ Despliegue optimizado y configuraciones específicas
-                          para producción.
-                        </li>
-                        <li>
-                          ✅ Arquitectura preparada para integración futura de
-                          sincronización en tiempo real.
-                        </li>
-                      </ul>
+                    {showMore && (
+                      <>
+                        <ul className="list-disc list-inside ml-4">
+                          <li>
+                            ✅ Despliegue optimizado y configuraciones
+                            específicas para producción.
+                          </li>
+                          <li>
+                            ✅ Arquitectura preparada para integración futura de
+                            sincronización en tiempo real.
+                          </li>
+                        </ul>
 
-                      <p className="mt-4 ">
-                        La autenticación se implementa con Firebase
-                        Authentication y Firebase Admin SDK, usando cookies
-                        HTTPOnly para seguridad y persistencia de sesión. Los
-                        datos se almacenan en MongoDB Atlas, garantizando un
-                        backend confiable y escalable.
-                      </p>
+                        <p className="mt-4 ">
+                          La autenticación se implementa con Firebase
+                          Authentication y Firebase Admin SDK, usando cookies
+                          HTTPOnly para seguridad y persistencia de sesión. Los
+                          datos se almacenan en MongoDB Atlas, garantizando un
+                          backend confiable y escalable.
+                        </p>
 
-                      <p>
-                        El proyecto está desplegado en Vercel (frontend) y
-                        Render (backend), seleccionando plataformas que
-                        optimizan rendimiento y costos sin sacrificar
-                        estabilidad.
-                      </p>
+                        <p>
+                          El proyecto está desplegado en Vercel (frontend) y
+                          Render (backend), seleccionando plataformas que
+                          optimizan rendimiento y costos sin sacrificar
+                          estabilidad.
+                        </p>
 
-                      <p className="mt-4 font-semibold">📌 Próximos pasos:</p>
-                      <ul className="list-disc list-inside ml-4">
-                        <li>Integrar pasarela de pagos con Mercado Pago.</li>
-                        <li>
-                          Añadir sistema de notificaciones para usuarios y
-                          administradores.
-                        </li>
-                        <li>
-                          Implementar filtros avanzados y recomendaciones
-                          personalizadas.
-                        </li>
-                        <li>
-                          Desarrollar versión móvil nativa para ampliar el
-                          alcance (actualmente sólo es web).
-                        </li>
-                      </ul>
+                        <p className="mt-4 font-semibold">📌 Próximos pasos:</p>
+                        <ul className="list-disc list-inside ml-4">
+                          <li>Integrar pasarela de pagos con Mercado Pago.</li>
+                          <li>
+                            Añadir sistema de notificaciones para usuarios y
+                            administradores.
+                          </li>
+                          <li>
+                            Implementar filtros avanzados y recomendaciones
+                            personalizadas.
+                          </li>
+                          <li>
+                            Desarrollar versión móvil nativa para ampliar el
+                            alcance (actualmente sólo es web).
+                          </li>
+                        </ul>
 
-                      <p className="mt-4 font-semibold">🛠️ Tecnologías:</p>
-                      <ul className="list-disc list-inside ml-4">
-                        <li>
-                          Frontend: Next.js (App Router), TypeScript, Tailwind
-                          CSS.
-                        </li>
-                        <li>Backend: Node.js, Express.js.</li>
-                        <li>
-                          Autenticación: Firebase Authentication y Firebase
-                          Admin SDK.
-                        </li>
-                        <li>Base de datos: MongoDB Atlas.</li>
-                        <li>Almacenamiento de imágenes: Cloudinary.</li>
-                        <li>Manejo de estado: Zustand y cookies HTTPOnly.</li>
-                        <li>
-                          Despliegue: Vercel (frontend), Render (backend).
-                        </li>
-                        <li>Herramientas: Axios, js-cookie, JWT.</li>
-                      </ul>
-                    </>
-                  )}
+                        <p className="mt-4 font-semibold">🛠️ Tecnologías:</p>
+                        <ul className="list-disc list-inside ml-4">
+                          <li>
+                            Frontend: Next.js (App Router), TypeScript, Tailwind
+                            CSS.
+                          </li>
+                          <li>Backend: Node.js, Express.js.</li>
+                          <li>
+                            Autenticación: Firebase Authentication y Firebase
+                            Admin SDK.
+                          </li>
+                          <li>Base de datos: MongoDB Atlas.</li>
+                          <li>Almacenamiento de imágenes: Cloudinary.</li>
+                          <li>Manejo de estado: Zustand y cookies HTTPOnly.</li>
+                          <li>
+                            Despliegue: Vercel (frontend), Render (backend).
+                          </li>
+                          <li>Herramientas: Axios, js-cookie, JWT.</li>
+                        </ul>
+                      </>
+                    )}
 
-                  <button
-                    className=" text-blue-600 hover:underline"
-                    onClick={toggleShowMore}
-                  >
-                    {showMore ? "Mostrar menos..." : "Mostrar más..."}
-                  </button>
-                </>
-              ) : (
-                <>
-                  <p>
-                    Cabin Rentals is a full-featured web application for
-                    managing cabin rentals, designed to provide a smooth and
-                    secure experience for both users looking to book and
-                    administrators managing availability and payments.
-                  </p>
+                    {/* <button
+                      className=" text-blue-600 hover:underline"
+                      onClick={toggleShowMore}
+                    >
+                      {showMore ? "Mostrar menos..." : "Mostrar más..."}
+                    </button> */}
+                    <button
+                      onClick={toggleShowMore}
+                      className={`ml-2 mt-2 hover:underline ${
+                        theme === "light" ? "text-blue-500" : "text-blue-400"
+                      }`}
+                      aria-label={
+                        showMore
+                          ? "Mostrar menos contenido"
+                          : "Mostrar más contenido"
+                      }
+                    >
+                      {showMore ? "Mostrar menos..." : "Mostrar más..."}
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <p>
+                      Cabin Rentals is a full-featured web application for
+                      managing cabin rentals, designed to provide a smooth and
+                      secure experience for both users looking to book and
+                      administrators managing availability and payments.
+                    </p>
 
-                  <p>
-                    The app consists of two main parts: a frontend built with
-                    Next.js using a layered and feature-based architecture, and
-                    a backend built with Node.js and Express.js following a
-                    simplified Clean Architecture.
-                  </p>
+                    <p>
+                      The app consists of two main parts: a frontend built with
+                      Next.js using a layered and feature-based architecture,
+                      and a backend built with Node.js and Express.js following
+                      a simplified Clean Architecture.
+                    </p>
 
-                  <p className="mt-4 font-semibold">
-                    🚀 Key challenges and solutions:
-                  </p>
-                  <ul className="list-disc list-inside ml-4">
-                    <li>
-                      ✅ Secure authentication with Firebase and session
-                      management via HTTPOnly cookies.
-                    </li>
-                    <li>
-                      ✅ Implementation of Next.js App Router system for agile
-                      and modular UX.
-                    </li>
-                    <li>
-                      ✅ Secure REST API design for comprehensive user,
-                      reservation, and cabin management.
-                    </li>
-                    <li>
-                      ✅ Global state management and session persistence on
-                      frontend using Zustand and HTTPOnly cookies.
-                    </li>
-                  </ul>
+                    <p className="mt-4 font-semibold">
+                      🚀 Key challenges and solutions:
+                    </p>
+                    <ul className="list-disc list-inside ml-4">
+                      <li>
+                        ✅ Secure authentication with Firebase and session
+                        management via HTTPOnly cookies.
+                      </li>
+                      <li>
+                        ✅ Implementation of Next.js App Router system for agile
+                        and modular UX.
+                      </li>
+                      <li>
+                        ✅ Secure REST API design for comprehensive user,
+                        reservation, and cabin management.
+                      </li>
+                      <li>
+                        ✅ Global state management and session persistence on
+                        frontend using Zustand and HTTPOnly cookies.
+                      </li>
+                    </ul>
 
-                  {showMore && (
-                    <>
-                      <ul className="list-disc list-inside ml-4">
-                        <li>
-                          ✅ Optimized deployment and production-specific
-                          configurations.
-                        </li>
-                        <li>
-                          ✅ Architecture prepared for future real-time
-                          synchronization integration.
-                        </li>
-                      </ul>
+                    {showMore && (
+                      <>
+                        <ul className="list-disc list-inside ml-4">
+                          <li>
+                            ✅ Optimized deployment and production-specific
+                            configurations.
+                          </li>
+                          <li>
+                            ✅ Architecture prepared for future real-time
+                            synchronization integration.
+                          </li>
+                        </ul>
 
-                      <p className="mt-4">
-                        Authentication is implemented with Firebase
-                        Authentication and Firebase Admin SDK, using HTTPOnly
-                        cookies to ensure security and session persistence. Data
-                        is stored in MongoDB Atlas, providing a reliable and
-                        scalable backend.
-                      </p>
+                        <p className="mt-4">
+                          Authentication is implemented with Firebase
+                          Authentication and Firebase Admin SDK, using HTTPOnly
+                          cookies to ensure security and session persistence.
+                          Data is stored in MongoDB Atlas, providing a reliable
+                          and scalable backend.
+                        </p>
 
-                      <p>
-                        The project is deployed on Vercel (frontend) and Render
-                        (backend), choosing platforms that optimize performance
-                        and cost without sacrificing stability.
-                      </p>
+                        <p>
+                          The project is deployed on Vercel (frontend) and
+                          Render (backend), choosing platforms that optimize
+                          performance and cost without sacrificing stability.
+                        </p>
 
-                      <p className="mt-4 font-semibold">📌 Next steps:</p>
-                      <ul className="list-disc list-inside ml-4">
-                        <li>Integrate payment gateway with Mercado Pago.</li>
-                        <li>Add notification system for users and admins.</li>
-                        <li>
-                          Implement advanced filters and personalized
-                          recommendations.
-                        </li>
-                        <li>
-                          Develop native mobile app version to broaden reach
-                          (currently web only).
-                        </li>
-                      </ul>
+                        <p className="mt-4 font-semibold">📌 Next steps:</p>
+                        <ul className="list-disc list-inside ml-4">
+                          <li>Integrate payment gateway with Mercado Pago.</li>
+                          <li>Add notification system for users and admins.</li>
+                          <li>
+                            Implement advanced filters and personalized
+                            recommendations.
+                          </li>
+                          <li>
+                            Develop native mobile app version to broaden reach
+                            (currently web only).
+                          </li>
+                        </ul>
 
-                      <p className="mt-4 font-semibold">🛠️ Technologies:</p>
-                      <ul className="list-disc list-inside ml-4">
-                        <li>
-                          Frontend: Next.js (App Router), TypeScript, Tailwind
-                          CSS.
-                        </li>
-                        <li>Backend: Node.js, Express.js.</li>
-                        <li>
-                          Authentication: Firebase Authentication and Firebase
-                          Admin SDK.
-                        </li>
-                        <li>Database: MongoDB Atlas.</li>
-                        <li>Image storage: Cloudinary.</li>
-                        <li>State management: Zustand and HTTPOnly cookies.</li>
-                        <li>
-                          Deployment: Vercel (frontend), Render (backend).
-                        </li>
-                        <li>Tools: Axios, js-cookie, JWT.</li>
-                      </ul>
-                    </>
-                  )}
+                        <p className="mt-4 font-semibold">🛠️ Technologies:</p>
+                        <ul className="list-disc list-inside ml-4">
+                          <li>
+                            Frontend: Next.js (App Router), TypeScript, Tailwind
+                            CSS.
+                          </li>
+                          <li>Backend: Node.js, Express.js.</li>
+                          <li>
+                            Authentication: Firebase Authentication and Firebase
+                            Admin SDK.
+                          </li>
+                          <li>Database: MongoDB Atlas.</li>
+                          <li>Image storage: Cloudinary.</li>
+                          <li>
+                            State management: Zustand and HTTPOnly cookies.
+                          </li>
+                          <li>
+                            Deployment: Vercel (frontend), Render (backend).
+                          </li>
+                          <li>Tools: Axios, js-cookie, JWT.</li>
+                        </ul>
+                      </>
+                    )}
 
-                  <button
-                    className="text-blue-600 hover:underline"
-                    onClick={toggleShowMore}
-                  >
-                    {showMore ? "Show less..." : "Show more..."}
-                  </button>
-                </>
-              )}
+                    <button
+                      className="text-blue-600 hover:underline"
+                      onClick={toggleShowMore}
+                    >
+                      {showMore ? "Show less..." : "Show more..."}
+                    </button>
+                  </>
+                )}
+              </div>
             </div>
           </div>
 
@@ -406,7 +422,7 @@ function Projects() {
         <div className="">
           <div className="caja-luciani-automoviles">
             <div className="px-[3%] mb-[1%] text-left">
-              <span
+              <div
                 className={`${
                   theme === "light" ? "text-black" : "text-white"
                 } mb-[3%]`}
@@ -417,7 +433,7 @@ function Projects() {
                   {showLanguage === "spanish"
                     ? "Jun 2024/Ene 2025"
                     : "May 2024/Jan 2025"}
-                  ):
+                  )
                 </span>
                 <br />
                 {showLanguage === "spanish" ? (
@@ -440,14 +456,14 @@ function Projects() {
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            Aplicación web: para dueños y
-                            administradores de negocios, quienes pueden publicar
-                            y gestionar descuentos.
+                            Aplicación web: para dueños y administradores de
+                            negocios, quienes pueden publicar y gestionar
+                            descuentos.
                           </li>
                           <li>
-                          Aplicación móvil: para los usuarios
-                            que buscan descuentos y generan códigos QR para
-                            canjear en los locales.
+                            Aplicación móvil: para los usuarios que buscan
+                            descuentos y generan códigos QR para canjear en los
+                            locales.
                           </li>
                         </ul>
 
@@ -459,9 +475,9 @@ function Projects() {
                         </p>
 
                         <p>
-                          Escáner QR: los administradores de
-                          los negocios pueden validar los descuentos mediante
-                          un escáner integrado en la app móvil.
+                          Escáner QR: los administradores de los negocios pueden
+                          validar los descuentos mediante un escáner integrado
+                          en la app móvil.
                         </p>
 
                         <p className="my-4 font-semibold">
@@ -469,30 +485,33 @@ function Projects() {
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            ✅ Autenticación segura: Integré
-                            Firebase Authentication con sesiones protegidas
-                            mediante JWT y cookies.
+                            ✅ Autenticación segura: Integré Firebase
+                            Authentication con sesiones protegidas mediante JWT
+                            y cookies.
                           </li>
                           <li>
-                            ✅ Sincronización en tiempo real: Aseguré que los descuentos creados en la web se
-                            reflejen de inmediato en la app móvil.
+                            ✅ Sincronización en tiempo real: Aseguré que los
+                            descuentos creados en la web se reflejen de
+                            inmediato en la app móvil.
                           </li>
                           <li>
-                            ✅ Experiencia híbrida (web y móvil): 
-                            Diseñé una arquitectura que funciona sin fricciones
-                            en ambas plataformas.
+                            ✅ Experiencia híbrida (web y móvil): Diseñé una
+                            arquitectura que funciona sin fricciones en ambas
+                            plataformas.
                           </li>
                           <li>
-                            ✅ Optimización de imágenes: Implementé un sistema de compresión para mejorar el
-                            rendimiento sin perder calidad.
+                            ✅ Optimización de imágenes: Implementé un sistema
+                            de compresión para mejorar el rendimiento sin perder
+                            calidad.
                           </li>
                           <li>
-                            ✅ Validación de descuentos con QR: Creé un sistema de escaneo para asegurar que los
-                            descuentos sean legítimos.
+                            ✅ Validación de descuentos con QR: Creé un sistema
+                            de escaneo para asegurar que los descuentos sean
+                            legítimos.
                           </li>
                           <li>
-                            ✅ Despliegue eficiente: Optimizé tiempos de carga en la nube para mejorar el
-                            rendimiento.
+                            ✅ Despliegue eficiente: Optimizé tiempos de carga
+                            en la nube para mejorar el rendimiento.
                           </li>
                         </ul>
 
@@ -572,9 +591,108 @@ function Projects() {
                           💡 En entrevistas técnicas, puedo compartir fragmentos
                           de código relevantes y explicar en detalle la
                           arquitectura y las tecnologías utilizadas.
+                        </p>
+
+                        <button
+                          onClick={toggleContent}
+                          className={`ml-2 mt-2 hover:underline ${
+                            theme === "light"
+                              ? "text-blue-500"
+                              : "text-blue-400"
+                          }`}
+                          aria-label={
+                            showFullContent
+                              ? "Mostrar menos contenido"
+                              : "Mostrar más contenido"
+                          }
+                        >
+                          {showFullContent
+                            ? "Mostrar menos..."
+                            : "Mostrar más..."}
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        <div>
+                          <p className="mb-4">
+                            "Comé x menos" es una aplicación híbrida que conecta a
+                            los usuarios con descuentos exclusivos en
+                            restaurantes, bares, cafeterías, panaderías y otros
+                            establecimientos gastronómicos. A diferencia de
+                            plataformas como PedidosYa o Rappi, que se centran en
+                            el delivery, el objetivo de "Comé x menos" es fomentar
+                            el consumo directo en los locales o la modalidad de
+                            "takeaway" para aprovechar los descuentos.
+                          </p>
+
+                          <p className="mb-4 font-semibold">
+                            La app está compuesta por dos plataformas:
+                          </p>
+                          <ul className="list-disc ml-5 mb-4">
+                            <li>
+                              Aplicación web: para dueños y administradores de
+                              negocios, quienes pueden publicar y gestionar
+                              descuentos.
+                            </li>
+                            <li>
+                              Aplicación móvil: para los usuarios que buscan
+                              descuentos y generan códigos QR para canjear en los
+                              locales.
+                            </li>
+                          </ul>
+
+                          <p className="mb-2">
+                            Ambas versiones comparten el mismo backend, que creé
+                            con Node.js y Express, asegurando sincronización en
+                            tiempo real. Para la base de datos, utilicé MongoDB
+                            Atlas.
+                          </p>
+
+                          <p>
+                            Escáner QR: los administradores de los negocios pueden
+                            validar los descuentos mediante un escáner integrado
+                            en la app móvil.
+                          </p>
+
+                          <p className="my-4 font-semibold">
+                            🚀 Retos resueltos en el desarrollo
+                          </p>
+
+                          <ul className="list-disc ml-5 mb-2">
+                            <li>
+                              ✅ Autenticación segura: Integré Firebase
+                              Authentication con sesiones protegidas mediante JWT
+                              y cookies.
+                            </li>
+                            <li>
+                              ✅ Sincronización en tiempo real: Aseguré que los
+                              descuentos creados en la web se reflejen de
+                              inmediato en la app móvil.
+                            </li>
+                            <li>
+                              ✅ Experiencia híbrida (web y móvil): Diseñé una
+                              arquitectura que funciona sin fricciones en ambas
+                              plataformas.
+                            </li>
+                            <li>
+                              ✅ Optimización de imágenes: Implementé un sistema
+                              de compresión para mejorar el rendimiento sin perder
+                              calidad.
+                            </li>
+                            <li>
+                              ✅ Validación de descuentos con QR: Creé un sistema
+                              de escaneo para asegurar que los descuentos sean
+                              legítimos.
+                            </li>
+                            <li>
+                              ✅ Despliegue eficiente: Optimizé tiempos de carga
+                              en la nube para mejorar el rendimiento.
+                            </li>
+                          </ul>
+
                           <button
                             onClick={toggleContent}
-                            className={`ml-2 mt-2 hover:underline ${
+                            className={`hover:underline ${
                               theme === "light"
                                 ? "text-blue-500"
                                 : "text-blue-400"
@@ -589,99 +707,7 @@ function Projects() {
                               ? "Mostrar menos..."
                               : "Mostrar más..."}
                           </button>
-                        </p>
-                      </>
-                    ) : (
-                      <>
-                        <p className="mb-4">
-                          "Comé x menos" es una aplicación híbrida que conecta a
-                          los usuarios con descuentos exclusivos en
-                          restaurantes, bares, cafeterías, panaderías y otros
-                          establecimientos gastronómicos. A diferencia de
-                          plataformas como PedidosYa o Rappi, que se centran en
-                          el delivery, el objetivo de "Comé x menos" es fomentar
-                          el consumo directo en los locales o la modalidad de
-                          "takeaway" para aprovechar los descuentos.
-                        </p>
-
-                        <p className="mb-4 font-semibold">
-                          La app está compuesta por dos plataformas:
-                        </p>
-                        <ul className="list-disc ml-5 mb-4">
-                          <li>
-                            Aplicación web: para dueños y
-                            administradores de negocios, quienes pueden publicar
-                            y gestionar descuentos.
-                          </li>
-                          <li>
-                            Aplicación móvil: para los usuarios
-                            que buscan descuentos y generan códigos QR para
-                            canjear en los locales.
-                          </li>
-                        </ul>
-
-                        <p className="mb-2">
-                          Ambas versiones comparten el mismo backend, que creé
-                          con Node.js y Express, asegurando sincronización en
-                          tiempo real. Para la base de datos, utilicé MongoDB
-                          Atlas.
-                        </p>
-
-                        <p>
-                          Escáner QR: los administradores de
-                          los negocios pueden validar los descuentos mediante
-                          un escáner integrado en la app móvil.
-                        </p>
-
-                        <p className="my-4 font-semibold">
-                          🚀 Retos resueltos en el desarrollo
-                        </p>
-
-                        <ul className="list-disc ml-5 mb-4">
-                          <li>
-                            ✅ Autenticación segura: Integré
-                            Firebase Authentication con sesiones protegidas
-                            mediante JWT y cookies.
-                          </li>
-                          <li>
-                            ✅ Sincronización en tiempo real: Aseguré que los descuentos creados en la web se
-                            reflejen de inmediato en la app móvil.
-                          </li>
-                          <li>
-                            ✅ Experiencia híbrida (web y móvil): Diseñé una arquitectura que funciona sin fricciones
-                            en ambas plataformas.
-                          </li>
-                          <li>
-                            ✅ Optimización de imágenes: Implementé un sistema de compresión para mejorar el
-                            rendimiento sin perder calidad.
-                          </li>
-                          <li>
-                            ✅ Validación de descuentos con QR: Creé un sistema de escaneo para asegurar que los
-                            descuentos sean legítimos.
-                          </li>
-                          <li>
-                            ✅ Despliegue eficiente: Optimizé
-                            tiempos de carga en la nube para mejorar el
-                            rendimiento.
-                            <button
-                              onClick={toggleContent}
-                              className={`ml-2 hover:underline ${
-                                theme === "light"
-                                  ? "text-blue-500"
-                                  : "text-blue-400"
-                              }`}
-                              aria-label={
-                                showFullContent
-                                  ? "Mostrar menos contenido"
-                                  : "Mostrar más contenido"
-                              }
-                            >
-                              {showFullContent
-                                ? "Mostrar menos..."
-                                : "Mostrar más..."}
-                            </button>
-                          </li>
-                        </ul>
+                        </div>
                       </>
                     )}
                   </>
@@ -705,14 +731,12 @@ function Projects() {
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            Web application: For business
-                            owners and administrators to publish and manage
-                            discounts.
+                            Web application: For business owners and
+                            administrators to publish and manage discounts.
                           </li>
                           <li>
-                            Mobile application: For users to
-                            browse discounts and generate QR codes to redeem
-                            them in stores.
+                            Mobile application: For users to browse discounts
+                            and generate QR codes to redeem them in stores.
                           </li>
                         </ul>
 
@@ -724,9 +748,9 @@ function Projects() {
                         </p>
 
                         <p>
-                          QR scanner: Business administrators
-                          can validate discounts using an integrated scanner
-                          in the mobile app.
+                          QR scanner: Business administrators can validate
+                          discounts using an integrated scanner in the mobile
+                          app.
                         </p>
 
                         <p className="my-4 font-semibold">
@@ -734,29 +758,32 @@ function Projects() {
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            ✅ Secure authentication: Integrated Firebase Authentication with session
-                            protection using JWT and cookies.
+                            ✅ Secure authentication: Integrated Firebase
+                            Authentication with session protection using JWT and
+                            cookies.
                           </li>
                           <li>
-                            ✅ Real-time synchronization: Ensured that discounts created on the web instantly
-                            reflect in the mobile app.
+                            ✅ Real-time synchronization: Ensured that discounts
+                            created on the web instantly reflect in the mobile
+                            app.
                           </li>
                           <li>
-                            ✅ Hybrid experience (web & mobile): Designed an architecture that works seamlessly on
-                            both platforms.
+                            ✅ Hybrid experience (web & mobile): Designed an
+                            architecture that works seamlessly on both
+                            platforms.
                           </li>
                           <li>
-                            ✅ Image optimization: Implemented
-                            a compression system to enhance performance without
-                            losing quality.
+                            ✅ Image optimization: Implemented a compression
+                            system to enhance performance without losing
+                            quality.
                           </li>
                           <li>
-                            ✅ QR discount validation: Developed a scanning system to ensure discounts are
-                            legitimate.
+                            ✅ QR discount validation: Developed a scanning
+                            system to ensure discounts are legitimate.
                           </li>
                           <li>
-                            ✅ Efficient deployment: Optimized
-                            cloud load times for better performance.
+                            ✅ Efficient deployment: Optimized cloud load times
+                            for better performance.
                           </li>
                         </ul>
 
@@ -776,7 +803,9 @@ function Projects() {
                           </li>
                         </ul>
 
-                        <p className="mb-4 font-semibold">🛠️ Technologies used</p>
+                        <p className="mb-4 font-semibold">
+                          🛠️ Technologies used
+                        </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>Frontend Web: Next.js + Tailwind CSS</li>
                           <li>Mobile Frontend: React Native with Expo</li>
@@ -868,14 +897,12 @@ function Projects() {
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            Web application: For business
-                            owners and administrators to publish and manage
-                            discounts.
+                            Web application: For business owners and
+                            administrators to publish and manage discounts.
                           </li>
                           <li>
-                            Mobile application: For users to
-                            browse discounts and generate QR codes to redeem
-                            them in stores.
+                            Mobile application: For users to browse discounts
+                            and generate QR codes to redeem them in stores.
                           </li>
                         </ul>
 
@@ -887,9 +914,9 @@ function Projects() {
                         </p>
 
                         <p>
-                          QR scanner: Business administrators
-                          can validate discounts using an integrated scanner
-                          in the mobile app.
+                          QR scanner: Business administrators can validate
+                          discounts using an integrated scanner in the mobile
+                          app.
                         </p>
 
                         <p className="my-4 font-semibold">
@@ -897,29 +924,32 @@ function Projects() {
                         </p>
                         <ul className="list-disc ml-5 mb-4">
                           <li>
-                            ✅ Secure authentication: Integrated Firebase Authentication with session
-                            protection using JWT and cookies.
+                            ✅ Secure authentication: Integrated Firebase
+                            Authentication with session protection using JWT and
+                            cookies.
                           </li>
                           <li>
-                            ✅ Real-time synchronization: Ensured that discounts created on the web instantly
-                            reflect in the mobile app.
+                            ✅ Real-time synchronization: Ensured that discounts
+                            created on the web instantly reflect in the mobile
+                            app.
                           </li>
                           <li>
-                            ✅ Hybrid experience (web & mobile): Designed an architecture that works seamlessly on
-                            both platforms.
+                            ✅ Hybrid experience (web & mobile): Designed an
+                            architecture that works seamlessly on both
+                            platforms.
                           </li>
                           <li>
-                            ✅ Image optimization: Implemented
-                            a compression system to enhance performance without
-                            losing quality.
+                            ✅ Image optimization: Implemented a compression
+                            system to enhance performance without losing
+                            quality.
                           </li>
                           <li>
-                            ✅ QR discount validation: Developed a scanning system to ensure discounts are
-                            legitimate.
+                            ✅ QR discount validation: Developed a scanning
+                            system to ensure discounts are legitimate.
                           </li>
                           <li>
-                            ✅ Efficient deployment: Optimized
-                            cloud load times for better performance.
+                            ✅ Efficient deployment: Optimized cloud load times
+                            for better performance.
                             <button
                               onClick={toggleContent}
                               className={`ml-2 hover:underline ${
@@ -943,7 +973,7 @@ function Projects() {
                     )}
                   </>
                 )}
-              </span>
+              </div>
             </div>
 
             {/* Sección de imágenes y videos */}
@@ -1109,7 +1139,7 @@ function Projects() {
                 <span className="ml-[5px]">
                   (
                   {showLanguage === "spanish" ? "Oct/Nov 2023" : "Oct/Nov 2023"}
-                  ):
+                  )
                 </span>
                 <br />
                 {showLanguage === "spanish"
@@ -1190,7 +1220,7 @@ function Projects() {
                 <span className="ml-[5px]">
                   (
                   {showLanguage === "spanish" ? "Ago/Set 2023" : "Aug/Sep 2023"}
-                  ):
+                  )
                 </span>
                 <br />
                 {showLanguage === "spanish"

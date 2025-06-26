@@ -6,8 +6,8 @@ import { Button } from "@mui/material";
 const AboutMe = () => {
   const { showLanguage, theme } = useContext(Context);
 
-  const cvPathES = "./data/CV (ES)-Oscar Luciani - Frontend.pdf";
-  const cvPathEN = "./data/CV (EN)-Oscar Luciani - Frontend Developer.pdf";
+  const cvPathES = "./data/Oscar_Luciani_Frontend_CV_ES.pdf";
+  const cvPathEN = "./data/Oscar_Luciani_Frontend_CV_EN.pdf";
 
   return (
     <section id="about" className="py-6">

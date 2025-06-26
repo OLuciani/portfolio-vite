@@ -1,5 +1,6 @@
 import { LuMapPin } from "react-icons/lu";
-import { CiFlag1 } from "react-icons/ci";
+//import { CiFlag1 } from "react-icons/ci";
+import { HiOutlineFlag } from "react-icons/hi";
 import { MdOutlineAttachEmail } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineLinkedin } from "react-icons/ai";
@@ -21,19 +22,23 @@ function Contact() {
   const [messageValue, setMessageValue] = useState("");
   const [isSending, setIsSending] = useState(false); // Para manejar el estado de envío
   const [successMessage, setSuccessMessage] = useState(""); // Mensaje de éxito
-  
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
+
     // Resetear mensajes de error y éxito
     setEmailError("");
     setMessageError("");
     setSuccessMessage("");
-  
+
     if (formRef.current) {
-      const userEmail = (formRef.current as any).user_email.value;
-      const message = (formRef.current as any).message.value;
-  
+      /* const userEmail = (formRef.current as any).user_email.value;
+      const message = (formRef.current as any).message.value; */
+      const formElement = formRef.current;
+      const formData = new FormData(formElement);
+      const userEmail = formData.get("user_email") as string;
+      const message = formData.get("message") as string;
+
       // Validar email
       if (!isValidEmail(userEmail)) {
         setEmailError(
@@ -43,7 +48,7 @@ function Contact() {
         );
         return;
       }
-  
+
       // Validar mensaje
       if (message.trim() === "") {
         setMessageError(
@@ -53,10 +58,10 @@ function Contact() {
         );
         return;
       }
-  
+
       // Mostrar indicador de carga mientras se envía
       setIsSending(true);
-  
+
       try {
         await emailjs.sendForm(
           "service_j37eijj",
@@ -64,7 +69,7 @@ function Contact() {
           formRef.current,
           "jNzEAYIpofHkH56hD"
         );
-  
+
         // Mostrar mensaje de éxito y limpiar campos
         setSuccessMessage(
           showLanguage === "spanish"
@@ -73,7 +78,7 @@ function Contact() {
         );
         setEmailValue("");
         setMessageValue("");
-  
+
         // Configurar temporizador para ocultar el mensaje
         setTimeout(() => {
           setSuccessMessage("");
@@ -88,7 +93,6 @@ function Contact() {
       }
     }
   };
-  
 
   const isValidEmail = (email: string) => {
     return email.includes("@");
@@ -113,7 +117,7 @@ function Contact() {
                 <LuMapPin className="text-2xl md:text-3xl" />
               </span>
               <p className="md:text-lg">
-                <span className="md:text-lg">
+                <span className="md:text-lg font-semibold">
                   {showLanguage === "spanish" ? "Localidad:" : "Location:"}{" "}
                 </span>
                 {showLanguage === "spanish"
@@ -125,10 +129,10 @@ function Contact() {
             {/* Nacionalidad */}
             <div className="flex items-center gap-5">
               <span>
-                <CiFlag1 className="text-2xl md:text-3xl" />
+                <HiOutlineFlag className="text-2xl md:text-3xl " />
               </span>
               <p className="md:text-lg">
-                <span className="md:text-lg">
+                <span className="md:text-lg font-semibold">
                   {showLanguage === "spanish"
                     ? "Nacionalidad:"
                     : "Nationality:"}{" "}
@@ -145,7 +149,7 @@ function Contact() {
                 <MdOutlineAttachEmail className="text-2xl md:text-3xl" />
               </span>
               <p className="md:text-lg">
-                <span className="md:text-lg">Email: </span>
+                <span className="md:text-lg font-semibold">Email: </span>
                 lucianioscar1@gmail.com
               </p>
             </div>
@@ -156,7 +160,7 @@ function Contact() {
                 <BsTelephone className="text-2xl md:text-3xl" />
               </span>
               <p className="md:text-lg">
-                <span className="md:text-lg">
+                <span className="md:text-lg font-semibold">
                   {showLanguage === "spanish" ? "Teléfono:" : "Phone:"}{" "}
                 </span>
                 54 9 351 5320693
@@ -168,8 +172,8 @@ function Contact() {
               <a
                 className={`flex items-center gap-5 font-semibold ${
                   theme === "light"
-                  ? "hover:text-blue-600"
-                  : "hover:text-blue-500"
+                    ? "hover:text-blue-600"
+                    : "hover:text-blue-500"
                 }`}
                 href="https://www.linkedin.com/in/oscarluciani"
                 target="_blank"
@@ -179,11 +183,7 @@ function Contact() {
                     className={`text-2xl md:text-3xl cursor-pointer`}
                   />
                 </span>
-                <p
-                  className={`md:text-lg cursor-pointer`}
-                >
-                  Linkedin
-                </p>
+                <p className={`md:text-lg cursor-pointer`}>Linkedin</p>
               </a>
             </div>
 
@@ -199,13 +199,9 @@ function Contact() {
                 target="_blank"
               >
                 <span>
-                  <FaGithub
-                    className={`text-2xl md:text-3xl cursor-pointer`}
-                  />
+                  <FaGithub className={`text-2xl md:text-3xl cursor-pointer`} />
                 </span>
-                <p
-                  className={`md:text-lg cursor-pointer hover:underline`}
-                >
+                <p className={`md:text-lg cursor-pointer hover:underline`}>
                   Github
                 </p>
               </a>
@@ -236,7 +232,9 @@ function Contact() {
                   value={emailValue}
                   onChange={(e) => setEmailValue(e.target.value)}
                   className={`w-full mb-4 px-4 py-2 rounded-md border focus:outline-none focus:border-[salmon] ${
-                    theme === "light" ? "bg-gray-100 border-gray-400" : "text-black"
+                    theme === "light"
+                      ? "bg-gray-100 border-gray-400"
+                      : "text-black"
                   }`}
                   required
                 />
@@ -260,7 +258,9 @@ function Contact() {
                   onChange={(e) => setMessageValue(e.target.value)}
                   rows={4}
                   className={`w-full mb-4 px-4 py-2 rounded-md border focus:outline-none focus:border-[salmon] ${
-                    theme === "light" ? "bg-gray-100 border-gray-400" : "text-black"
+                    theme === "light"
+                      ? "bg-gray-100 border-gray-400"
+                      : "text-black"
                   }`}
                   required
                 />
@@ -310,4 +310,3 @@ function Contact() {
 }
 
 export default Contact;
-

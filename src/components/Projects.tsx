@@ -347,6 +347,22 @@ function Projects() {
             <div className="md:w-[260px] mt-3 md:mt-0 flex flex-col items-center justify-center gap-3">
               <div className="grid justify-center items-center mb-[10px]">
                 <a
+                  href="https://www.youtube.com/watch?v=lTPsboqARaU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    className="w-[260px] text-lg text-center font-semibold py-1 rounded-md"
+                    variant="contained"
+                    color="primary"
+                  >
+                    {showLanguage === "spanish" ? "Ver Video" : "Watch Video"}
+                  </Button>
+                </a>
+              </div>
+
+              <div className="grid justify-center items-center mb-[10px]">
+                <a
                   href="https://cabin-rentals-frontend.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -360,6 +376,7 @@ function Projects() {
                   </Button>
                 </a>
               </div>
+
               <div className="grid justify-center items-center">
                 <a
                   href="https://cabin-rentals-backend.onrender.com/api/health"
@@ -413,6 +430,22 @@ function Projects() {
                   </Button>
                 </a>
               </div>
+
+              {/* <div className="grid justify-center items-center mt-[10px]">
+                <a
+                  href="https://www.youtube.com/watch?v=lTPsboqARaU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    className="w-[260px] text-lg text-center font-semibold py-1 rounded-md"
+                    variant="contained"
+                    color="primary"
+                  >
+                    {showLanguage === "spanish" ? "Ver Video" : "Watch Video"}
+                  </Button>
+                </a>
+              </div> */}
             </div>
           </div>
         </div>
@@ -615,14 +648,15 @@ function Projects() {
                       <>
                         <div>
                           <p className="mb-4">
-                            "Comé x menos" es una aplicación híbrida que conecta a
-                            los usuarios con descuentos exclusivos en
+                            "Comé x menos" es una aplicación híbrida que conecta
+                            a los usuarios con descuentos exclusivos en
                             restaurantes, bares, cafeterías, panaderías y otros
                             establecimientos gastronómicos. A diferencia de
-                            plataformas como PedidosYa o Rappi, que se centran en
-                            el delivery, el objetivo de "Comé x menos" es fomentar
-                            el consumo directo en los locales o la modalidad de
-                            "takeaway" para aprovechar los descuentos.
+                            plataformas como PedidosYa o Rappi, que se centran
+                            en el delivery, el objetivo de "Comé x menos" es
+                            fomentar el consumo directo en los locales o la
+                            modalidad de "takeaway" para aprovechar los
+                            descuentos.
                           </p>
 
                           <p className="mb-4 font-semibold">
@@ -636,8 +670,8 @@ function Projects() {
                             </li>
                             <li>
                               Aplicación móvil: para los usuarios que buscan
-                              descuentos y generan códigos QR para canjear en los
-                              locales.
+                              descuentos y generan códigos QR para canjear en
+                              los locales.
                             </li>
                           </ul>
 
@@ -649,9 +683,9 @@ function Projects() {
                           </p>
 
                           <p>
-                            Escáner QR: los administradores de los negocios pueden
-                            validar los descuentos mediante un escáner integrado
-                            en la app móvil.
+                            Escáner QR: los administradores de los negocios
+                            pueden validar los descuentos mediante un escáner
+                            integrado en la app móvil.
                           </p>
 
                           <p className="my-4 font-semibold">
@@ -661,8 +695,8 @@ function Projects() {
                           <ul className="list-disc ml-5 mb-2">
                             <li>
                               ✅ Autenticación segura: Integré Firebase
-                              Authentication con sesiones protegidas mediante JWT
-                              y cookies.
+                              Authentication con sesiones protegidas mediante
+                              JWT y cookies.
                             </li>
                             <li>
                               ✅ Sincronización en tiempo real: Aseguré que los
@@ -676,13 +710,13 @@ function Projects() {
                             </li>
                             <li>
                               ✅ Optimización de imágenes: Implementé un sistema
-                              de compresión para mejorar el rendimiento sin perder
-                              calidad.
+                              de compresión para mejorar el rendimiento sin
+                              perder calidad.
                             </li>
                             <li>
-                              ✅ Validación de descuentos con QR: Creé un sistema
-                              de escaneo para asegurar que los descuentos sean
-                              legítimos.
+                              ✅ Validación de descuentos con QR: Creé un
+                              sistema de escaneo para asegurar que los
+                              descuentos sean legítimos.
                             </li>
                             <li>
                               ✅ Despliegue eficiente: Optimizé tiempos de carga

@@ -347,7 +347,7 @@ function Projects() {
             <div className="md:w-[260px] mt-3 md:mt-0 flex flex-col items-center justify-center gap-3">
               <div className="grid justify-center items-center mb-[10px]">
                 <a
-                  href="https://www.youtube.com/watch?v=lTPsboqARaU"
+                  href="https://www.youtube.com/watch?v=NJH1nDsyVYs"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
